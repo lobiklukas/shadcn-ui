@@ -1,6 +1,10 @@
 # Node
 node_modules/
 
+# Environment
+.env
+.env.local
+
 # TanStack Start output
 .output/
 .vinxi/
