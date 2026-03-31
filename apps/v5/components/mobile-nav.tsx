@@ -1,8 +1,7 @@
 "use client"
 
 import * as React from "react"
-import Link, { type LinkProps } from "next/link"
-import { usePathname, useRouter } from "next/navigation"
+import { Link, useLocation, useNavigate } from "@tanstack/react-router"
 
 import { PAGES_NEW } from "@/lib/docs"
 import { showMcpDocs } from "@/lib/flags"
@@ -72,7 +71,7 @@ export function MobileNav({
   className?: string
 }) {
   const [open, setOpen] = React.useState(false)
-  const pathname = usePathname()
+  const { pathname } = useLocation()
   const { framework } = useFramework()
   const isOnComponentPage =
     /\/docs\/components\/(radix|base|vue|svelte)\//.test(pathname)
@@ -125,11 +124,11 @@ export function MobileNav({
               Menu
             </div>
             <div className="flex flex-col gap-3">
-              <MobileLink href="/" onOpenChange={setOpen}>
+              <MobileLink to="/" onOpenChange={setOpen}>
                 Home
               </MobileLink>
               {items.map((item, index) => (
-                <MobileLink key={index} href={item.href} onOpenChange={setOpen}>
+                <MobileLink key={index} to={item.href} onOpenChange={setOpen}>
                   {item.label}
                 </MobileLink>
               ))}
@@ -145,7 +144,7 @@ export function MobileNav({
                   return null
                 }
                 return (
-                  <MobileLink key={name} href={href} onOpenChange={setOpen}>
+                  <MobileLink key={name} to={href} onOpenChange={setOpen}>
                     {name}
                     {PAGES_NEW.includes(href) && (
                       <span
@@ -208,7 +207,7 @@ export function MobileNav({
                         return (
                           <MobileLink
                             key={`${item.url}-${index}`}
-                            href={href}
+                            to={href}
                             onOpenChange={setOpen}
                             className="flex items-center gap-2"
                           >
@@ -232,22 +231,23 @@ export function MobileNav({
 }
 
 function MobileLink({
-  href,
+  to,
   onOpenChange,
   className,
   children,
   ...props
-}: LinkProps & {
+}: Omit<React.ComponentProps<typeof Link>, "to"> & {
+  to: string
   onOpenChange?: (open: boolean) => void
   children: React.ReactNode
   className?: string
 }) {
-  const router = useRouter()
+  const navigate = useNavigate()
   return (
     <Link
-      href={href}
+      to={to}
       onClick={() => {
-        router.push(href.toString())
+        navigate({ to })
         onOpenChange?.(false)
       }}
       className={cn("flex items-center gap-2 text-2xl font-medium", className)}

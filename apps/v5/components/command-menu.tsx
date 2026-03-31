@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { usePathname, useRouter } from "next/navigation"
+import { useLocation, useNavigate } from "@tanstack/react-router"
 import { IconArrowRight } from "@tabler/icons-react"
 import { useDocsSearch } from "fumadocs-core/search/client"
 import { CornerDownLeftIcon, SquareDashedIcon } from "lucide-react"
@@ -49,8 +49,8 @@ export function CommandMenu({
   blocks?: { name: string; description: string; categories: string[] }[]
   navItems?: { href: string; label: string }[]
 }) {
-  const router = useRouter()
-  const pathname = usePathname()
+  const navigate = useNavigate()
+  const { pathname } = useLocation()
   const [config] = useConfig()
   const currentBase = getCurrentBase(pathname)
   const [open, setOpen] = React.useState(false)
@@ -197,7 +197,7 @@ export function CommandMenu({
               setCopyPayload("")
             }}
             onSelect={() => {
-              runCommand(() => router.push(item.href))
+              runCommand(() => navigate({ to: item.href }))
             }}
           >
             <IconArrowRight />
@@ -206,7 +206,7 @@ export function CommandMenu({
         ))}
       </CommandGroup>
     )
-  }, [navItems, runCommand, router])
+  }, [navItems, runCommand, navigate])
 
   const pageGroupsSection = React.useMemo(() => {
     return tree.children.map((group) => {
@@ -244,7 +244,7 @@ export function CommandMenu({
                 keywords={isComponent ? ["component"] : undefined}
                 onHighlight={() => handlePageHighlight(isComponent, item)}
                 onSelect={() => {
-                  runCommand(() => router.push(item.url))
+                  runCommand(() => navigate({ to: item.url }))
                 }}
               >
                 {isComponent ? (
@@ -259,7 +259,7 @@ export function CommandMenu({
         </CommandGroup>
       )
     })
-  }, [tree.children, currentBase, handlePageHighlight, runCommand, router])
+  }, [tree.children, currentBase, handlePageHighlight, runCommand, navigate])
 
   const colorGroupsSection = React.useMemo(() => {
     return colors.map((colorPalette) => (
@@ -324,7 +324,7 @@ export function CommandMenu({
             ]}
             onSelect={() => {
               runCommand(() =>
-                router.push(`/blocks/${block.categories[0]}#${block.name}`)
+                navigate({ to: `/blocks/${block.categories[0]}#${block.name}` })
               )
             }}
           >
@@ -337,7 +337,7 @@ export function CommandMenu({
         ))}
       </CommandGroup>
     )
-  }, [blocks, handleBlockHighlight, runCommand, router])
+  }, [blocks, handleBlockHighlight, runCommand, navigate])
 
   React.useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -526,7 +526,7 @@ function SearchResults({
   query: Query
   search: string
 }) {
-  const router = useRouter()
+  const navigate = useNavigate()
 
   const uniqueResults = React.useMemo(() => {
     if (!query.data || !Array.isArray(query.data)) {
@@ -564,7 +564,7 @@ function SearchResults({
             key={item.id}
             data-type={item.type}
             onSelect={() => {
-              router.push(item.url)
+              navigate({ to: item.url })
               setOpen(false)
             }}
             className="h-9 rounded-md border border-transparent px-3! font-normal data-[selected=true]:border-input data-[selected=true]:bg-input/50"

@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { usePathname, useRouter } from "next/navigation"
+import { useLocation, useNavigate } from "@tanstack/react-router"
 
 import { hasComponentForBase } from "@/lib/framework-components"
 import { cn } from "@/lib/utils"
@@ -26,8 +26,8 @@ const FRAMEWORK_OPTIONS = [
 
 export function FrameworkSwitcher({ className }: { className?: string }) {
   const { framework, setFramework } = useFramework()
-  const pathname = usePathname()
-  const router = useRouter()
+  const { pathname } = useLocation()
+  const navigate = useNavigate()
 
   // Sync framework preference from URL when on a component page.
   React.useEffect(() => {
@@ -56,11 +56,11 @@ export function FrameworkSwitcher({ className }: { className?: string }) {
       const targetBase = getDefaultBaseForFramework(value)
 
       if (hasComponentForBase(targetBase, component)) {
-        router.push(`/docs/components/${targetBase}/${component}`)
+        navigate({ to: `/docs/components/${targetBase}/${component}` })
       } else {
         // Component doesn't exist for this framework yet.
         // Navigate to the components index page.
-        router.push("/docs/components")
+        navigate({ to: "/docs/components" })
       }
     }
   }

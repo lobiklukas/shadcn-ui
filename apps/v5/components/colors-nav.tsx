@@ -1,7 +1,6 @@
 "use client"
 
-import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { Link, useLocation } from "@tanstack/react-router"
 
 import { getColors } from "@/lib/colors"
 import { cn } from "@/lib/utils"
@@ -11,7 +10,7 @@ export function ColorsNav({
   className,
   ...props
 }: React.ComponentProps<"div">) {
-  const pathname = usePathname()
+  const { pathname } = useLocation()
   const colors = getColors()
 
   return (
@@ -20,7 +19,7 @@ export function ColorsNav({
         <div className="flex items-center">
           {colors.map((colorPalette, index) => (
             <Link
-              href={`/colors#${colorPalette.name}`}
+              to={`/colors#${colorPalette.name}`}
               key={colorPalette.name}
               data-active={
                 pathname?.startsWith(colorPalette.name) ||

@@ -1,7 +1,6 @@
 "use client"
 
 import * as React from "react"
-import Script from "next/script"
 import { useTheme } from "next-themes"
 
 import { cn } from "@/lib/utils"
@@ -61,10 +60,8 @@ export function ModeSwitcher({
 
 export function DarkModeScript() {
   return (
-    // eslint-disable-next-line @next/next/no-before-interactive-script-outside-document
-    <Script
+    <script
       id="dark-mode-listener"
-      strategy="beforeInteractive"
       dangerouslySetInnerHTML={{
         __html: `
             (function() {

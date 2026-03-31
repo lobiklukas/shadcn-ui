@@ -1,5 +1,5 @@
 import { Suspense } from "react"
-import Link from "next/link"
+import { Link } from "@tanstack/react-router"
 import { PlusSignIcon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon } from "@hugeicons/react"
 
@@ -38,7 +38,7 @@ export function SiteHeader() {
             size="icon"
             className="hidden size-8 lg:flex"
           >
-            <Link href="/">
+            <Link to="/">
               <Icons.logo className="size-5" />
               <span className="sr-only">{siteConfig.name}</span>
             </Link>
@@ -84,7 +84,7 @@ export function SiteHeader() {
             <div className="flex items-center gap-2 group-has-data-[slot=designer]/layout:hidden">
               <Separator orientation="vertical" />
               <Button asChild size="sm" className="h-[31px] rounded-lg">
-                <Link href="/create">
+                <Link to="/create">
                   <HugeiconsIcon icon={PlusSignIcon} />
                   New
                 </Link>

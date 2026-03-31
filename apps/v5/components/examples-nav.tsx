@@ -1,7 +1,6 @@
 "use client"
 
-import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { Link, useLocation } from "@tanstack/react-router"
 
 import { cn } from "@/lib/utils"
 import { ScrollArea, ScrollBar } from "@/registry/new-york-v4/ui/scroll-area"
@@ -43,7 +42,7 @@ export function ExamplesNav({
   className,
   ...props
 }: React.ComponentProps<"div">) {
-  const pathname = usePathname()
+  const { pathname } = useLocation()
 
   return (
     <div className={cn("flex items-center", className)} {...props}>
@@ -80,7 +79,7 @@ function ExampleLink({
 
   return (
     <Link
-      href={example.href}
+      to={example.href}
       key={example.href}
       className="flex h-7 items-center justify-center gap-2 px-4 text-center text-base font-medium text-muted-foreground transition-colors hover:text-primary data-[active=true]:text-primary"
       data-active={isActive}

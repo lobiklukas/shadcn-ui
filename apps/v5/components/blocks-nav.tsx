@@ -1,13 +1,12 @@
 "use client"
 
-import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { Link, useLocation } from "@tanstack/react-router"
 
 import { registryCategories } from "@/lib/categories"
 import { ScrollArea, ScrollBar } from "@/registry/new-york-v4/ui/scroll-area"
 
 export function BlocksNav() {
-  const pathname = usePathname()
+  const { pathname } = useLocation()
 
   return (
     <div className="relative overflow-hidden">
@@ -44,7 +43,7 @@ function BlocksNavLink({
 
   return (
     <Link
-      href={`/blocks/${category.slug}`}
+      to={`/blocks/${category.slug}`}
       key={category.slug}
       className="flex h-7 items-center justify-center px-4 text-center text-base font-medium text-muted-foreground transition-colors hover:text-primary data-[active=true]:text-primary"
       data-active={isActive}

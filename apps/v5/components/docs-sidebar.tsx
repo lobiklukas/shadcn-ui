@@ -1,7 +1,6 @@
 "use client"
 
-import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { Link, useLocation } from "@tanstack/react-router"
 
 import { PAGES_NEW } from "@/lib/docs"
 import { showMcpDocs } from "@/lib/flags"
@@ -71,7 +70,7 @@ export function DocsSidebar({
   tree,
   ...props
 }: React.ComponentProps<typeof Sidebar> & { tree: typeof source.pageTree }) {
-  const pathname = usePathname()
+  const { pathname } = useLocation()
   const { framework } = useFramework()
   const isOnComponentPage =
     /\/docs\/components\/(radix|base|vue|svelte)\//.test(pathname)
@@ -110,7 +109,7 @@ export function DocsSidebar({
                       }
                       className="relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md data-[active=true]:border-accent data-[active=true]:bg-accent 3xl:fixed:w-full 3xl:fixed:max-w-48"
                     >
-                      <Link href={href}>
+                      <Link to={href}>
                         <span className="absolute inset-0 flex w-(--sidebar-menu-width) bg-transparent" />
                         {name}
                         {PAGES_NEW.includes(href) && (
@@ -193,7 +192,7 @@ export function DocsSidebar({
                               isActive={href === pathname}
                               className="relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md data-[active=true]:border-accent data-[active=true]:bg-accent 3xl:fixed:w-full 3xl:fixed:max-w-48"
                             >
-                              <Link href={href}>
+                              <Link to={href}>
                                 <span className="absolute inset-0 flex w-(--sidebar-menu-width) bg-transparent" />
                                 {page.name}
                                 {PAGES_NEW.includes(page.url) && (

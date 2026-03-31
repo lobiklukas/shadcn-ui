@@ -1,6 +1,5 @@
 import * as React from "react"
-import Image from "next/image"
-import Link from "next/link"
+import { Link } from "@tanstack/react-router"
 
 import { type PageTreeFolder } from "@/lib/page-tree"
 import { source } from "@/lib/source"
@@ -294,17 +293,14 @@ export const mdxComponents = {
   Image: ({
     src,
     className,
-    width,
-    height,
     alt,
     ...props
   }: React.ComponentProps<"img">) => (
-    <Image
+    <img
       className={cn("mt-6 rounded-md border", className)}
       src={(src as string) || ""}
-      width={Number(width)}
-      height={Number(height)}
       alt={alt || ""}
+      loading="lazy"
       {...props}
     />
   ),
@@ -366,14 +362,16 @@ export const mdxComponents = {
   CodeCollapsibleWrapper,
   ComponentsList: ComponentsListWrapper,
   DirectoryList,
-  Link: ({ className, ...props }: React.ComponentProps<typeof Link>) => (
+  Link: ({ className, href, ...props }: React.ComponentProps<"a"> & { href?: string }) => (
     <Link
+      to={href || "#"}
       className={cn("font-medium underline underline-offset-4", className)}
       {...props}
     />
   ),
-  LinkedCard: ({ className, ...props }: React.ComponentProps<typeof Link>) => (
+  LinkedCard: ({ className, href, ...props }: React.ComponentProps<"a"> & { href?: string }) => (
     <Link
+      to={href || "#"}
       className={cn(
         "flex w-full flex-col items-center rounded-xl bg-surface p-6 text-surface-foreground transition-colors hover:bg-surface/80 sm:p-10",
         className

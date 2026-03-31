@@ -1,6 +1,6 @@
 "use client"
 
-import Link from "next/link"
+import { Link } from "@tanstack/react-router"
 
 import { PAGES_NEW } from "@/lib/docs"
 import {
@@ -56,7 +56,7 @@ export function ComponentsList({
         return (
           <Link
             key={component.$id}
-            href={href}
+            to={href}
             className="inline-flex items-center gap-2 text-lg font-medium underline-offset-4 hover:underline md:text-base"
           >
             {component.name}

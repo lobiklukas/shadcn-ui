@@ -1,8 +1,7 @@
 "use client"
 
 import * as React from "react"
-import Image from "next/image"
-import Link from "next/link"
+import { Link } from "@tanstack/react-router"
 import {
   Check,
   ChevronRight,
@@ -196,7 +195,7 @@ function BlockViewerToolbar({ styleName }: { styleName: Style["name"] }) {
               asChild
               title="Open in New Tab"
             >
-              <Link href={`/view/${styleName}/${item.name}`} target="_blank">
+              <Link to={`/view/${styleName}/${item.name}`} target="_blank">
                 <span className="sr-only">Open in New Tab</span>
                 <Fullscreen />
               </Link>
@@ -304,20 +303,18 @@ function BlockViewerMobile({ children }: { children: React.ReactNode }) {
         children
       ) : (
         <div className="overflow-hidden rounded-xl border">
-          <Image
+          <img
             src={`/r/styles/new-york-v4/${item.name}-light.png`}
             alt={item.name}
             data-block={item.name}
-            width={1440}
-            height={900}
+            loading="lazy"
             className="object-cover dark:hidden"
           />
-          <Image
+          <img
             src={`/r/styles/new-york-v4/${item.name}-dark.png`}
             alt={item.name}
             data-block={item.name}
-            width={1440}
-            height={900}
+            loading="lazy"
             className="hidden object-cover dark:block"
           />
         </div>

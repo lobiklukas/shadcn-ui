@@ -1,7 +1,6 @@
 "use client"
 
-import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { Link, useLocation } from "@tanstack/react-router"
 
 import { PAGES_NEW } from "@/lib/docs"
 import { cn } from "@/lib/utils"
@@ -14,7 +13,7 @@ export function MainNav({
 }: React.ComponentProps<"nav"> & {
   items: { href: string; label: string }[]
 }) {
-  const pathname = usePathname()
+  const { pathname } = useLocation()
 
   return (
     <nav className={cn("items-center gap-0", className)} {...props}>
@@ -27,7 +26,7 @@ export function MainNav({
           className="px-2.5"
         >
           <Link
-            href={item.href}
+            to={item.href}
             data-active={pathname === item.href}
             data-new={PAGES_NEW.includes(item.href)}
             className="relative items-center"

@@ -11,6 +11,9 @@ node_modules/
 # Vite temp files
 vite.config.timestamp*
 
+# TanStack temp
+.tanstack/
+
 # Symlinked from v4 (don't duplicate in git)
 content
 registry

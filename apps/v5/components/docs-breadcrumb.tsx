@@ -1,8 +1,7 @@
 "use client"
 
 import { Fragment } from "react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { Link, useLocation } from "@tanstack/react-router"
 import { useBreadcrumb } from "fumadocs-core/breadcrumb"
 import type { Root } from "fumadocs-core/page-tree"
 
@@ -22,7 +21,7 @@ export function DocsBreadcrumb({
   tree: Root
   className?: string
 }) {
-  const pathname = usePathname()
+  const { pathname } = useLocation()
   const items = useBreadcrumb(pathname, tree)
 
   if (items.length === 0) return null
@@ -32,7 +31,7 @@ export function DocsBreadcrumb({
       <BreadcrumbList>
         <BreadcrumbItem>
           <BreadcrumbLink asChild>
-            <Link href="/docs" className="hover:text-accent-foreground">
+            <Link to="/docs" className="hover:text-accent-foreground">
               Docs
             </Link>
           </BreadcrumbLink>
@@ -45,7 +44,7 @@ export function DocsBreadcrumb({
               <BreadcrumbItem>
                 <BreadcrumbLink asChild>
                   <Link
-                    href={item.url}
+                    to={item.url}
                     className="truncate hover:text-accent-foreground"
                   >
                     {item.name}

@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import Link from "next/link"
+import { Link } from "@tanstack/react-router"
 import { IconAlertCircle } from "@tabler/icons-react"
 
 import { cn } from "@/lib/utils"
@@ -134,7 +134,7 @@ export function ComponentPreviewTabs({
                   <span>
                     {"// See the "}
                     <Link
-                      href="/docs/rtl"
+                      to="/docs/rtl"
                       className="underline underline-offset-4"
                     >
                       RTL guide

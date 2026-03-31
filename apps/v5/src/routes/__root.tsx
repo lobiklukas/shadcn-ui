@@ -7,6 +7,9 @@ import {
   createRootRoute,
 } from "@tanstack/react-router"
 
+import { META_THEME_COLORS, siteConfig } from "@/lib/config"
+import { cn } from "@/lib/utils"
+
 import appCss from "../globals.css?url"
 
 export const Route = createRootRoute({
@@ -14,12 +17,37 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "theme-color", content: META_THEME_COLORS.light },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&family=Inter:wght@100..900&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&family=Inter:wght@100..900&family=Noto+Sans+Arabic:wght@100..900&family=Noto+Sans+Hebrew:wght@100..900&display=swap",
+      },
+      { rel: "icon", href: "/favicon.ico" },
+      { rel: "shortcut icon", href: "/favicon-16x16.png" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
+      { rel: "manifest", href: "/site.webmanifest" },
+      {
+        rel: "alternate",
+        type: "application/rss+xml",
+        href: `${siteConfig.url}/rss.xml`,
+      },
+    ],
+    scripts: [
+      {
+        children: `
+          try {
+            if (localStorage.theme === 'dark' || ((!('theme' in localStorage) || localStorage.theme === 'system') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+              document.querySelector('meta[name="theme-color"]').setAttribute('content', '${META_THEME_COLORS.dark}')
+              document.documentElement.classList.add('dark')
+            }
+            if (localStorage.layout) {
+              document.documentElement.classList.add('layout-' + localStorage.layout)
+            }
+          } catch (_) {}
+        `,
       },
     ],
   }),
@@ -29,7 +57,14 @@ export const Route = createRootRoute({
 function RootComponent() {
   return (
     <RootDocument>
-      <Outlet />
+      <div
+        data-slot="layout"
+        className="group/layout relative z-10 flex min-h-svh flex-col bg-background"
+      >
+        <main className="flex min-h-0 flex-1 flex-col">
+          <Outlet />
+        </main>
+      </div>
     </RootDocument>
   )
 }
@@ -40,7 +75,11 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
       <head>
         <HeadContent />
       </head>
-      <body className="font-sans antialiased">
+      <body
+        className={cn(
+          "group/body overscroll-none font-sans antialiased [--footer-height:calc(var(--spacing)*14)] [--header-height:calc(var(--spacing)*14)] xl:[--footer-height:calc(var(--spacing)*24)]"
+        )}
+      >
         {children}
         <Scripts />
       </body>

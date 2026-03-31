@@ -1,13 +1,9 @@
-import Image from "next/image"
-
 import { cn } from "@/lib/utils"
 
 export function BlockImage({
   name,
-  width = 1440,
-  height = 900,
   className,
-}: Omit<React.ComponentProps<typeof Image>, "src" | "alt"> & { name: string }) {
+}: React.ComponentProps<"div"> & { name: string }) {
   return (
     <div
       className={cn(
@@ -15,19 +11,17 @@ export function BlockImage({
         className
       )}
     >
-      <Image
+      <img
         src={`/r/styles/new-york/${name}-light.png`}
         alt={name}
-        width={width}
-        height={height}
+        loading="lazy"
         className="object-cover dark:hidden"
         data-image="light"
       />
-      <Image
+      <img
         src={`/r/styles/new-york/${name}-dark.png`}
         alt={name}
-        width={width}
-        height={height}
+        loading="lazy"
         className="hidden object-cover dark:block"
         data-image="dark"
       />

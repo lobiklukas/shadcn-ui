@@ -1,7 +1,6 @@
 "use client"
 
-import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { Link, useLocation } from "@tanstack/react-router"
 
 import { cn } from "@/lib/utils"
 import { ScrollArea, ScrollBar } from "@/registry/new-york-v4/ui/scroll-area"
@@ -41,7 +40,7 @@ export function ChartsNav({
   className,
   ...props
 }: React.ComponentProps<"div">) {
-  const pathname = usePathname()
+  const { pathname } = useLocation()
 
   return (
     <div className="relative overflow-hidden">
@@ -49,7 +48,7 @@ export function ChartsNav({
         <div className={cn("flex items-center", className)} {...props}>
           {links.map((link) => (
             <Link
-              href={link.href}
+              to={link.href}
               key={link.href}
               data-active={link.href.startsWith(pathname)}
               className={cn(
