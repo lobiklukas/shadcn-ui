@@ -1,0 +1,21 @@
+# Node
+node_modules/
+
+# TanStack Start output
+.output/
+.vinxi/
+
+# Fumadocs generated
+.source/
+
+# Vite temp files
+vite.config.timestamp*
+
+# Symlinked from v4 (don't duplicate in git)
+content
+registry
+styles
+public
+preview-server
+scripts
+examples
