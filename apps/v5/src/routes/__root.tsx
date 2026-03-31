@@ -5,6 +5,7 @@ import {
   HeadContent,
   Scripts,
   createRootRoute,
+  redirect,
 } from "@tanstack/react-router"
 
 import { NuqsAdapter } from "nuqs/adapters/react"
@@ -20,7 +21,53 @@ import { TooltipProvider as RadixTooltipProvider } from "@/registry/bases/radix/
 
 import appCss from "../globals.css?url"
 
+// Simple path redirects (from next.config.mjs)
+const REDIRECTS: Record<string, string> = {
+  "/docs/components/form": "/docs/forms",
+  "/docs/components/radix/form": "/docs/forms",
+  "/docs/components/base/form": "/docs/forms",
+  "/components": "/docs/components",
+  "/figma": "/docs/figma",
+  "/sidebar": "/docs/components/sidebar",
+  "/react-19": "/docs/react-19",
+  "/charts": "/charts/area",
+  "/mcp": "/docs/mcp",
+  "/directory": "/docs/directory",
+  "/new": "/docs/new",
+  "/skills": "/docs/skills",
+  "/cli": "/docs/cli",
+  "/themes": "/create",
+}
+
 export const Route = createRootRoute({
+  beforeLoad: ({ location }) => {
+    const pathname = location.pathname
+
+    // Simple redirects
+    if (REDIRECTS[pathname]) {
+      throw redirect({ to: REDIRECTS[pathname] })
+    }
+
+    // /docs/components/:name → /docs/components/radix/:name (when name isn't radix/base/form)
+    const componentMatch = pathname.match(
+      /^\/docs\/components\/([^/]+)$/
+    )
+    if (
+      componentMatch &&
+      !["radix", "base", "form"].includes(componentMatch[1])
+    ) {
+      throw redirect({
+        to: `/docs/components/radix/${componentMatch[1]}`,
+      })
+    }
+
+    // /docs/primitives/:path → /docs/components/:path
+    if (pathname.startsWith("/docs/primitives/")) {
+      throw redirect({
+        to: pathname.replace("/docs/primitives/", "/docs/components/"),
+      })
+    }
+  },
   head: () => ({
     meta: [
       { charSet: "utf-8" },
