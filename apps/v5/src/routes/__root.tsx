@@ -7,8 +7,16 @@ import {
   createRootRoute,
 } from "@tanstack/react-router"
 
+import { NuqsAdapter } from "nuqs/adapters/react"
 import { META_THEME_COLORS, siteConfig } from "@/lib/config"
 import { cn } from "@/lib/utils"
+import { LayoutProvider } from "@/hooks/use-layout"
+import { ActiveThemeProvider } from "@/components/active-theme"
+import { ThemeProvider } from "@/components/theme-provider"
+import { SiteHeader } from "@/components/site-header"
+import { SiteFooter } from "@/components/site-footer"
+import { Toaster } from "@/registry/bases/radix/ui/sonner"
+import { TooltipProvider as RadixTooltipProvider } from "@/registry/bases/radix/ui/tooltip"
 
 import appCss from "../globals.css?url"
 
@@ -61,9 +69,11 @@ function RootComponent() {
         data-slot="layout"
         className="group/layout relative z-10 flex min-h-svh flex-col bg-background"
       >
+        <SiteHeader />
         <main className="flex min-h-0 flex-1 flex-col">
           <Outlet />
         </main>
+        <SiteFooter />
       </div>
     </RootDocument>
   )
@@ -80,7 +90,18 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
           "group/body overscroll-none font-sans antialiased [--footer-height:calc(var(--spacing)*14)] [--header-height:calc(var(--spacing)*14)] xl:[--footer-height:calc(var(--spacing)*24)]"
         )}
       >
-        {children}
+        <NuqsAdapter>
+          <ThemeProvider>
+            <LayoutProvider>
+              <ActiveThemeProvider>
+                <RadixTooltipProvider delayDuration={0}>
+                  {children}
+                  <Toaster position="top-center" />
+                </RadixTooltipProvider>
+              </ActiveThemeProvider>
+            </LayoutProvider>
+          </ThemeProvider>
+        </NuqsAdapter>
         <Scripts />
       </body>
     </html>

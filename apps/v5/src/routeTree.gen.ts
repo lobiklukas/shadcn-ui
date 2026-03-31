@@ -9,13 +9,34 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ExamplesRouteRouteImport } from './routes/examples/route'
 import { Route as DocsRouteRouteImport } from './routes/docs/route'
+import { Route as ChartsRouteRouteImport } from './routes/charts/route'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CreateIndexRouteImport } from './routes/create/index'
+import { Route as ColorsIndexRouteImport } from './routes/colors/index'
+import { Route as BlocksIndexRouteImport } from './routes/blocks/index'
+import { Route as ExamplesTasksRouteImport } from './routes/examples/tasks'
+import { Route as ExamplesPlaygroundRouteImport } from './routes/examples/playground'
+import { Route as ExamplesDashboardRouteImport } from './routes/examples/dashboard'
 import { Route as DocsSplatRouteImport } from './routes/docs/$'
+import { Route as ChartsTypeRouteImport } from './routes/charts/$type'
+import { Route as BlocksSplatRouteImport } from './routes/blocks/$'
+import { Route as ViewStyleNameRouteImport } from './routes/view/$style/$name'
 
+const ExamplesRouteRoute = ExamplesRouteRouteImport.update({
+  id: '/examples',
+  path: '/examples',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DocsRouteRoute = DocsRouteRouteImport.update({
   id: '/docs',
   path: '/docs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ChartsRouteRoute = ChartsRouteRouteImport.update({
+  id: '/charts',
+  path: '/charts',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -23,48 +44,190 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CreateIndexRoute = CreateIndexRouteImport.update({
+  id: '/create/',
+  path: '/create/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ColorsIndexRoute = ColorsIndexRouteImport.update({
+  id: '/colors/',
+  path: '/colors/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlocksIndexRoute = BlocksIndexRouteImport.update({
+  id: '/blocks/',
+  path: '/blocks/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExamplesTasksRoute = ExamplesTasksRouteImport.update({
+  id: '/tasks',
+  path: '/tasks',
+  getParentRoute: () => ExamplesRouteRoute,
+} as any)
+const ExamplesPlaygroundRoute = ExamplesPlaygroundRouteImport.update({
+  id: '/playground',
+  path: '/playground',
+  getParentRoute: () => ExamplesRouteRoute,
+} as any)
+const ExamplesDashboardRoute = ExamplesDashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
+  getParentRoute: () => ExamplesRouteRoute,
+} as any)
 const DocsSplatRoute = DocsSplatRouteImport.update({
   id: '/$',
   path: '/$',
   getParentRoute: () => DocsRouteRoute,
 } as any)
+const ChartsTypeRoute = ChartsTypeRouteImport.update({
+  id: '/$type',
+  path: '/$type',
+  getParentRoute: () => ChartsRouteRoute,
+} as any)
+const BlocksSplatRoute = BlocksSplatRouteImport.update({
+  id: '/blocks/$',
+  path: '/blocks/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ViewStyleNameRoute = ViewStyleNameRouteImport.update({
+  id: '/view/$style/$name',
+  path: '/view/$style/$name',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/charts': typeof ChartsRouteRouteWithChildren
   '/docs': typeof DocsRouteRouteWithChildren
+  '/examples': typeof ExamplesRouteRouteWithChildren
+  '/blocks/$': typeof BlocksSplatRoute
+  '/charts/$type': typeof ChartsTypeRoute
   '/docs/$': typeof DocsSplatRoute
+  '/examples/dashboard': typeof ExamplesDashboardRoute
+  '/examples/playground': typeof ExamplesPlaygroundRoute
+  '/examples/tasks': typeof ExamplesTasksRoute
+  '/blocks/': typeof BlocksIndexRoute
+  '/colors/': typeof ColorsIndexRoute
+  '/create/': typeof CreateIndexRoute
+  '/view/$style/$name': typeof ViewStyleNameRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/charts': typeof ChartsRouteRouteWithChildren
   '/docs': typeof DocsRouteRouteWithChildren
+  '/examples': typeof ExamplesRouteRouteWithChildren
+  '/blocks/$': typeof BlocksSplatRoute
+  '/charts/$type': typeof ChartsTypeRoute
   '/docs/$': typeof DocsSplatRoute
+  '/examples/dashboard': typeof ExamplesDashboardRoute
+  '/examples/playground': typeof ExamplesPlaygroundRoute
+  '/examples/tasks': typeof ExamplesTasksRoute
+  '/blocks': typeof BlocksIndexRoute
+  '/colors': typeof ColorsIndexRoute
+  '/create': typeof CreateIndexRoute
+  '/view/$style/$name': typeof ViewStyleNameRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/charts': typeof ChartsRouteRouteWithChildren
   '/docs': typeof DocsRouteRouteWithChildren
+  '/examples': typeof ExamplesRouteRouteWithChildren
+  '/blocks/$': typeof BlocksSplatRoute
+  '/charts/$type': typeof ChartsTypeRoute
   '/docs/$': typeof DocsSplatRoute
+  '/examples/dashboard': typeof ExamplesDashboardRoute
+  '/examples/playground': typeof ExamplesPlaygroundRoute
+  '/examples/tasks': typeof ExamplesTasksRoute
+  '/blocks/': typeof BlocksIndexRoute
+  '/colors/': typeof ColorsIndexRoute
+  '/create/': typeof CreateIndexRoute
+  '/view/$style/$name': typeof ViewStyleNameRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/docs' | '/docs/$'
+  fullPaths:
+    | '/'
+    | '/charts'
+    | '/docs'
+    | '/examples'
+    | '/blocks/$'
+    | '/charts/$type'
+    | '/docs/$'
+    | '/examples/dashboard'
+    | '/examples/playground'
+    | '/examples/tasks'
+    | '/blocks/'
+    | '/colors/'
+    | '/create/'
+    | '/view/$style/$name'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/docs' | '/docs/$'
-  id: '__root__' | '/' | '/docs' | '/docs/$'
+  to:
+    | '/'
+    | '/charts'
+    | '/docs'
+    | '/examples'
+    | '/blocks/$'
+    | '/charts/$type'
+    | '/docs/$'
+    | '/examples/dashboard'
+    | '/examples/playground'
+    | '/examples/tasks'
+    | '/blocks'
+    | '/colors'
+    | '/create'
+    | '/view/$style/$name'
+  id:
+    | '__root__'
+    | '/'
+    | '/charts'
+    | '/docs'
+    | '/examples'
+    | '/blocks/$'
+    | '/charts/$type'
+    | '/docs/$'
+    | '/examples/dashboard'
+    | '/examples/playground'
+    | '/examples/tasks'
+    | '/blocks/'
+    | '/colors/'
+    | '/create/'
+    | '/view/$style/$name'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ChartsRouteRoute: typeof ChartsRouteRouteWithChildren
   DocsRouteRoute: typeof DocsRouteRouteWithChildren
+  ExamplesRouteRoute: typeof ExamplesRouteRouteWithChildren
+  BlocksSplatRoute: typeof BlocksSplatRoute
+  BlocksIndexRoute: typeof BlocksIndexRoute
+  ColorsIndexRoute: typeof ColorsIndexRoute
+  CreateIndexRoute: typeof CreateIndexRoute
+  ViewStyleNameRoute: typeof ViewStyleNameRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/examples': {
+      id: '/examples'
+      path: '/examples'
+      fullPath: '/examples'
+      preLoaderRoute: typeof ExamplesRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/docs': {
       id: '/docs'
       path: '/docs'
       fullPath: '/docs'
       preLoaderRoute: typeof DocsRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/charts': {
+      id: '/charts'
+      path: '/charts'
+      fullPath: '/charts'
+      preLoaderRoute: typeof ChartsRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -74,6 +237,48 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/create/': {
+      id: '/create/'
+      path: '/create'
+      fullPath: '/create/'
+      preLoaderRoute: typeof CreateIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/colors/': {
+      id: '/colors/'
+      path: '/colors'
+      fullPath: '/colors/'
+      preLoaderRoute: typeof ColorsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blocks/': {
+      id: '/blocks/'
+      path: '/blocks'
+      fullPath: '/blocks/'
+      preLoaderRoute: typeof BlocksIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/examples/tasks': {
+      id: '/examples/tasks'
+      path: '/tasks'
+      fullPath: '/examples/tasks'
+      preLoaderRoute: typeof ExamplesTasksRouteImport
+      parentRoute: typeof ExamplesRouteRoute
+    }
+    '/examples/playground': {
+      id: '/examples/playground'
+      path: '/playground'
+      fullPath: '/examples/playground'
+      preLoaderRoute: typeof ExamplesPlaygroundRouteImport
+      parentRoute: typeof ExamplesRouteRoute
+    }
+    '/examples/dashboard': {
+      id: '/examples/dashboard'
+      path: '/dashboard'
+      fullPath: '/examples/dashboard'
+      preLoaderRoute: typeof ExamplesDashboardRouteImport
+      parentRoute: typeof ExamplesRouteRoute
+    }
     '/docs/$': {
       id: '/docs/$'
       path: '/$'
@@ -81,8 +286,41 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DocsSplatRouteImport
       parentRoute: typeof DocsRouteRoute
     }
+    '/charts/$type': {
+      id: '/charts/$type'
+      path: '/$type'
+      fullPath: '/charts/$type'
+      preLoaderRoute: typeof ChartsTypeRouteImport
+      parentRoute: typeof ChartsRouteRoute
+    }
+    '/blocks/$': {
+      id: '/blocks/$'
+      path: '/blocks/$'
+      fullPath: '/blocks/$'
+      preLoaderRoute: typeof BlocksSplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/view/$style/$name': {
+      id: '/view/$style/$name'
+      path: '/view/$style/$name'
+      fullPath: '/view/$style/$name'
+      preLoaderRoute: typeof ViewStyleNameRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
+
+interface ChartsRouteRouteChildren {
+  ChartsTypeRoute: typeof ChartsTypeRoute
+}
+
+const ChartsRouteRouteChildren: ChartsRouteRouteChildren = {
+  ChartsTypeRoute: ChartsTypeRoute,
+}
+
+const ChartsRouteRouteWithChildren = ChartsRouteRoute._addFileChildren(
+  ChartsRouteRouteChildren,
+)
 
 interface DocsRouteRouteChildren {
   DocsSplatRoute: typeof DocsSplatRoute
@@ -96,9 +334,32 @@ const DocsRouteRouteWithChildren = DocsRouteRoute._addFileChildren(
   DocsRouteRouteChildren,
 )
 
+interface ExamplesRouteRouteChildren {
+  ExamplesDashboardRoute: typeof ExamplesDashboardRoute
+  ExamplesPlaygroundRoute: typeof ExamplesPlaygroundRoute
+  ExamplesTasksRoute: typeof ExamplesTasksRoute
+}
+
+const ExamplesRouteRouteChildren: ExamplesRouteRouteChildren = {
+  ExamplesDashboardRoute: ExamplesDashboardRoute,
+  ExamplesPlaygroundRoute: ExamplesPlaygroundRoute,
+  ExamplesTasksRoute: ExamplesTasksRoute,
+}
+
+const ExamplesRouteRouteWithChildren = ExamplesRouteRoute._addFileChildren(
+  ExamplesRouteRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ChartsRouteRoute: ChartsRouteRouteWithChildren,
   DocsRouteRoute: DocsRouteRouteWithChildren,
+  ExamplesRouteRoute: ExamplesRouteRouteWithChildren,
+  BlocksSplatRoute: BlocksSplatRoute,
+  BlocksIndexRoute: BlocksIndexRoute,
+  ColorsIndexRoute: ColorsIndexRoute,
+  CreateIndexRoute: CreateIndexRoute,
+  ViewStyleNameRoute: ViewStyleNameRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
