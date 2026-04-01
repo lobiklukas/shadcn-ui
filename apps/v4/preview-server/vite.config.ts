@@ -96,7 +96,7 @@ export default defineConfig({
       include: ["**/ember/**", "**/ember-ui/**", "**/ember-lib/**"],
     }),
     // Ember: resolve ~icons/lucide/* imports
-    Icons({ compiler: "raw" }),
+    Icons({ compiler: "ember" }),
     // Vue & Svelte
     vue(),
     svelte(),
