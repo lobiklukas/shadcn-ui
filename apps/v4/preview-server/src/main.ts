@@ -81,8 +81,22 @@ async function renderPreview() {
     } else {
       app.innerHTML = `<p>Svelte component "${componentName}" not found.</p>`
     }
+  } else if (framework === "ember") {
+    const { renderComponent, renderSettled } = await import("@ember/renderer")
+    const modules = import.meta.glob("./ember/*.gts")
+    const modulePath = `./ember/${componentName}.gts`
+
+    if (modules[modulePath]) {
+      const mod = (await modules[modulePath]()) as Record<string, unknown>
+      // The default export is the component class
+      const Component = mod.default as Parameters<typeof renderComponent>[0]
+      renderComponent(Component, { into: app, owner: {} })
+      await renderSettled()
+    } else {
+      app.innerHTML = `<p>Ember component "${componentName}" not found.</p>`
+    }
   } else {
-    app.innerHTML = `<p>Unknown framework "${framework}". Supported: vue, svelte</p>`
+    app.innerHTML = `<p>Unknown framework "${framework}". Supported: vue, svelte, ember</p>`
   }
 }
 
