@@ -7,6 +7,9 @@ const stubsDir = path.resolve(__dirname, "src/stubs")
 
 export default defineConfig({
   base: "/preview/ember/",
+  build: {
+    assetsDir: "_assets",
+  },
   plugins: [...emberPlugins(stubsDir), tailwindcss()],
   resolve: {
     alias: {

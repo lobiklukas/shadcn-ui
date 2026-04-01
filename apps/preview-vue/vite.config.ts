@@ -5,6 +5,9 @@ import { defineConfig } from "vite"
 
 export default defineConfig({
   base: "/preview/vue/",
+  build: {
+    assetsDir: "_assets",
+  },
   plugins: [vue(), tailwindcss()],
   resolve: {
     alias: {

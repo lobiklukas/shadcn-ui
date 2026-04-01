@@ -5,6 +5,9 @@ import { defineConfig } from "vite"
 
 export default defineConfig({
   base: "/preview/svelte/",
+  build: {
+    assetsDir: "_assets",
+  },
   plugins: [svelte(), tailwindcss()],
   resolve: {
     alias: {
