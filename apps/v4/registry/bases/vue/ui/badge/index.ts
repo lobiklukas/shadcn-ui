@@ -11,6 +11,7 @@ export const badgeVariants = cva(
         default: "cn-badge-variant-default",
         secondary: "cn-badge-variant-secondary",
         destructive: "cn-badge-variant-destructive",
+        warning: "cn-badge-variant-warning",
         outline: "cn-badge-variant-outline",
         ghost: "cn-badge-variant-ghost",
         link: "cn-badge-variant-link",
