@@ -2,7 +2,7 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-@import "../../v4/registry/styles/style-nova.css" layer(base);
+@import "../../v4/registry/styles/style-force-ui.css" layer(base);
 
 @custom-variant dark (&:is(.dark *));
 
