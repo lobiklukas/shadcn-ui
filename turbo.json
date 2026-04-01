@@ -53,6 +53,9 @@
     },
     "registry:build": {
       "outputs": []
+    },
+    "preview:build": {
+      "outputs": ["dist/**"]
     }
   }
 }

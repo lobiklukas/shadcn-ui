@@ -1,6 +1,9 @@
 packages:
   - "apps/*"
-  - "apps/v4/preview-server"
+  - "apps/preview-vue"
+  - "apps/preview-svelte"
+  - "apps/preview-ember"
+  - "apps/preview-router"
   - "packages/*"
   - "!**/test/**"
   - "!**/fixtures/**"

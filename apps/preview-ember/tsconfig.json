@@ -12,8 +12,7 @@
     "noEmit": true,
     "strict": true,
     "paths": {
-      "@/*": ["./src/*"],
-      "@force-ui/variants/*": ["../../../packages/force-ui-variants/src/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": ["src"]

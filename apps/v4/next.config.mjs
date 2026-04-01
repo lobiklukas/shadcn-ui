@@ -139,15 +139,15 @@ const nextConfig = {
       beforeFiles: [
         {
           source: "/preview/vue/:path*",
-          destination: "/preview/index.html",
+          destination: "/preview/vue/index.html",
         },
         {
           source: "/preview/svelte/:path*",
-          destination: "/preview/index.html",
+          destination: "/preview/svelte/index.html",
         },
         {
           source: "/preview/ember/:path*",
-          destination: "/preview/index.html",
+          destination: "/preview/ember/index.html",
         },
       ],
       afterFiles: [
