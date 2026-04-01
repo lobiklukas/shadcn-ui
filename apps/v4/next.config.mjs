@@ -136,7 +136,8 @@ const nextConfig = {
   },
   rewrites() {
     return {
-      beforeFiles: [
+      beforeFiles: [],
+      afterFiles: [
         {
           source: "/preview/vue/:path*",
           destination: "/preview/vue/index.html",
@@ -149,8 +150,6 @@ const nextConfig = {
           source: "/preview/ember/:path*",
           destination: "/preview/ember/index.html",
         },
-      ],
-      afterFiles: [
         {
           source: "/docs/:path*.md",
           destination: "/llm/:path*",

@@ -55,6 +55,7 @@
       "outputs": []
     },
     "preview:build": {
+      "dependsOn": ["^build"],
       "outputs": ["dist/**"]
     }
   }
