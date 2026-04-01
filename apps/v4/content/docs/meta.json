@@ -6,6 +6,7 @@
     "changelog",
     "forms",
     "installation",
+    "force-ui-registry",
     "dark-mode",
     "rtl",
     "registry"

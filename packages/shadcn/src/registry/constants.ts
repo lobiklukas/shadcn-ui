@@ -47,8 +47,9 @@ export const BASE_COLORS = [
 export const BUILTIN_REGISTRIES: z.infer<typeof registryConfigSchema> = {
   "@shadcn": `${REGISTRY_URL}/styles/{style}/{name}.json`,
   "@force-ui": `${REGISTRY_URL}/styles/{style}/{name}.json`,
-  "@force-ui-vue": `${REGISTRY_URL}/vue/styles/{style}/{name}.json`,
-  "@force-ui-svelte": `${REGISTRY_URL}/svelte/styles/{style}/{name}.json`,
+  "@force-ui-vue": `${REGISTRY_URL}/styles/vue-{style}/{name}.json`,
+  "@force-ui-svelte": `${REGISTRY_URL}/styles/svelte-{style}/{name}.json`,
+  "@force-ui-ember": `${REGISTRY_URL}/styles/ember-{style}/{name}.json`,
 }
 
 export const BUILTIN_MODULES = new Set([

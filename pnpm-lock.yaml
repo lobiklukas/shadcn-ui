@@ -122,6 +122,290 @@ importers:
         specifier: ^5.5.3
         version: 5.9.2
 
+  apps/preview-ember:
+    dependencies:
+      '@floating-ui/dom':
+        specifier: ^1.7.6
+        version: 1.7.6
+      '@glimmer/component':
+        specifier: ^2.0.0
+        version: 2.0.0
+      '@glimmer/tracking':
+        specifier: ^1.1.2
+        version: 1.1.2
+      '@internationalized/date':
+        specifier: ^3.7.0
+        version: 3.12.0
+      chrono-node:
+        specifier: ^2.8.2
+        version: 2.8.4
+      class-variance-authority:
+        specifier: ^0.7.1
+        version: 0.7.1
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
+      ember-click-outside:
+        specifier: ^6.1.1
+        version: 6.1.1(@babel/core@7.29.0)
+      ember-keyboard:
+        specifier: ^9.0.4
+        version: 9.0.4(@babel/core@7.29.0)(@ember/test-helpers@5.4.1(@babel/core@7.29.0))
+      ember-modifier:
+        specifier: ^4.3.0
+        version: 4.3.0(@babel/core@7.29.0)
+      ember-provide-consume-context:
+        specifier: ^0.9.0
+        version: 0.9.0(@ember/test-helpers@5.4.1(@babel/core@7.29.0))(@glimmer/component@2.0.0)(ember-source@6.9.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
+      ember-truth-helpers:
+        specifier: ^5.0.0
+        version: 5.0.0
+      shadcn:
+        specifier: workspace:*
+        version: link:../../packages/shadcn
+      tailwind-merge:
+        specifier: ^3.0.0
+        version: 3.3.1
+      tracked-built-ins:
+        specifier: ^4.1.2
+        version: 4.1.2(@babel/core@7.29.0)
+      tw-animate-css:
+        specifier: ^1.0.0
+        version: 1.4.0
+      zod:
+        specifier: ^3.0.0
+        version: 3.25.76
+    devDependencies:
+      '@babel/core':
+        specifier: ^7.29.0
+        version: 7.29.0
+      '@babel/plugin-transform-runtime':
+        specifier: ^7.29.0
+        version: 7.29.0(@babel/core@7.29.0)
+      '@babel/plugin-transform-typescript':
+        specifier: ^7.28.0
+        version: 7.28.0(@babel/core@7.29.0)
+      '@babel/runtime':
+        specifier: ^7.29.2
+        version: 7.29.2
+      '@iconify-json/lucide':
+        specifier: ^1.2.101
+        version: 1.2.101
+      '@rollup/plugin-babel':
+        specifier: ^7.0.0
+        version: 7.0.0(@babel/core@7.29.0)(@types/babel__core@7.20.5)(rollup@4.46.2)
+      '@tailwindcss/vite':
+        specifier: ^4.0.0
+        version: 4.2.2(vite@6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1))
+      babel-plugin-ember-template-compilation:
+        specifier: ^4.0.0
+        version: 4.0.0
+      content-tag:
+        specifier: ^4.1.1
+        version: 4.1.1
+      decorator-transforms:
+        specifier: ^2.3.1
+        version: 2.3.1(@babel/core@7.29.0)
+      ember-source:
+        specifier: ~6.9.0
+        version: 6.9.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
+      tailwindcss:
+        specifier: ^4.0.0
+        version: 4.2.2
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.2
+      unplugin-icons:
+        specifier: ^23.0.1
+        version: 23.0.1(@vue/compiler-sfc@3.5.31)(svelte@5.55.1)
+      vite:
+        specifier: ^6.0.0
+        version: 6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)
+
+  apps/preview-router: {}
+
+  apps/preview-svelte:
+    dependencies:
+      '@internationalized/date':
+        specifier: ^3.7.0
+        version: 3.12.0
+      '@lucide/svelte':
+        specifier: ^1.0.0
+        version: 1.7.0(svelte@5.55.1)
+      '@tabler/icons-svelte':
+        specifier: ^3.0.0
+        version: 3.41.1(svelte@5.55.1)
+      '@tanstack/table-core':
+        specifier: ^8.0.0
+        version: 8.21.3
+      bits-ui:
+        specifier: ^2.16.3
+        version: 2.16.5(@internationalized/date@3.12.0)(@sveltejs/kit@2.55.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.55.1)(vite@6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)))(svelte@5.55.1)(typescript@5.9.2)(vite@6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)))(svelte@5.55.1)
+      chrono-node:
+        specifier: ^2.8.2
+        version: 2.8.4
+      class-variance-authority:
+        specifier: ^0.7.1
+        version: 0.7.1
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
+      d3-scale:
+        specifier: ^4.0.0
+        version: 4.0.2
+      embla-carousel-autoplay:
+        specifier: ^8.0.0
+        version: 8.5.2(embla-carousel@8.6.0)
+      embla-carousel-svelte:
+        specifier: ^8.0.0
+        version: 8.6.0(svelte@5.55.1)
+      formsnap:
+        specifier: ^2.0.1
+        version: 2.0.1(svelte@5.55.1)(sveltekit-superforms@2.30.1(@sveltejs/kit@2.55.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.55.1)(vite@6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)))(svelte@5.55.1)(typescript@5.9.2)(vite@6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)))(@types/json-schema@7.0.15)(svelte@5.55.1)(typescript@5.9.2))
+      layerchart:
+        specifier: 2.0.0-next.43
+        version: 2.0.0-next.43(svelte@5.55.1)
+      mode-watcher:
+        specifier: ^0.5.0
+        version: 0.5.1(svelte@5.55.1)
+      paneforge:
+        specifier: ^1.0.2
+        version: 1.0.2(svelte@5.55.1)
+      shadcn:
+        specifier: workspace:*
+        version: link:../../packages/shadcn
+      svelte:
+        specifier: ^5.0.0
+        version: 5.55.1
+      svelte-sonner:
+        specifier: ^0.3.0
+        version: 0.3.28(svelte@5.55.1)
+      sveltekit-superforms:
+        specifier: ^2.30.1
+        version: 2.30.1(@sveltejs/kit@2.55.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.55.1)(vite@6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)))(svelte@5.55.1)(typescript@5.9.2)(vite@6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)))(@types/json-schema@7.0.15)(svelte@5.55.1)(typescript@5.9.2)
+      tailwind-merge:
+        specifier: ^3.0.0
+        version: 3.3.1
+      tailwind-variants:
+        specifier: ^0.3.0
+        version: 0.3.1(tailwindcss@4.2.2)
+      tw-animate-css:
+        specifier: ^1.0.0
+        version: 1.4.0
+      vaul-svelte:
+        specifier: ^0.3.2
+        version: 0.3.2(svelte@5.55.1)
+      zod:
+        specifier: ^3.0.0
+        version: 3.25.76
+    devDependencies:
+      '@sveltejs/vite-plugin-svelte':
+        specifier: ^5.0.0
+        version: 5.1.1(svelte@5.55.1)(vite@6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1))
+      '@tailwindcss/vite':
+        specifier: ^4.0.0
+        version: 4.2.2(vite@6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1))
+      tailwindcss:
+        specifier: ^4.0.0
+        version: 4.2.2
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.2
+      vite:
+        specifier: ^6.0.0
+        version: 6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)
+
+  apps/preview-vue:
+    dependencies:
+      '@internationalized/date':
+        specifier: ^3.7.0
+        version: 3.12.0
+      '@tanstack/vue-form':
+        specifier: ^1.28.6
+        version: 1.28.6(vue@3.5.31(typescript@5.9.2))
+      '@tanstack/vue-table':
+        specifier: ^8.21.3
+        version: 8.21.3(vue@3.5.31(typescript@5.9.2))
+      '@unovis/ts':
+        specifier: ^1.5.0
+        version: 1.6.4
+      '@unovis/vue':
+        specifier: ^1.5.0
+        version: 1.6.4(@unovis/ts@1.6.4)(vue@3.5.31(typescript@5.9.2))
+      '@vee-validate/zod':
+        specifier: ^4.15.1
+        version: 4.15.1(vue@3.5.31(typescript@5.9.2))(zod@3.25.76)
+      '@vueuse/core':
+        specifier: ^12.0.0
+        version: 12.8.2(typescript@5.9.2)
+      chrono-node:
+        specifier: ^2.8.2
+        version: 2.8.4
+      class-variance-authority:
+        specifier: ^0.7.1
+        version: 0.7.1
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
+      embla-carousel-autoplay:
+        specifier: ^8.0.0
+        version: 8.5.2(embla-carousel@8.6.0)
+      embla-carousel-vue:
+        specifier: ^8.0.0
+        version: 8.6.0(vue@3.5.31(typescript@5.9.2))
+      lucide-vue-next:
+        specifier: ^0.474.0
+        version: 0.474.0(vue@3.5.31(typescript@5.9.2))
+      reka-ui:
+        specifier: ^2.0.0
+        version: 2.9.2(vue@3.5.31(typescript@5.9.2))
+      shadcn:
+        specifier: workspace:*
+        version: link:../../packages/shadcn
+      tailwind-merge:
+        specifier: ^3.0.0
+        version: 3.3.1
+      tailwind-variants:
+        specifier: ^0.3.0
+        version: 0.3.1(tailwindcss@4.2.2)
+      tw-animate-css:
+        specifier: ^1.0.0
+        version: 1.4.0
+      vaul-vue:
+        specifier: ^0.2.0
+        version: 0.2.1(radix-vue@1.9.17(vue@3.5.31(typescript@5.9.2)))(vue@3.5.31(typescript@5.9.2))
+      vee-validate:
+        specifier: ^4.15.1
+        version: 4.15.1(vue@3.5.31(typescript@5.9.2))
+      vue:
+        specifier: ^3.5.0
+        version: 3.5.31(typescript@5.9.2)
+      vue-input-otp:
+        specifier: ^0.3.0
+        version: 0.3.2(typescript@5.9.2)(vue@3.5.31(typescript@5.9.2))
+      vue-sonner:
+        specifier: ^1.0.0
+        version: 1.3.2
+      zod:
+        specifier: ^3.0.0
+        version: 3.25.76
+    devDependencies:
+      '@tailwindcss/vite':
+        specifier: ^4.0.0
+        version: 4.2.2(vite@6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1))
+      '@vitejs/plugin-vue':
+        specifier: ^5.2.0
+        version: 5.2.4(vite@6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1))(vue@3.5.31(typescript@5.9.2))
+      tailwindcss:
+        specifier: ^4.0.0
+        version: 4.2.2
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.2
+      vite:
+        specifier: ^6.0.0
+        version: 6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)
+
   apps/v4:
     dependencies:
       '@base-ui/react':
@@ -171,7 +455,7 @@ importers:
         version: 8.21.3(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@vercel/analytics':
         specifier: ^1.4.1
-        version: 1.5.0(@sveltejs/kit@2.55.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.55.1)(vite@7.1.12(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)))(svelte@5.55.1)(typescript@5.9.2)(vite@7.1.12(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)))(next@16.1.6(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react@19.2.3)(svelte@5.55.1)(vue@3.5.31(typescript@5.9.2))
+        version: 1.5.0(@sveltejs/kit@2.55.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.55.1)(vite@7.1.12(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)))(svelte@5.55.1)(typescript@5.9.2)(vite@7.1.12(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)))(next@16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react@19.2.3)(svelte@5.55.1)(vue@3.5.31(typescript@5.9.2))
       change-case:
         specifier: ^5.4.4
         version: 5.4.4
@@ -204,22 +488,22 @@ importers:
         version: 4.0.2
       fumadocs-core:
         specifier: 16.0.5
-        version: 16.0.5(@types/react@19.2.2)(lucide-react@0.474.0(react@19.2.3))(next@16.1.6(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        version: 16.0.5(@types/react@19.2.2)(lucide-react@0.474.0(react@19.2.3))(next@16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       fumadocs-docgen:
         specifier: 2.0.0
         version: 2.0.0
       fumadocs-mdx:
         specifier: 13.0.2
-        version: 13.0.2(fumadocs-core@16.0.5(@types/react@19.2.2)(lucide-react@0.474.0(react@19.2.3))(next@16.1.6(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(next@16.1.6(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react@19.2.3)(vite@7.1.12(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1))
+        version: 13.0.2(fumadocs-core@16.0.5(@types/react@19.2.2)(lucide-react@0.474.0(react@19.2.3))(next@16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(next@16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react@19.2.3)(vite@7.1.12(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1))
       fumadocs-ui:
         specifier: 16.0.5
-        version: 16.0.5(@types/react-dom@19.2.2(@types/react@19.2.2))(@types/react@19.2.2)(lucide-react@0.474.0(react@19.2.3))(next@16.1.6(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(tailwindcss@4.1.18)
+        version: 16.0.5(@types/react-dom@19.2.2(@types/react@19.2.2))(@types/react@19.2.2)(lucide-react@0.474.0(react@19.2.3))(next@16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(tailwindcss@4.1.18)
       input-otp:
         specifier: ^1.4.2
         version: 1.4.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       jotai:
         specifier: ^2.15.0
-        version: 2.15.0(@babel/core@7.28.0)(@babel/template@7.28.6)(@types/react@19.2.2)(react@19.2.3)
+        version: 2.15.0(@babel/core@7.29.0)(@babel/template@7.28.6)(@types/react@19.2.2)(react@19.2.3)
       little-date:
         specifier: ^1.0.0
         version: 1.0.0
@@ -237,13 +521,13 @@ importers:
         version: 12.23.12(@emotion/is-prop-valid@1.3.1)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       next:
         specifier: 16.1.6
-        version: 16.1.6(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        version: 16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       next-themes:
         specifier: 0.4.6
         version: 0.4.6(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       nuqs:
         specifier: ^2.8.9
-        version: 2.8.9(next@16.1.6(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react@19.2.3)
+        version: 2.8.9(next@16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react@19.2.3)
       postcss:
         specifier: ^8.5.1
         version: 8.5.6
@@ -359,202 +643,6 @@ importers:
       unist-util-visit:
         specifier: ^4.1.2
         version: 4.1.2
-
-  apps/v4/preview-server:
-    dependencies:
-      '@floating-ui/dom':
-        specifier: ^1.7.6
-        version: 1.7.6
-      '@glimmer/component':
-        specifier: ^2.0.0
-        version: 2.0.0
-      '@glimmer/tracking':
-        specifier: ^1.1.2
-        version: 1.1.2
-      '@internationalized/date':
-        specifier: ^3.7.0
-        version: 3.12.0
-      '@lucide/svelte':
-        specifier: ^1.0.0
-        version: 1.7.0(svelte@5.55.1)
-      '@tabler/icons-svelte':
-        specifier: ^3.0.0
-        version: 3.41.1(svelte@5.55.1)
-      '@tanstack/table-core':
-        specifier: ^8.0.0
-        version: 8.21.3
-      '@tanstack/vue-form':
-        specifier: ^1.28.6
-        version: 1.28.6(vue@3.5.31(typescript@5.9.2))
-      '@tanstack/vue-table':
-        specifier: ^8.21.3
-        version: 8.21.3(vue@3.5.31(typescript@5.9.2))
-      '@unovis/ts':
-        specifier: ^1.5.0
-        version: 1.6.4
-      '@unovis/vue':
-        specifier: ^1.5.0
-        version: 1.6.4(@unovis/ts@1.6.4)(vue@3.5.31(typescript@5.9.2))
-      '@vee-validate/zod':
-        specifier: ^4.15.1
-        version: 4.15.1(vue@3.5.31(typescript@5.9.2))(zod@3.25.76)
-      '@vueuse/core':
-        specifier: ^12.0.0
-        version: 12.8.2(typescript@5.9.2)
-      bits-ui:
-        specifier: ^2.16.3
-        version: 2.16.5(@internationalized/date@3.12.0)(@sveltejs/kit@2.55.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.55.1)(vite@6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)))(svelte@5.55.1)(typescript@5.9.2)(vite@6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)))(svelte@5.55.1)
-      chrono-node:
-        specifier: ^2.8.2
-        version: 2.8.4
-      class-variance-authority:
-        specifier: ^0.7.1
-        version: 0.7.1
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
-      d3-scale:
-        specifier: ^4.0.0
-        version: 4.0.2
-      ember-click-outside:
-        specifier: ^6.1.1
-        version: 6.1.1(@babel/core@7.29.0)
-      ember-keyboard:
-        specifier: ^9.0.4
-        version: 9.0.4(@babel/core@7.29.0)(@ember/test-helpers@5.4.1(@babel/core@7.29.0))
-      ember-modifier:
-        specifier: ^4.3.0
-        version: 4.3.0(@babel/core@7.29.0)
-      ember-provide-consume-context:
-        specifier: ^0.9.0
-        version: 0.9.0(@ember/test-helpers@5.4.1(@babel/core@7.29.0))(@glimmer/component@2.0.0)(ember-source@6.9.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
-      ember-truth-helpers:
-        specifier: ^5.0.0
-        version: 5.0.0
-      embla-carousel-autoplay:
-        specifier: ^8.0.0
-        version: 8.5.2(embla-carousel@8.6.0)
-      embla-carousel-svelte:
-        specifier: ^8.0.0
-        version: 8.6.0(svelte@5.55.1)
-      embla-carousel-vue:
-        specifier: ^8.0.0
-        version: 8.6.0(vue@3.5.31(typescript@5.9.2))
-      formsnap:
-        specifier: ^2.0.1
-        version: 2.0.1(svelte@5.55.1)(sveltekit-superforms@2.30.1(@sveltejs/kit@2.55.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.55.1)(vite@6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)))(svelte@5.55.1)(typescript@5.9.2)(vite@6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)))(@types/json-schema@7.0.15)(svelte@5.55.1)(typescript@5.9.2))
-      layerchart:
-        specifier: 2.0.0-next.43
-        version: 2.0.0-next.43(svelte@5.55.1)
-      lucide-vue-next:
-        specifier: ^0.474.0
-        version: 0.474.0(vue@3.5.31(typescript@5.9.2))
-      mode-watcher:
-        specifier: ^0.5.0
-        version: 0.5.1(svelte@5.55.1)
-      paneforge:
-        specifier: ^1.0.2
-        version: 1.0.2(svelte@5.55.1)
-      reka-ui:
-        specifier: ^2.0.0
-        version: 2.9.2(vue@3.5.31(typescript@5.9.2))
-      shadcn:
-        specifier: workspace:*
-        version: link:../../../packages/shadcn
-      svelte:
-        specifier: ^5.0.0
-        version: 5.55.1
-      svelte-sonner:
-        specifier: ^0.3.0
-        version: 0.3.28(svelte@5.55.1)
-      sveltekit-superforms:
-        specifier: ^2.30.1
-        version: 2.30.1(@sveltejs/kit@2.55.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.55.1)(vite@6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)))(svelte@5.55.1)(typescript@5.9.2)(vite@6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)))(@types/json-schema@7.0.15)(svelte@5.55.1)(typescript@5.9.2)
-      tailwind-merge:
-        specifier: ^3.0.0
-        version: 3.3.1
-      tailwind-variants:
-        specifier: ^0.3.0
-        version: 0.3.1(tailwindcss@4.1.18)
-      tracked-built-ins:
-        specifier: ^4.1.2
-        version: 4.1.2(@babel/core@7.29.0)
-      tw-animate-css:
-        specifier: ^1.0.0
-        version: 1.4.0
-      vaul-svelte:
-        specifier: ^0.3.2
-        version: 0.3.2(svelte@5.55.1)
-      vaul-vue:
-        specifier: ^0.2.0
-        version: 0.2.1(radix-vue@1.9.17(vue@3.5.31(typescript@5.9.2)))(vue@3.5.31(typescript@5.9.2))
-      vee-validate:
-        specifier: ^4.15.1
-        version: 4.15.1(vue@3.5.31(typescript@5.9.2))
-      vue:
-        specifier: ^3.5.0
-        version: 3.5.31(typescript@5.9.2)
-      vue-input-otp:
-        specifier: ^0.3.0
-        version: 0.3.2(typescript@5.9.2)(vue@3.5.31(typescript@5.9.2))
-      vue-sonner:
-        specifier: ^1.0.0
-        version: 1.3.2
-      zod:
-        specifier: ^3.0.0
-        version: 3.25.76
-    devDependencies:
-      '@babel/core':
-        specifier: ^7.29.0
-        version: 7.29.0
-      '@babel/plugin-transform-runtime':
-        specifier: ^7.29.0
-        version: 7.29.0(@babel/core@7.29.0)
-      '@babel/plugin-transform-typescript':
-        specifier: ^7.28.0
-        version: 7.28.0(@babel/core@7.29.0)
-      '@babel/runtime':
-        specifier: ^7.29.2
-        version: 7.29.2
-      '@iconify-json/lucide':
-        specifier: ^1.2.101
-        version: 1.2.101
-      '@rollup/plugin-babel':
-        specifier: ^7.0.0
-        version: 7.0.0(@babel/core@7.29.0)(@types/babel__core@7.20.5)(rollup@4.46.2)
-      '@sveltejs/vite-plugin-svelte':
-        specifier: ^5.0.0
-        version: 5.1.1(svelte@5.55.1)(vite@6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1))
-      '@tailwindcss/vite':
-        specifier: ^4.0.0
-        version: 4.2.2(vite@6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1))
-      '@vitejs/plugin-vue':
-        specifier: ^5.2.0
-        version: 5.2.4(vite@6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1))(vue@3.5.31(typescript@5.9.2))
-      babel-plugin-ember-template-compilation:
-        specifier: ^4.0.0
-        version: 4.0.0
-      content-tag:
-        specifier: ^4.1.1
-        version: 4.1.1
-      decorator-transforms:
-        specifier: ^2.3.1
-        version: 2.3.1(@babel/core@7.29.0)
-      ember-source:
-        specifier: ~6.9.0
-        version: 6.9.0(@glimmer/component@2.0.0)(rsvp@4.8.5)
-      tailwindcss:
-        specifier: ^4.0.0
-        version: 4.1.18
-      typescript:
-        specifier: ^5.7.0
-        version: 5.9.2
-      unplugin-icons:
-        specifier: ^23.0.1
-        version: 23.0.1(@vue/compiler-sfc@3.5.31)(svelte@5.55.1)
-      vite:
-        specifier: ^6.0.0
-        version: 6.4.1(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)
 
   packages/shadcn:
     dependencies:
@@ -1321,10 +1409,6 @@ packages:
 
   '@babel/runtime@7.12.18':
     resolution: {integrity: sha512-BogPQ7ciE6SYAUPtlm9tWbgI9+2AgqSam6QivMgXgAT+fKbgppaj4ZX15MHeLC1PVF5sNk70huBu20XxWOs8Cg==}
-
-  '@babel/runtime@7.28.4':
-    resolution: {integrity: sha512-Q/N6JNWvIvPnLDvjlE1OUBLPQHH6l3CltCEsHIujp45zQUSSh8K+gHnaEX45yAT1nyngnINhvWtzN+Nb9D8RAQ==}
-    engines: {node: '>=6.9.0'}
 
   '@babel/runtime@7.29.2':
     resolution: {integrity: sha512-JiDShH45zKHWyGe4ZNVRrCjBz8Nh9TMmZG1kh4QTK8hCBTWBi8Da+i7s1fJw7/lYpM4ccepSNfqzZ/QvABBi5g==}
@@ -4811,11 +4895,6 @@ packages:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
-
-  acorn@8.15.0:
-    resolution: {integrity: sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
 
   acorn@8.16.0:
     resolution: {integrity: sha512-UVJyE9MttOsBQIDKw1skb9nAwQuR5wuGD3+82K6JgJlm/Y+KI92oNsMNGZCYdDsVtRHSak0pcV5Dno5+4jh9sw==}
@@ -11581,8 +11660,6 @@ snapshots:
     dependencies:
       regenerator-runtime: 0.13.11
 
-  '@babel/runtime@7.28.4': {}
-
   '@babel/runtime@7.29.2': {}
 
   '@babel/template@7.27.2':
@@ -11633,7 +11710,7 @@ snapshots:
 
   '@base-ui/react@1.1.0(@types/react@19.2.2)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.29.2
       '@base-ui/utils': 0.2.4(@types/react@19.2.2)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@floating-ui/react-dom': 2.1.6(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@floating-ui/utils': 0.2.10
@@ -11647,7 +11724,7 @@ snapshots:
 
   '@base-ui/utils@0.2.4(@types/react@19.2.2)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.29.2
       '@floating-ui/utils': 0.2.11
       react: 19.2.3
       react-dom: 19.2.3(react@19.2.3)
@@ -12849,7 +12926,7 @@ snapshots:
 
   '@manypkg/find-root@1.1.0':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.29.2
       '@types/node': 12.20.55
       find-up: 4.1.0
       fs-extra: 8.1.0
@@ -12860,7 +12937,7 @@ snapshots:
 
   '@manypkg/get-packages@1.1.3':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.29.2
       '@changesets/types': 4.1.0
       '@manypkg/find-root': 1.1.0
       fs-extra: 8.1.0
@@ -12905,7 +12982,7 @@ snapshots:
       '@types/estree-jsx': 1.0.5
       '@types/hast': 3.0.4
       '@types/mdx': 2.0.13
-      acorn: 8.15.0
+      acorn: 8.16.0
       collapse-white-space: 2.1.0
       devlop: 1.1.0
       estree-util-is-identifier-name: 3.0.0
@@ -12914,7 +12991,7 @@ snapshots:
       hast-util-to-jsx-runtime: 2.3.6
       markdown-extensions: 2.0.0
       recma-build-jsx: 1.0.0
-      recma-jsx: 1.0.1(acorn@8.15.0)
+      recma-jsx: 1.0.1(acorn@8.16.0)
       recma-stringify: 1.0.0
       rehype-recma: 1.0.0
       remark-mdx: 3.1.1
@@ -14127,10 +14204,6 @@ snapshots:
 
   '@standard-schema/utils@0.3.0': {}
 
-  '@sveltejs/acorn-typescript@1.0.9(acorn@8.15.0)':
-    dependencies:
-      acorn: 8.15.0
-
   '@sveltejs/acorn-typescript@1.0.9(acorn@8.16.0)':
     dependencies:
       acorn: 8.16.0
@@ -15228,10 +15301,10 @@ snapshots:
     transitivePeerDependencies:
       - vue
 
-  '@vercel/analytics@1.5.0(@sveltejs/kit@2.55.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.55.1)(vite@7.1.12(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)))(svelte@5.55.1)(typescript@5.9.2)(vite@7.1.12(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)))(next@16.1.6(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react@19.2.3)(svelte@5.55.1)(vue@3.5.31(typescript@5.9.2))':
+  '@vercel/analytics@1.5.0(@sveltejs/kit@2.55.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.55.1)(vite@7.1.12(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)))(svelte@5.55.1)(typescript@5.9.2)(vite@7.1.12(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)))(next@16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react@19.2.3)(svelte@5.55.1)(vue@3.5.31(typescript@5.9.2))':
     optionalDependencies:
       '@sveltejs/kit': 2.55.0(@opentelemetry/api@1.9.0)(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.55.1)(vite@7.1.12(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)))(svelte@5.55.1)(typescript@5.9.2)(vite@7.1.12(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1))
-      next: 16.1.6(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      next: 16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       react: 19.2.3
       svelte: 5.55.1
       vue: 3.5.31(typescript@5.9.2)
@@ -15428,11 +15501,9 @@ snapshots:
       mime-types: 3.0.2
       negotiator: 1.0.0
 
-  acorn-jsx@5.3.2(acorn@8.15.0):
+  acorn-jsx@5.3.2(acorn@8.16.0):
     dependencies:
-      acorn: 8.15.0
-
-  acorn@8.15.0: {}
+      acorn: 8.16.0
 
   acorn@8.16.0: {}
 
@@ -16514,7 +16585,7 @@ snapshots:
 
   date-fns@2.30.0:
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.29.2
 
   date-fns@4.1.0: {}
 
@@ -17048,7 +17119,7 @@ snapshots:
   esast-util-from-js@2.0.1:
     dependencies:
       '@types/estree-jsx': 1.0.5
-      acorn: 8.15.0
+      acorn: 8.16.0
       esast-util-from-estree: 2.0.0
       vfile-message: 4.0.3
 
@@ -17365,7 +17436,7 @@ snapshots:
 
   eslint-plugin-react-hooks@7.0.1(eslint@9.26.0(hono@4.11.7)(jiti@2.6.1)):
     dependencies:
-      '@babel/core': 7.28.0
+      '@babel/core': 7.29.0
       '@babel/parser': 7.29.2
       eslint: 9.26.0(hono@4.11.7)(jiti@2.6.1)
       hermes-parser: 0.25.1
@@ -17534,8 +17605,8 @@ snapshots:
 
   espree@10.4.0:
     dependencies:
-      acorn: 8.15.0
-      acorn-jsx: 5.3.2(acorn@8.15.0)
+      acorn: 8.16.0
+      acorn-jsx: 5.3.2(acorn@8.16.0)
       eslint-visitor-keys: 4.2.1
 
   esprima@4.0.1: {}
@@ -17965,7 +18036,7 @@ snapshots:
   fsevents@2.3.3:
     optional: true
 
-  fumadocs-core@16.0.5(@types/react@19.2.2)(lucide-react@0.474.0(react@19.2.3))(next@16.1.6(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
+  fumadocs-core@16.0.5(@types/react@19.2.2)(lucide-react@0.474.0(react@19.2.3))(next@16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
     dependencies:
       '@formatjs/intl-localematcher': 0.6.2
       '@orama/orama': 3.1.16
@@ -17987,7 +18058,7 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.2
       lucide-react: 0.474.0(react@19.2.3)
-      next: 16.1.6(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      next: 16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       react: 19.2.3
       react-dom: 19.2.3(react@19.2.3)
     transitivePeerDependencies:
@@ -18002,14 +18073,14 @@ snapshots:
       unist-util-visit: 5.0.0
       zod: 3.25.76
 
-  fumadocs-mdx@13.0.2(fumadocs-core@16.0.5(@types/react@19.2.2)(lucide-react@0.474.0(react@19.2.3))(next@16.1.6(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(next@16.1.6(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react@19.2.3)(vite@7.1.12(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)):
+  fumadocs-mdx@13.0.2(fumadocs-core@16.0.5(@types/react@19.2.2)(lucide-react@0.474.0(react@19.2.3))(next@16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(next@16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react@19.2.3)(vite@7.1.12(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)):
     dependencies:
       '@mdx-js/mdx': 3.1.1
       '@standard-schema/spec': 1.1.0
       chokidar: 4.0.3
       esbuild: 0.25.11
       estree-util-value-to-estree: 3.5.0
-      fumadocs-core: 16.0.5(@types/react@19.2.2)(lucide-react@0.474.0(react@19.2.3))(next@16.1.6(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      fumadocs-core: 16.0.5(@types/react@19.2.2)(lucide-react@0.474.0(react@19.2.3))(next@16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       js-yaml: 4.1.1
       lru-cache: 11.2.4
       mdast-util-to-markdown: 2.1.2
@@ -18023,13 +18094,13 @@ snapshots:
       unist-util-visit: 5.0.0
       zod: 4.3.6
     optionalDependencies:
-      next: 16.1.6(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      next: 16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       react: 19.2.3
       vite: 7.1.12(@types/node@20.19.10)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.20.3)(yaml@2.8.1)
     transitivePeerDependencies:
       - supports-color
 
-  fumadocs-ui@16.0.5(@types/react-dom@19.2.2(@types/react@19.2.2))(@types/react@19.2.2)(lucide-react@0.474.0(react@19.2.3))(next@16.1.6(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(tailwindcss@4.1.18):
+  fumadocs-ui@16.0.5(@types/react-dom@19.2.2(@types/react@19.2.2))(@types/react@19.2.2)(lucide-react@0.474.0(react@19.2.3))(next@16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(tailwindcss@4.1.18):
     dependencies:
       '@radix-ui/react-accordion': 1.2.12(@types/react-dom@19.2.2(@types/react@19.2.2))(@types/react@19.2.2)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@radix-ui/react-collapsible': 1.1.12(@types/react-dom@19.2.2(@types/react@19.2.2))(@types/react@19.2.2)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
@@ -18042,7 +18113,7 @@ snapshots:
       '@radix-ui/react-slot': 1.2.3(@types/react@19.2.2)(react@19.2.3)
       '@radix-ui/react-tabs': 1.1.13(@types/react-dom@19.2.2(@types/react@19.2.2))(@types/react@19.2.2)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       class-variance-authority: 0.7.1
-      fumadocs-core: 16.0.5(@types/react@19.2.2)(lucide-react@0.474.0(react@19.2.3))(next@16.1.6(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      fumadocs-core: 16.0.5(@types/react@19.2.2)(lucide-react@0.474.0(react@19.2.3))(next@16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       lodash.merge: 4.6.2
       next-themes: 0.4.6(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       postcss-selector-parser: 7.1.0
@@ -18053,7 +18124,7 @@ snapshots:
       tailwind-merge: 3.3.1
     optionalDependencies:
       '@types/react': 19.2.2
-      next: 16.1.6(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      next: 16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       tailwindcss: 4.1.18
     transitivePeerDependencies:
       - '@mixedbread/sdk'
@@ -18740,9 +18811,9 @@ snapshots:
 
   jose@6.1.3: {}
 
-  jotai@2.15.0(@babel/core@7.28.0)(@babel/template@7.28.6)(@types/react@19.2.2)(react@19.2.3):
+  jotai@2.15.0(@babel/core@7.29.0)(@babel/template@7.28.6)(@types/react@19.2.2)(react@19.2.3):
     optionalDependencies:
-      '@babel/core': 7.28.0
+      '@babel/core': 7.29.0
       '@babel/template': 7.28.6
       '@types/react': 19.2.2
       react: 19.2.3
@@ -19005,7 +19076,7 @@ snapshots:
 
   local-pkg@1.1.2:
     dependencies:
-      mlly: 1.7.4
+      mlly: 1.8.2
       pkg-types: 2.3.0
       quansync: 0.2.11
 
@@ -19453,8 +19524,8 @@ snapshots:
 
   micromark-extension-mdxjs@3.0.0:
     dependencies:
-      acorn: 8.15.0
-      acorn-jsx: 5.3.2(acorn@8.15.0)
+      acorn: 8.16.0
+      acorn-jsx: 5.3.2(acorn@8.16.0)
       micromark-extension-mdx-expression: 3.0.1
       micromark-extension-mdx-jsx: 3.0.2
       micromark-extension-mdx-md: 2.0.0
@@ -19655,7 +19726,7 @@ snapshots:
 
   mlly@1.7.4:
     dependencies:
-      acorn: 8.15.0
+      acorn: 8.16.0
       pathe: 2.0.3
       pkg-types: 1.3.1
       ufo: 1.6.1
@@ -19746,7 +19817,7 @@ snapshots:
       react: 19.2.3
       react-dom: 19.2.3(react@19.2.3)
 
-  next@16.1.6(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
+  next@16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
     dependencies:
       '@next/env': 16.1.6
       '@swc/helpers': 0.5.15
@@ -19755,7 +19826,7 @@ snapshots:
       postcss: 8.4.31
       react: 19.2.3
       react-dom: 19.2.3(react@19.2.3)
-      styled-jsx: 5.1.6(@babel/core@7.28.0)(babel-plugin-macros@3.1.0)(react@19.2.3)
+      styled-jsx: 5.1.6(@babel/core@7.29.0)(babel-plugin-macros@3.1.0)(react@19.2.3)
     optionalDependencies:
       '@next/swc-darwin-arm64': 16.1.6
       '@next/swc-darwin-x64': 16.1.6
@@ -19811,12 +19882,12 @@ snapshots:
 
   npm-to-yarn@3.0.1: {}
 
-  nuqs@2.8.9(next@16.1.6(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react@19.2.3):
+  nuqs@2.8.9(next@16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react@19.2.3):
     dependencies:
       '@standard-schema/spec': 1.0.0
       react: 19.2.3
     optionalDependencies:
-      next: 16.1.6(@babel/core@7.28.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      next: 16.1.6(@babel/core@7.29.0)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
 
   object-assign@4.1.1: {}
 
@@ -20145,7 +20216,7 @@ snapshots:
   pkg-types@1.3.1:
     dependencies:
       confbox: 0.1.8
-      mlly: 1.7.4
+      mlly: 1.8.2
       pathe: 2.0.3
 
   pkg-types@2.3.0:
@@ -20545,7 +20616,7 @@ snapshots:
 
   react-textarea-autosize@8.5.9(@types/react@19.2.2)(react@19.2.3):
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.29.2
       react: 19.2.3
       use-composed-ref: 1.4.0(@types/react@19.2.2)(react@19.2.3)
       use-latest: 1.3.0(@types/react@19.2.2)(react@19.2.3)
@@ -20612,10 +20683,10 @@ snapshots:
       estree-util-build-jsx: 3.0.1
       vfile: 6.0.3
 
-  recma-jsx@1.0.1(acorn@8.15.0):
+  recma-jsx@1.0.1(acorn@8.16.0):
     dependencies:
-      acorn: 8.15.0
-      acorn-jsx: 5.3.2(acorn@8.15.0)
+      acorn: 8.16.0
+      acorn-jsx: 5.3.2(acorn@8.16.0)
       estree-util-to-js: 2.0.0
       recma-parse: 1.0.0
       recma-stringify: 1.0.0
@@ -21403,12 +21474,12 @@ snapshots:
     dependencies:
       inline-style-parser: 0.2.4
 
-  styled-jsx@5.1.6(@babel/core@7.28.0)(babel-plugin-macros@3.1.0)(react@19.2.3):
+  styled-jsx@5.1.6(@babel/core@7.29.0)(babel-plugin-macros@3.1.0)(react@19.2.3):
     dependencies:
       client-only: 0.0.1
       react: 19.2.3
     optionalDependencies:
-      '@babel/core': 7.28.0
+      '@babel/core': 7.29.0
       babel-plugin-macros: 3.1.0
 
   stylis@4.2.0: {}
@@ -21478,10 +21549,10 @@ snapshots:
     dependencies:
       '@jridgewell/remapping': 2.3.5
       '@jridgewell/sourcemap-codec': 1.5.5
-      '@sveltejs/acorn-typescript': 1.0.9(acorn@8.15.0)
+      '@sveltejs/acorn-typescript': 1.0.9(acorn@8.16.0)
       '@types/estree': 1.0.8
       '@types/trusted-types': 2.0.7
-      acorn: 8.15.0
+      acorn: 8.16.0
       aria-query: 5.3.1
       axobject-query: 4.1.0
       clsx: 2.1.1
@@ -21545,10 +21616,10 @@ snapshots:
 
   tailwind-merge@3.3.1: {}
 
-  tailwind-variants@0.3.1(tailwindcss@4.1.18):
+  tailwind-variants@0.3.1(tailwindcss@4.2.2):
     dependencies:
       tailwind-merge: 2.5.4
-      tailwindcss: 4.1.18
+      tailwindcss: 4.2.2
 
   tailwindcss@3.4.19(tsx@4.20.3)(yaml@2.8.1):
     dependencies:
@@ -22013,7 +22084,7 @@ snapshots:
   unplugin@2.3.11:
     dependencies:
       '@jridgewell/remapping': 2.3.5
-      acorn: 8.15.0
+      acorn: 8.16.0
       picomatch: 4.0.3
       webpack-virtual-modules: 0.6.2
 
@@ -22243,7 +22314,7 @@ snapshots:
       esbuild: 0.25.11
       fdir: 6.5.0(picomatch@4.0.3)
       picomatch: 4.0.3
-      postcss: 8.5.6
+      postcss: 8.5.8
       rollup: 4.46.2
       tinyglobby: 0.2.15
     optionalDependencies:

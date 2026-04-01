@@ -1,0 +1,129 @@
+---
+title: Force UI Registry
+description: Add Force UI components to your project using the registry.
+---
+
+Force UI provides component registries for **React**, **Vue**, **Svelte**, and **Ember**. Each registry contains styled, accessible components that you can add to your project with the CLI.
+
+## Registries
+
+| Registry | Framework | Example |
+| --- | --- | --- |
+| `@force-ui` | React (Radix UI) | `npx shadcn@latest add @force-ui/button` |
+| `@force-ui-vue` | Vue | `npx shadcn@latest add @force-ui-vue/button` |
+| `@force-ui-svelte` | Svelte | `npx shadcn@latest add @force-ui-svelte/button` |
+| `@force-ui-ember` | Ember | `npx shadcn@latest add @force-ui-ember/button` |
+
+These registries are built-in to the CLI and available without any extra configuration.
+
+## Setup
+
+### 1. Initialize your project
+
+If you haven't already, run `shadcn init` in your project:
+
+```bash
+npx shadcn@latest init
+```
+
+This creates a `components.json` file with your project configuration.
+
+### 2. Configure the registry
+
+The Force UI registries are built-in, so they work out of the box. If you want to add them explicitly or use a custom registry URL, add them to the `registries` field in your `components.json`:
+
+```json title="components.json"
+{
+  "style": "nova",
+  "registries": {
+    "@force-ui": "https://force-ui.com/r/styles/{style}/{name}.json",
+    "@force-ui-vue": "https://force-ui.com/r/styles/vue-{style}/{name}.json",
+    "@force-ui-svelte": "https://force-ui.com/r/styles/svelte-{style}/{name}.json",
+    "@force-ui-ember": "https://force-ui.com/r/styles/ember-{style}/{name}.json"
+  }
+}
+```
+
+The `{style}` and `{name}` placeholders are resolved automatically by the CLI using your configured style and the component name.
+
+## Styles
+
+Force UI ships five design styles. Set the `style` field in your `components.json` to choose one:
+
+| Style | Description |
+| --- | --- |
+| `nova` | Reduced padding and margins |
+| `vega` | Clean, neutral, and familiar |
+| `maia` | Rounded, with generous spacing |
+| `lyra` | Boxy and sharp. For mono fonts |
+| `mira` | Made for compact interfaces |
+
+```json title="components.json"
+{
+  "style": "nova"
+}
+```
+
+Changing the style affects which variant of each component is installed. For example, `@force-ui-vue/button` with style `nova` fetches from `/styles/vue-nova/button.json`.
+
+## Adding components
+
+Use the `add` command with the registry namespace for your framework:
+
+<Tabs defaultValue="react">
+
+<TabsList>
+<TabsTrigger value="react">React</TabsTrigger>
+<TabsTrigger value="vue">Vue</TabsTrigger>
+<TabsTrigger value="svelte">Svelte</TabsTrigger>
+<TabsTrigger value="ember">Ember</TabsTrigger>
+</TabsList>
+
+<TabsContent value="react">
+
+```bash
+npx shadcn@latest add @force-ui/button
+npx shadcn@latest add @force-ui/card @force-ui/dialog
+```
+
+</TabsContent>
+
+<TabsContent value="vue">
+
+```bash
+npx shadcn@latest add @force-ui-vue/button
+npx shadcn@latest add @force-ui-vue/card @force-ui-vue/dialog
+```
+
+</TabsContent>
+
+<TabsContent value="svelte">
+
+```bash
+npx shadcn@latest add @force-ui-svelte/button
+npx shadcn@latest add @force-ui-svelte/card @force-ui-svelte/dialog
+```
+
+</TabsContent>
+
+<TabsContent value="ember">
+
+```bash
+npx shadcn@latest add @force-ui-ember/button
+npx shadcn@latest add @force-ui-ember/card @force-ui-ember/dialog
+```
+
+</TabsContent>
+
+</Tabs>
+
+The CLI will:
+
+1. Fetch the component JSON from the registry
+2. Resolve any dependencies (other components, npm packages)
+3. Write the component files to your configured `aliases.components` path
+4. Install any required npm dependencies
+
+## Browse components
+
+You can browse all available components for each framework in the [Components](/docs/components) section, or use [shadcn/create](/create) to preview components with different styles, themes, and fonts before adding them to your project.

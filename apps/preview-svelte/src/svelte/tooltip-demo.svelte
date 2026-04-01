@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { buttonVariants } from "../ui/button/index.js";
+	import { buttonVariants } from "@/svelte-ui/button/index.js";
 	import * as Tooltip from "@/svelte-ui/tooltip/index.js";
 </script>
 

@@ -32,6 +32,10 @@ const TOP_LEVEL_SECTIONS = [
     href: "/docs/installation",
   },
   {
+    name: "Force UI Registry",
+    href: "/docs/force-ui-registry",
+  },
+  {
     name: "Theming",
     href: "/docs/theming",
   },
