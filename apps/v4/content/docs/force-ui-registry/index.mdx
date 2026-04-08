@@ -32,17 +32,7 @@ This creates a `components.json` file with your project configuration.
 
 The Force UI registries are built-in, so they work out of the box. If you want to add them explicitly or use a custom registry URL, add them to the `registries` field in your `components.json`:
 
-```json title="components.json"
-{
-  "style": "nova",
-  "registries": {
-    "@force-ui": "https://force-ui.com/r/styles/{style}/{name}.json",
-    "@force-ui-vue": "https://force-ui.com/r/styles/vue-{style}/{name}.json",
-    "@force-ui-svelte": "https://force-ui.com/r/styles/svelte-{style}/{name}.json",
-    "@force-ui-ember": "https://force-ui.com/r/styles/ember-{style}/{name}.json"
-  }
-}
-```
+<RegistryConfigBlock />
 
 The `{style}` and `{name}` placeholders are resolved automatically by the CLI using your configured style and the component name.
 

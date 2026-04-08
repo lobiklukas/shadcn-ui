@@ -90,6 +90,17 @@ export const examples: Registry["items"] = [
     ],
   },
   {
+    name: "badge-warning",
+    type: "registry:example",
+    registryDependencies: ["badge"],
+    files: [
+      {
+        path: "examples/badge-warning.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "badge-outline",
     type: "registry:example",
     registryDependencies: ["badge"],

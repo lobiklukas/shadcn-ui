@@ -13,6 +13,9 @@ import { Badge } from '@/ui/badge'
       <Badge variant="destructive">
         Destructive
       </Badge>
+      <Badge variant="warning">
+        Warning
+      </Badge>
       <Badge variant="outline">
         Outline
       </Badge>
