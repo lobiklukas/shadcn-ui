@@ -19,6 +19,9 @@ export default defineConfig({
       "$app/state": path.resolve(__dirname, "src/stubs/app-state.ts"),
     },
   },
+  optimizeDeps: {
+    exclude: ["sveltekit-superforms"],
+  },
   server: {
     port: 3002,
     cors: true,
