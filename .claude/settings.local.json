@@ -1,19 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm test:*)",
-      "Bash(npm run typecheck:*)",
-      "Bash(ls:*)",
-      "Bash(cat:*)",
-      "WebSearch",
-      "WebFetch(domain:github.com)",
-      "Bash(pnpm run:*)",
-      "Bash(node:*)",
-      "Bash(grep -r registry/bases.*examples /opt/dev/shadcn-force-ui/apps/v4 --include=*.ts --include=*.tsx --include=*.mts)",
-      "Bash(grep -A2 registry/bases/vue.*examples /opt/dev/shadcn-force-ui/apps/v4/registry/__index__.tsx)",
-      "Bash(find /opt/dev/shadcn-force-ui -name webpack.config* -o -name vite.config* -o -name .svelteignore)",
-      "Bash(pnpm tsx:*)"
-    ],
-    "deny": []
+      "Bash(grep -E \"\\\\.\\(ts|tsx|js|json\\)$\")",
+      "Bash(jq '.files[0].content' -r)",
+      "Bash(grep:*)",
+      "WebFetch(domain:github.com)"
+    ]
   }
 }
