@@ -1,9 +1,12 @@
 # Registry bases (`base` and `radix`)
 
-This folder holds **two parallel registries**:
+This folder holds the **React** registries that track upstream shadcn:
 
 - **`base/`** — Base UI–backed components and blocks  
 - **`radix/`** — Radix-backed components and blocks  
+
+> **Framework ports** (Ember, Vue, Svelte) live in `packages/registry-{name}/`, not here.
+> The build script (`scripts/build-registry.mts`) routes them automatically via `getBaseSrcDir()`.
 
 ## Keep them in sync
 

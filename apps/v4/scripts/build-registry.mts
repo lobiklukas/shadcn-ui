@@ -21,6 +21,15 @@ import { BASES, type Base } from "@/registry/bases"
 import { PRESETS } from "@/registry/config"
 import { STYLES } from "@/registry/styles"
 
+// [FORCE-UI] Framework ports live in packages/registry-{name}, not registry/bases/{name}
+const FRAMEWORK_PORT_BASES = new Set(["vue", "svelte", "ember"])
+function getBaseSrcDir(baseName: string): string {
+  if (FRAMEWORK_PORT_BASES.has(baseName)) {
+    return path.resolve(process.cwd(), `../../packages/registry-${baseName}`)
+  }
+  return path.resolve(process.cwd(), `registry/bases/${baseName}`)
+}
+
 /*
  * build-registry.mts is the single v4 registry pipeline.
  *
@@ -381,7 +390,7 @@ async function buildBasesIndex(bases: Base[]) {
   const registryImports = await Promise.all(
     bases.map(async (base) => {
       const { registry: importedRegistry } = await import(
-        `../registry/bases/${base.name}/registry.ts`
+        path.join(getBaseSrcDir(base.name), "registry.ts")
       )
       return { base, importedRegistry }
     })
@@ -474,7 +483,7 @@ async function buildBases(bases: Base[]) {
     Promise.all(
       bases.map(async (base) => {
         const { registry: baseRegistry } = await import(
-          `../registry/bases/${base.name}/registry.ts`
+          path.join(getBaseSrcDir(base.name), "registry.ts")
         )
         const result = registrySchema.safeParse(baseRegistry)
         if (!result.success) {
@@ -502,10 +511,7 @@ async function buildBases(bases: Base[]) {
                 [
                   filePath,
                   await fs.readFile(
-                    path.join(
-                      process.cwd(),
-                      `registry/bases/${base.name}/${filePath}`
-                    ),
+                    path.join(getBaseSrcDir(base.name), filePath),
                     "utf8"
                   ),
                 ] as const
@@ -720,7 +726,7 @@ export const Index: Record<string, Record<string, any>> = {`
     const styleCombination = getStyleCombination(style.name)
     const { registry: importedRegistry } = styleCombination
       ? await import(
-          `../registry/bases/${styleCombination.base.name}/registry.ts`
+          path.join(getBaseSrcDir(styleCombination.base.name), "registry.ts")
         )
       : await import(`../registry/${style.name}/registry.ts`)
 
@@ -1041,7 +1047,7 @@ async function buildIndex() {
   const baseUiRegistries = await Promise.all(
     Array.from(BASES).map(async (base) => {
       const { ui } = await import(
-        `../registry/bases/${base.name}/ui/_registry.ts`
+        path.join(getBaseSrcDir(base.name), "ui/_registry.ts")
       )
       return { baseName: base.name, items: ui as RegistryItem[] }
     })
