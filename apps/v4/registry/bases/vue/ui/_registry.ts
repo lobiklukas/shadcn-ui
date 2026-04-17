@@ -30,6 +30,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/accordion",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/accordion/AccordionDemo.vue",
+      },
+    },
   },
   {
     name: "alert",
@@ -56,6 +62,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/alert",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/alert/AlertDemo.vue",
+      },
+    },
   },
   {
     name: "alert-dialog",
@@ -113,6 +125,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/alert-dialog",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/alert-dialog/AlertDialogDemo.vue",
+      },
+    },
   },
   {
     name: "aspect-ratio",
@@ -130,6 +148,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/aspect-ratio",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/aspect-ratio/AspectRatioDemo.vue",
+      },
+    },
   },
   {
     name: "avatar",
@@ -168,6 +192,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/avatar",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/avatar/AvatarDemo.vue",
+      },
+    },
   },
   {
     name: "badge",
@@ -186,6 +216,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/badge",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/badge/BadgeDemo.vue",
+      },
+    },
   },
   {
     name: "breadcrumb",
@@ -227,6 +263,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/breadcrumb",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/breadcrumb/BreadcrumbDemo.vue",
+      },
+    },
   },
   {
     name: "button",
@@ -244,6 +286,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/button",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/button/ButtonDemo.vue",
+      },
+    },
   },
   {
     name: "button-group",
@@ -273,6 +321,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/button-group",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/button-group/ButtonGroupDemo.vue",
+      },
+    },
   },
   {
     name: "calendar",
@@ -340,6 +394,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/calendar",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/calendar/CalendarDemo.vue",
+      },
+    },
   },
   {
     name: "card",
@@ -378,6 +438,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/card",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/card/CardDemo.vue",
+      },
+    },
   },
   {
     name: "carousel",
@@ -424,6 +490,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/carousel",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/carousel/CarouselDemo.vue",
+      },
+    },
   },
   {
     name: "chart",
@@ -458,6 +530,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/chart",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/chart/ChartDemo.vue",
+      },
+    },
   },
   {
     name: "checkbox",
@@ -476,6 +554,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/checkbox",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/checkbox/CheckboxDemo.vue",
+      },
+    },
   },
   {
     name: "collapsible",
@@ -501,6 +585,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/collapsible",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/collapsible/CollapsibleDemo.vue",
+      },
+    },
   },
   {
     name: "combobox",
@@ -562,6 +652,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/combobox",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/combobox/ComboboxDemo.vue",
+      },
+    },
   },
   {
     name: "command",
@@ -616,6 +712,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/command",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/command/CommandDemo.vue",
+      },
+    },
   },
   {
     name: "context-menu",
@@ -690,6 +792,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/context-menu",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/context-menu/ContextMenuDemo.vue",
+      },
+    },
   },
   {
     name: "dialog",
@@ -748,6 +856,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/dialog",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/dialog/DialogDemo.vue",
+      },
+    },
   },
   {
     name: "drawer",
@@ -799,6 +913,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/drawer",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/drawer/DrawerDemo.vue",
+      },
+    },
   },
   {
     name: "dropdown-menu",
@@ -869,6 +989,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/dropdown-menu",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/dropdown-menu/DropdownMenuDemo.vue",
+      },
+    },
   },
   {
     name: "empty",
@@ -903,6 +1029,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/empty",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/empty/EmptyDemo.vue",
+      },
+    },
   },
   {
     name: "field",
@@ -957,6 +1089,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/field",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/field/FieldDemo.vue",
+      },
+    },
   },
   {
     name: "form",
@@ -1004,6 +1142,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/form",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/form/FormDemo.vue",
+      },
+    },
   },
   {
     name: "hover-card",
@@ -1030,6 +1174,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/hover-card",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/hover-card/HoverCardDemo.vue",
+      },
+    },
   },
   {
     name: "input",
@@ -1047,6 +1197,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/input",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/input/InputDemo.vue",
+      },
+    },
   },
   {
     name: "input-group",
@@ -1086,6 +1242,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/input-group",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/input-group/InputGroupDemo.vue",
+      },
+    },
   },
   {
     name: "input-otp",
@@ -1120,6 +1282,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/input-otp",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/input-otp/InputOtpDemo.vue",
+      },
+    },
   },
   {
     name: "item",
@@ -1176,6 +1344,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/item",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/item/ItemDemo.vue",
+      },
+    },
   },
   {
     name: "kbd",
@@ -1194,6 +1368,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/kbd",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/kbd/KbdDemo.vue",
+      },
+    },
   },
   {
     name: "label",
@@ -1212,6 +1392,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/label",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/label/LabelDemo.vue",
+      },
+    },
   },
   {
     name: "menubar",
@@ -1289,6 +1475,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/menubar",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/menubar/MenubarDemo.vue",
+      },
+    },
   },
   {
     name: "native-select",
@@ -1318,6 +1510,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/native-select",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/native-select/NativeSelectDemo.vue",
+      },
+    },
   },
   {
     name: "navigation-menu",
@@ -1367,6 +1565,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/navigation-menu",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/navigation-menu/NavigationMenuDemo.vue",
+      },
+    },
   },
   {
     name: "number-field",
@@ -1404,6 +1608,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/number-field",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/number-field/NumberFieldDemo.vue",
+      },
+    },
   },
   {
     name: "pagination",
@@ -1458,6 +1668,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/pagination",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/pagination/PaginationDemo.vue",
+      },
+    },
   },
   {
     name: "pin-input",
@@ -1491,6 +1707,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/pin-input",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/pin-input/PinInputDemo.vue",
+      },
+    },
   },
   {
     name: "popover",
@@ -1533,6 +1755,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/popover",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/popover/PopoverDemo.vue",
+      },
+    },
   },
   {
     name: "progress",
@@ -1551,6 +1779,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/progress",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/progress/ProgressDemo.vue",
+      },
+    },
   },
   {
     name: "radio-group",
@@ -1573,6 +1807,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/radio-group",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/radio-group/RadioGroupDemo.vue",
+      },
+    },
   },
   {
     name: "range-calendar",
@@ -1639,6 +1879,11 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/range-calendar",
+      },
+    },
   },
   {
     name: "resizable",
@@ -1665,6 +1910,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/resizable",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/resizable/ResizableDemo.vue",
+      },
+    },
   },
   {
     name: "scroll-area",
@@ -1687,6 +1938,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/scroll-area",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/scroll-area/ScrollAreaDemo.vue",
+      },
+    },
   },
   {
     name: "select",
@@ -1745,6 +2002,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/select",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/select/SelectDemo.vue",
+      },
+    },
   },
   {
     name: "separator",
@@ -1763,6 +2026,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/separator",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/separator/SeparatorDemo.vue",
+      },
+    },
   },
   {
     name: "sheet",
@@ -1816,6 +2085,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/sheet",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/sheet/SheetDemo.vue",
+      },
+    },
   },
   {
     name: "sidebar",
@@ -1939,6 +2214,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/sidebar",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/sidebar/SidebarDemo.vue",
+      },
+    },
   },
   {
     name: "skeleton",
@@ -1953,6 +2234,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/skeleton",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/skeleton/SkeletonDemo.vue",
+      },
+    },
   },
   {
     name: "slider",
@@ -1971,6 +2258,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/slider",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/slider/SliderDemo.vue",
+      },
+    },
   },
   {
     name: "sonner",
@@ -1991,6 +2284,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/sonner",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/sonner/SonnerDemo.vue",
+      },
+    },
   },
   {
     name: "spinner",
@@ -2008,6 +2307,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/spinner",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/spinner/SpinnerDemo.vue",
+      },
+    },
   },
   {
     name: "stepper",
@@ -2050,6 +2355,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/stepper",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/stepper/StepperDemo.vue",
+      },
+    },
   },
   {
     name: "switch",
@@ -2068,6 +2379,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/switch",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/switch/SwitchDemo.vue",
+      },
+    },
   },
   {
     name: "table",
@@ -2122,6 +2439,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/table",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/table/TableDemo.vue",
+      },
+    },
   },
   {
     name: "tabs",
@@ -2152,6 +2475,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/tabs",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/tabs/TabsDemo.vue",
+      },
+    },
   },
   {
     name: "tags-input",
@@ -2189,6 +2518,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/tags-input",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/tags-input/TagsInputDemo.vue",
+      },
+    },
   },
   {
     name: "textarea",
@@ -2206,6 +2541,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/textarea",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/textarea/TextareaDemo.vue",
+      },
+    },
   },
   {
     name: "toggle",
@@ -2224,6 +2565,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/toggle",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/toggle/ToggleDemo.vue",
+      },
+    },
   },
   {
     name: "toggle-group",
@@ -2249,6 +2596,12 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/toggle-group",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/toggle-group/ToggleGroupDemo.vue",
+      },
+    },
   },
   {
     name: "tooltip",
@@ -2279,5 +2632,11 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    meta: {
+      links: {
+        docs: "https://shadcn-force-ui.vercel.app/docs/components/vue/tooltip",
+        examples: "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/vue/examples/tooltip/TooltipDemo.vue",
+      },
+    },
   },
 ]

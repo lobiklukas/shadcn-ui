@@ -116,6 +116,7 @@ export const STYLES = [
       </svg>
     ),
   },
+  // [FORCE-UI-START] force-ui style entry
   {
     name: "force-ui",
     title: "Force UI",
@@ -141,6 +142,7 @@ export const STYLES = [
       </svg>
     ),
   },
+  // [FORCE-UI-END]
 ] as const
 
 export type Style = (typeof STYLES)[number]
