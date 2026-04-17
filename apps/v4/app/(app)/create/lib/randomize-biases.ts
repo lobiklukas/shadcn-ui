@@ -62,20 +62,10 @@ export const RANDOMIZE_BIASES: RandomizeBiases = {
   baseColors: (baseColors) => {
     return baseColors.filter((c) => c.name !== "gray")
   },
-  fonts: (fonts, context) => {
-    // When style is lyra, only use mono fonts.
-    if (context.style === "lyra") {
-      return fonts.filter((font) => font.value === "jetbrains-mono")
-    }
-
+  fonts: (fonts) => {
     return fonts
   },
-  radius: (radii, context) => {
-    // When style is lyra, always use "none" radius.
-    if (context.style === "lyra") {
-      return radii.filter((radius) => radius.name === "none")
-    }
-
+  radius: (radii) => {
     return radii
   },
   chartColors: (chartColors, context) => {

@@ -23,8 +23,7 @@ export function RadiusPicker({
   anchorRef: React.RefObject<HTMLDivElement | null>
 }) {
   const [params, setParams] = useDesignSystemSearchParams()
-  const isRadiusLocked = params.style === "lyra"
-  const selectedRadiusName = isRadiusLocked ? "none" : params.radius
+  const selectedRadiusName = params.radius
 
   const currentRadius = RADII.find(
     (radius) => radius.name === selectedRadiusName
