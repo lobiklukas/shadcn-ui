@@ -67,7 +67,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://force-ui.com/docs/components/svelte/sheet"
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/sheet"
     }
   },
   "type": "registry:ui"

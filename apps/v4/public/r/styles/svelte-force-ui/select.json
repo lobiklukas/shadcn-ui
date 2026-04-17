@@ -72,7 +72,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://force-ui.com/docs/components/svelte/select"
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/select"
     }
   },
   "type": "registry:ui"

@@ -62,7 +62,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://force-ui.com/docs/components/svelte/pagination"
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/pagination"
     }
   },
   "type": "registry:ui"

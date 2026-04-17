@@ -21,7 +21,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://force-ui.com/docs/components/svelte/checkbox"
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/checkbox"
     }
   },
   "type": "registry:ui"

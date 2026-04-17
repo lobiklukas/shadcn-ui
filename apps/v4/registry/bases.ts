@@ -30,6 +30,7 @@ export const REACT_BASES: z.infer<typeof registryItemSchema>[] = [
 // ALL_BASES includes all bases used by the build pipeline (React + Vue + Svelte + Ember).
 export const BASES: z.infer<typeof registryItemSchema>[] = [
   ...REACT_BASES,
+  // [FORCE-UI-START] framework ports (vue, svelte, ember)
   {
     name: "vue",
     type: "registry:style",
@@ -51,6 +52,7 @@ export const BASES: z.infer<typeof registryItemSchema>[] = [
     description: "A framework for ambitious web applications.",
     dependencies: ["ember-modifier", "ember-provide-consume-context", "class-variance-authority"],
   },
+  // [FORCE-UI-END]
 ]
 
 export type Base = (typeof BASES)[number]

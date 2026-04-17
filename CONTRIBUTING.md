@@ -1,193 +1,153 @@
-# Contributing
+# Contributing to Force UI
 
-Thanks for your interest in contributing to Force UI. We're happy to have you here.
+Force UI is an internal brand kit built on top of [shadcn/ui](https://ui.shadcn.com). This document covers how to work with the fork safely — adding features without making future upstream merges painful.
 
-Please take a moment to review this document before submitting your first pull request. We also strongly recommend that you check for open issues and pull requests to see if someone else is working on something similar.
-
-If you need any help, feel free to reach out to [@lobiklukas](https://github.com/lobiklukas).
-
-## About this repository
-
-This repository is a monorepo.
-
-- We use [pnpm](https://pnpm.io) and [`workspaces`](https://pnpm.io/workspaces) for development.
-- We use [Turborepo](https://turbo.build/repo) as our build system.
-- We use [changesets](https://github.com/changesets/changesets) for managing releases.
-
-## Structure
-
-This repository is structured as follows:
+## Repository structure
 
 ```
-apps
-└── v4
-    ├── app
-    ├── components
-    ├── content
-    └── registry
-        └── new-york-v4
-            ├── example
-            └── ui
-packages
-└── shadcn
-```
+apps/
+├── v4/                        # Docs & registry site (Next.js)
+│   ├── app/                   # Next.js app
+│   ├── content/docs/          # MDX documentation
+│   ├── registry/
+│   │   ├── bases/
+│   │   │   ├── radix/         # ← upstream React (Radix UI) — track closely
+│   │   │   └── base/          # ← upstream React (Base UI)  — track closely
+│   │   ├── styles/
+│   │   │   └── style-force-ui.css  # Force UI component styles
+│   │   └── themes.ts          # Imports force-ui theme + upstream themes
+│   └── scripts/
+│       └── build-registry.mts # Registry build pipeline
+├── preview-ember/             # Ember preview server
+├── preview-vue/               # Vue preview server
+└── preview-svelte/            # Svelte preview server
 
-| Path                 | Description                              |
-| -------------------- | ---------------------------------------- |
-| `apps/v4/app`        | The Next.js application for the website. |
-| `apps/v4/components` | The React components for the website.    |
-| `apps/v4/content`    | The content for the website.             |
-| `apps/v4/registry`   | The registry for the components.         |
-| `packages/shadcn`    | The `shadcn` package.                    |
+packages/
+├── shadcn/                    # shadcn CLI (upstream, minimal changes)
+├── theme-force-ui/            # Force UI brand tokens (OKLCH palette)
+│   └── src/index.ts           # Edit here to change brand colors
+├── registry-ember/            # Ember component registry
+├── registry-vue/              # Vue component registry
+└── registry-svelte/           # Svelte component registry
+```
 
 ## Development
 
-### Fork this repo
-
-You can fork this repo by clicking the fork button in the top right corner of this page.
-
-### Clone on your local machine
-
-```bash
-git clone https://github.com/your-username/ui.git
-```
-
-### Navigate to project directory
-
-```bash
-cd ui
-```
-
-### Create a new Branch
-
-```bash
-git checkout -b my-new-branch
-```
-
-### Install dependencies
-
 ```bash
 pnpm install
+pnpm --filter=v4 dev        # docs site on :4000
+pnpm --filter=v4 registry:build  # rebuild registry
 ```
 
-### Run a workspace
+## This is a fork — read this before making changes
 
-You can use the `pnpm --filter=[WORKSPACE]` command to start the development process for a workspace.
+Force UI forks [shadcn-ui/ui](https://github.com/shadcn-ui/ui). Upstream ships new components, fixes, and docs regularly. The goal is to make merges from `upstream/main` as painless as possible.
 
-#### Examples
+### The [FORCE-UI] marker system
 
-1. To run the Force UI website:
+Every file we modify that upstream also owns must have markers so we can find our changes instantly after a merge:
 
 ```bash
-pnpm --filter=v4 dev
+# After any upstream merge, run this to find every conflict hotspot:
+grep -rn "\[FORCE-UI\]" apps/v4/
 ```
 
-2. To run the `shadcn` package:
+- **CSS/MDX**: `/* [FORCE-UI] */` or `{/* [FORCE-UI] */}` inline, or `/* [FORCE-UI-START] */ ... /* [FORCE-UI-END] */` for blocks
+- **TypeScript**: `// [FORCE-UI]` inline or `// [FORCE-UI-START] / // [FORCE-UI-END]` for blocks
+
+### What lives where
+
+| Change type | Where it goes | Conflict risk |
+|---|---|---|
+| Brand color/token update | `packages/theme-force-ui/src/index.ts` | None |
+| New variant style (CSS) | `apps/v4/registry/styles/style-force-ui.css` | None |
+| New variant prop (`variant="warning"`) | One line in the component `.tsx` + `// [FORCE-UI]` | Very low |
+| New component (no upstream equivalent) | `apps/v4/registry/bases/radix/ui/` **for now**, or create `packages/registry-force-ui/` | Low |
+| Framework port changes (Ember/Vue/Svelte) | `packages/registry-{ember,vue,svelte}/` | None |
+| Docs for Force UI-specific features | `apps/v4/content/docs/force-ui/` | None |
+| Docs for existing components | `apps/v4/content/docs/components/{radix,base}/` + `// [FORCE-UI]` block | Low |
+
+## Adding a custom variant to an existing component
+
+Use the three-step pattern. Example: adding `warning` to Badge.
+
+**Step 1 — Add the CSS** in `style-force-ui.css`:
+```css
+.cn-badge-variant-warning {
+  @apply bg-warning/10 text-warning dark:bg-warning/20;
+}
+```
+
+**Step 2 — Add one line** to the component's `cva` map:
+```tsx
+// apps/v4/registry/bases/radix/ui/badge.tsx
+variants: {
+  variant: {
+    default: "cn-badge-variant-default",
+    // ... upstream variants ...
+    warning: "cn-badge-variant-warning",  // [FORCE-UI]
+  }
+}
+```
+
+**Step 3 — Update the docs** in the component's MDX files (both `radix/` and `base/`):
+```mdx
+| `variant` | `"default" \| ... \| "warning"` | `"default"` |
+```
+
+A PR that adds a variant without updating the docs table will be rejected.
+
+## Adding a new component
+
+If the component has no upstream equivalent (e.g. `Spinner`, `Field`, `Empty`):
+
+1. Add the source to `apps/v4/registry/bases/radix/ui/` and `apps/v4/registry/bases/base/ui/`
+2. Register it in `apps/v4/registry/bases/radix/ui/_registry.ts`
+3. Add docs at `apps/v4/content/docs/components/radix/{name}.mdx`
+4. Run `pnpm --filter=v4 registry:build`
+
+## Updating the brand theme
+
+Brand colors live in `packages/theme-force-ui/src/index.ts` as OKLCH values. Changing them here automatically propagates to the registry on the next build. Do **not** edit the `:root` vars in `globals.css` directly — that block is generated from the theme package and marked `[FORCE-UI-START]`.
+
+## Syncing from upstream shadcn
 
 ```bash
-pnpm --filter=shadcn dev
+git fetch upstream
+git merge upstream/main
+# Then:
+grep -rn "\[FORCE-UI\]" apps/v4/   # find every block that may need attention
 ```
 
-## Running the CLI Locally
+The files most likely to have conflicts after a merge are:
+- `apps/v4/app/globals.css` — look for `[FORCE-UI]` blocks
+- `apps/v4/registry/themes.ts` — we add `forceUITheme` import at the top
+- `apps/v4/registry/styles.tsx` — we add the `force-ui` style entry
+- `apps/v4/registry/bases.ts` — we add ember/vue/svelte base entries
 
-To run the CLI locally, you can follow the workflow:
+Framework ports (`packages/registry-{ember,vue,svelte}/`) and the theme package (`packages/theme-force-ui/`) are never touched by upstream merges.
 
-1. Start by running the dev server:
+## Documentation rules
 
-   ```bash
-   pnpm dev
-   ```
+- Component docs in `content/docs/components/radix/` and `content/docs/components/base/` are **100% ours** — don't auto-sync with upstream prose. Cherry-pick relevant upstream doc improvements manually.
+- When upstream adds a new component prop or example, review their docs and update ours if relevant.
+- Force UI-specific docs (theming, custom components, framework guides) go in `content/docs/force-ui/`.
+- The `styleName` prop in `<ComponentPreview>` must always be `radix-force-ui` or `base-force-ui`. Never reference a removed style.
 
-2. In another terminal tab, test the CLI by running:
+## Commit convention
 
-   ```bash
-   pnpm shadcn
-   ```
+Use [Conventional Commits](https://www.conventionalcommits.org/):
 
-   To test the CLI in a specific app, use a command like:
-
-   ```bash
-   pnpm shadcn <init | add | ...> -c ~/Desktop/my-app
-   ```
-
-This workflow ensures that you are running the most recent version of the registry and testing the CLI properly in your local environment.
-
-## Documentation
-
-The documentation for this project is located in the `v4` workspace. You can run the documentation locally by running the following command:
-
-```bash
-pnpm --filter=v4 dev
+```
+feat(components): add warning variant to badge
+fix(docs): update badge API table with warning variant
+refactor(registry): move ember port to packages/registry-ember
 ```
 
-Documentation is written using [MDX](https://mdxjs.com). You can find the documentation files in the `apps/v4/content/docs` directory.
+Categories: `feat`, `fix`, `refactor`, `docs`, `build`, `test`, `ci`, `chore`
 
-## Components
-
-We use a registry system for developing components. You can find the source code for the components under `apps/v4/registry`. The components are organized by styles.
-
-```bash
-apps
-└── v4
-    └── registry
-        └── new-york-v4
-            ├── example
-            └── ui
-```
-
-When adding or modifying components, please ensure that:
-
-1. You make the changes for every style.
-2. You update the documentation.
-3. You run `pnpm registry:build` to update the registry.
-
-## Commit Convention
-
-Before you create a Pull Request, please check whether your commits comply with
-the commit conventions used in this repository.
-
-When you create a commit we kindly ask you to follow the convention
-`category(scope or module): message` in your commit message while using one of
-the following categories:
-
-- `feat / feature`: all changes that introduce completely new code or new
-  features
-- `fix`: changes that fix a bug (ideally you will additionally reference an
-  issue if present)
-- `refactor`: any code related change that is not a fix nor a feature
-- `docs`: changing existing or creating new documentation (i.e. README, docs for
-  usage of a lib or cli usage)
-- `build`: all changes regarding the build of the software, changes to
-  dependencies or the addition of new dependencies
-- `test`: all changes regarding tests (adding new tests or changing existing
-  ones)
-- `ci`: all changes regarding the configuration of continuous integration (i.e.
-  github actions, ci system)
-- `chore`: all changes to the repository that do not fit into any of the above
-  categories
-
-  e.g. `feat(components): add new prop to the avatar component`
-
-If you are interested in the detailed specification you can visit
-https://www.conventionalcommits.org/ or check out the
-[Angular Commit Message Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
-
-## Requests for new components
-
-If you have a request for a new component, please open a discussion on GitHub. We'll be happy to help you out.
-
-## CLI
-
-The `shadcn` package is a CLI for adding components to your project.
-
-Any changes to the CLI should be made in the `packages/shadcn` directory. If you can, it would be great if you could add tests for your changes.
-
-## Testing
-
-Tests are written using [Vitest](https://vitest.dev). You can run all the tests from the root of the repository.
+## Running tests
 
 ```bash
 pnpm test
 ```
-
-Please ensure that the tests are passing when submitting a pull request. If you're adding new features, please include tests.

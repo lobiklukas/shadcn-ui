@@ -21,7 +21,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://force-ui.com/docs/components/svelte/separator"
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/separator"
     }
   },
   "type": "registry:ui"

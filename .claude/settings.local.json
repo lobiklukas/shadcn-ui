@@ -4,7 +4,22 @@
       "Bash(grep -E \"\\\\.\\(ts|tsx|js|json\\)$\")",
       "Bash(jq '.files[0].content' -r)",
       "Bash(grep:*)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "Bash(ls:*)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); [print\\(k,v\\) for k,v in d.get\\('scripts',{}\\).items\\(\\)]\")",
+      "Bash(git describe *)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\({k: d[k] for k in ['dependencies','devDependencies','peerDependencies'] if k in d}, indent=2\\)\\)\")",
+      "Bash(node *)",
+      "Bash(pnpm install *)",
+      "Bash(npx tsc *)",
+      "Bash(xargs -I {} basename {})",
+      "Bash(git checkout *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(cp -r /opt/dev/shadcn-force-ui/apps/v4/registry/bases/vue/. /opt/dev/shadcn-force-ui/packages/registry-vue/)",
+      "Bash(cp -r /opt/dev/shadcn-force-ui/apps/v4/registry/bases/svelte/. /opt/dev/shadcn-force-ui/packages/registry-svelte/)",
+      "Bash(git fetch *)",
+      "Bash(git stash *)"
     ]
   }
 }

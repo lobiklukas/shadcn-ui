@@ -69,6 +69,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/accordion",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/accordion-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -80,6 +86,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/alert-dialog",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/alert-dialog-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -95,6 +107,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/alert",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/alert-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -106,6 +124,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/aspect-ratio",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/aspect-ratio-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -121,6 +145,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/avatar",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/avatar-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -136,6 +166,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/badge",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/badge-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -147,6 +183,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/breadcrumb",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/breadcrumb-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -162,6 +204,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/button-group",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/button-group-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -177,6 +225,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/button",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/button-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -188,6 +242,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/card",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/card-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -199,6 +259,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/checkbox",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/checkbox-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -210,6 +276,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/collapsible",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/collapsible-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -225,6 +297,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/command",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/command-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -241,6 +319,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/context-menu",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/context-menu-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -252,6 +336,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/dialog",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/dialog-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -268,6 +358,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/dropdown-menu",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/dropdown-menu-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -283,6 +379,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/empty",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/empty-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -298,6 +400,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/field",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/field-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -313,6 +421,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/hover-card",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/hover-card-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -328,6 +442,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/input-group",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-group-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -339,6 +459,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/input-otp",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-otp-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -350,6 +476,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/input",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/input-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -365,6 +497,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/item",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/item-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -376,6 +514,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/kbd",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/kbd-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -387,6 +531,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/label",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/label-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -398,6 +548,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/native-select",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/native-select-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -409,6 +565,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/pagination",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/pagination-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -425,6 +587,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/popover",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/popover-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -436,6 +604,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/progress",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/progress-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -447,6 +621,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/radio-group",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/radio-group-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -458,6 +638,11 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/scroll-area"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -474,6 +659,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/select",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/select-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -485,6 +676,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/separator",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/separator-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -496,6 +693,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/sheet",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/sheet-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -515,6 +718,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/sidebar",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/sidebar-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -526,6 +735,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/skeleton",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/skeleton-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -537,6 +752,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/slider",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/slider-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -552,6 +773,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/sonner",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/sonner-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -563,6 +790,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/spinner",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/spinner-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -574,6 +807,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/switch",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/switch-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -585,6 +824,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/table",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/table-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -596,6 +841,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/tabs",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/tabs-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -607,6 +858,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/textarea",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/textarea-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -622,6 +879,11 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/toggle-group"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -637,6 +899,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/toggle",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/toggle-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {
@@ -652,6 +920,12 @@
           "type": "registry:ui"
         }
       ],
+      "meta": {
+        "links": {
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/ember/tooltip",
+          "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/ember/examples/tooltip-demo.gts"
+        }
+      },
       "type": "registry:ui"
     },
     {

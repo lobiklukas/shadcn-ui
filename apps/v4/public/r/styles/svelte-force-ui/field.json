@@ -65,7 +65,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://force-ui.com/docs/components/svelte/field"
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/field"
     }
   },
   "type": "registry:ui"

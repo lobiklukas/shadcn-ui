@@ -23,7 +23,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://force-ui.com/docs/components/svelte/kbd"
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/kbd"
     }
   },
   "type": "registry:ui"

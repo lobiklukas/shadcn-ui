@@ -18,7 +18,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://force-ui.com/docs/components/svelte/skeleton"
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/skeleton"
     }
   },
   "type": "registry:ui"

@@ -46,7 +46,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://force-ui.com/docs/components/svelte/avatar"
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/avatar"
     }
   },
   "type": "registry:ui"

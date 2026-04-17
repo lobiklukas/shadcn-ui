@@ -10,7 +10,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://ui.shadcn.com/docs/components/radix/direction",
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/direction",
       "api": "https://www.radix-ui.com/primitives/docs/utilities/direction-provider.md"
     }
   },

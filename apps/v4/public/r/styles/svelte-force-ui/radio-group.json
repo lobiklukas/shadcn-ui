@@ -26,7 +26,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://force-ui.com/docs/components/svelte/radio-group"
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/radio-group"
     }
   },
   "type": "registry:ui"

@@ -1,0 +1,13 @@
+{
+  "name": "@force-ui/theme",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Force UI brand tokens and theme definition for shadcn registry",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "peerDependencies": {
+    "shadcn": "workspace:*"
+  }
+}

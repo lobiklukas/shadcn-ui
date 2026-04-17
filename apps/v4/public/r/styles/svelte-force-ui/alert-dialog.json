@@ -77,7 +77,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://force-ui.com/docs/components/svelte/alert-dialog"
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/alert-dialog"
     }
   },
   "type": "registry:ui"

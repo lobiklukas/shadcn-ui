@@ -48,7 +48,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://force-ui.com/docs/components/svelte/breadcrumb"
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/breadcrumb"
     }
   },
   "type": "registry:ui"

@@ -48,7 +48,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://force-ui.com/docs/components/svelte/card"
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/card"
     }
   },
   "type": "registry:ui"
