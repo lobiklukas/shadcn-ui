@@ -656,6 +656,24 @@ importers:
         specifier: ^3.25.76
         version: 3.25.76
 
+  packages/registry-svelte:
+    dependencies:
+      shadcn:
+        specifier: workspace:*
+        version: link:../shadcn
+      zod:
+        specifier: ^3.25.76
+        version: 3.25.76
+
+  packages/registry-vue:
+    dependencies:
+      shadcn:
+        specifier: workspace:*
+        version: link:../shadcn
+      zod:
+        specifier: ^3.25.76
+        version: 3.25.76
+
   packages/shadcn:
     dependencies:
       '@babel/core':
