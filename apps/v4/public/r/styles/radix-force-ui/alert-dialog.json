@@ -13,8 +13,8 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://ui.shadcn.com/docs/components/radix/alert-dialog",
-      "examples": "https://raw.githubusercontent.com/shadcn-ui/ui/refs/heads/main/apps/v4/registry/bases/radix/examples/alert-dialog-example.tsx",
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/alert-dialog",
+      "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/alert-dialog-example.tsx",
       "api": "https://www.radix-ui.com/primitives/docs/components/alert-dialog.md"
     }
   },

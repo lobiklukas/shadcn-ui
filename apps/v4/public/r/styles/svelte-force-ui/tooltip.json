@@ -41,7 +41,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://force-ui.com/docs/components/svelte/tooltip"
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/tooltip"
     }
   },
   "type": "registry:ui"

@@ -10,8 +10,8 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://ui.shadcn.com/docs/components/radix/aspect-ratio",
-      "examples": "https://raw.githubusercontent.com/shadcn-ui/ui/refs/heads/main/apps/v4/registry/bases/radix/examples/aspect-ratio-example.tsx",
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/aspect-ratio",
+      "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/aspect-ratio-example.tsx",
       "api": "https://www.radix-ui.com/primitives/docs/components/aspect-ratio.md"
     }
   },

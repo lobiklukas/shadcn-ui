@@ -71,7 +71,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://force-ui.com/docs/components/svelte/drawer"
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/drawer"
     }
   },
   "type": "registry:ui"

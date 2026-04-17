@@ -18,7 +18,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://force-ui.com/docs/components/svelte/textarea"
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/textarea"
     }
   },
   "type": "registry:ui"

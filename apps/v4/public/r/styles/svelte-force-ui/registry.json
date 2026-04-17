@@ -72,7 +72,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/accordion"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/accordion"
         }
       },
       "type": "registry:ui"
@@ -104,7 +104,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/alert"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/alert"
         }
       },
       "type": "registry:ui"
@@ -169,7 +169,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/alert-dialog"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/alert-dialog"
         }
       },
       "type": "registry:ui"
@@ -189,7 +189,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/aspect-ratio"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/aspect-ratio"
         }
       },
       "type": "registry:ui"
@@ -230,7 +230,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/avatar"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/avatar"
         }
       },
       "type": "registry:ui"
@@ -250,7 +250,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/badge"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/badge"
         }
       },
       "type": "registry:ui"
@@ -294,7 +294,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/breadcrumb"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/breadcrumb"
         }
       },
       "type": "registry:ui"
@@ -314,7 +314,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/button"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/button"
         }
       },
       "type": "registry:ui"
@@ -342,7 +342,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/button-group"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/button-group"
         }
       },
       "type": "registry:ui"
@@ -431,7 +431,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/calendar"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/calendar"
         }
       },
       "type": "registry:ui"
@@ -475,7 +475,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/card"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/card"
         }
       },
       "type": "registry:ui"
@@ -516,7 +516,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/carousel"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/carousel"
         }
       },
       "type": "registry:ui"
@@ -548,7 +548,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/chart"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/chart"
         }
       },
       "type": "registry:ui"
@@ -569,7 +569,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/checkbox"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/checkbox"
         }
       },
       "type": "registry:ui"
@@ -597,7 +597,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/collapsible"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/collapsible"
         }
       },
       "type": "registry:ui"
@@ -658,7 +658,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/command"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/command"
         }
       },
       "type": "registry:ui"
@@ -739,7 +739,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/context-menu"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/context-menu"
         }
       },
       "type": "registry:ui"
@@ -796,7 +796,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/dialog"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/dialog"
         }
       },
       "type": "registry:ui"
@@ -857,7 +857,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/drawer"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/drawer"
         }
       },
       "type": "registry:ui"
@@ -942,7 +942,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/dropdown-menu"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/dropdown-menu"
         }
       },
       "type": "registry:ui"
@@ -982,7 +982,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/empty"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/empty"
         }
       },
       "type": "registry:ui"
@@ -1038,7 +1038,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/field"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/field"
         }
       },
       "type": "registry:ui"
@@ -1071,7 +1071,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/hover-card"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/hover-card"
         }
       },
       "type": "registry:ui"
@@ -1091,7 +1091,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/input"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/input"
         }
       },
       "type": "registry:ui"
@@ -1131,7 +1131,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/input-group"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/input-group"
         }
       },
       "type": "registry:ui"
@@ -1164,7 +1164,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/input-otp"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/input-otp"
         }
       },
       "type": "registry:ui"
@@ -1220,7 +1220,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/item"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/item"
         }
       },
       "type": "registry:ui"
@@ -1244,7 +1244,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/kbd"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/kbd"
         }
       },
       "type": "registry:ui"
@@ -1265,7 +1265,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/label"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/label"
         }
       },
       "type": "registry:ui"
@@ -1350,7 +1350,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/menubar"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/menubar"
         }
       },
       "type": "registry:ui"
@@ -1378,7 +1378,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/native-select"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/native-select"
         }
       },
       "type": "registry:ui"
@@ -1427,7 +1427,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/navigation-menu"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/navigation-menu"
         }
       },
       "type": "registry:ui"
@@ -1480,7 +1480,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/pagination"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/pagination"
         }
       },
       "type": "registry:ui"
@@ -1529,7 +1529,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/popover"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/popover"
         }
       },
       "type": "registry:ui"
@@ -1550,7 +1550,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/progress"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/progress"
         }
       },
       "type": "registry:ui"
@@ -1575,7 +1575,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/radio-group"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/radio-group"
         }
       },
       "type": "registry:ui"
@@ -1664,7 +1664,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/range-calendar"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/range-calendar"
         }
       },
       "type": "registry:ui"
@@ -1689,7 +1689,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/resizable"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/resizable"
         }
       },
       "type": "registry:ui"
@@ -1714,7 +1714,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/scroll-area"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/scroll-area"
         }
       },
       "type": "registry:ui"
@@ -1775,7 +1775,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/select"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/select"
         }
       },
       "type": "registry:ui"
@@ -1796,7 +1796,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/separator"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/separator"
         }
       },
       "type": "registry:ui"
@@ -1853,7 +1853,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/sheet"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/sheet"
         }
       },
       "type": "registry:ui"
@@ -1978,7 +1978,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/sidebar"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/sidebar"
         }
       },
       "type": "registry:ui"
@@ -1998,7 +1998,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/skeleton"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/skeleton"
         }
       },
       "type": "registry:ui"
@@ -2019,7 +2019,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/slider"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/slider"
         }
       },
       "type": "registry:ui"
@@ -2039,7 +2039,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/sonner"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/sonner"
         }
       },
       "type": "registry:ui"
@@ -2059,7 +2059,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/spinner"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/spinner"
         }
       },
       "type": "registry:ui"
@@ -2080,7 +2080,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/switch"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/switch"
         }
       },
       "type": "registry:ui"
@@ -2128,7 +2128,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/table"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/table"
         }
       },
       "type": "registry:ui"
@@ -2161,7 +2161,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/tabs"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/tabs"
         }
       },
       "type": "registry:ui"
@@ -2181,7 +2181,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/textarea"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/textarea"
         }
       },
       "type": "registry:ui"
@@ -2202,7 +2202,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/toggle"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/toggle"
         }
       },
       "type": "registry:ui"
@@ -2227,7 +2227,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/toggle-group"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/toggle-group"
         }
       },
       "type": "registry:ui"
@@ -2264,7 +2264,7 @@
       ],
       "meta": {
         "links": {
-          "docs": "https://force-ui.com/docs/components/svelte/tooltip"
+          "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/tooltip"
         }
       },
       "type": "registry:ui"

@@ -147,7 +147,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://force-ui.com/docs/components/svelte/sidebar"
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/sidebar"
     }
   },
   "type": "registry:ui"

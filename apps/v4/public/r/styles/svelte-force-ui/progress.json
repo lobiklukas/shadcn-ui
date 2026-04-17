@@ -21,7 +21,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://force-ui.com/docs/components/svelte/progress"
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/progress"
     }
   },
   "type": "registry:ui"

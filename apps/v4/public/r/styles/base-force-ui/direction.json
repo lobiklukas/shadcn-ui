@@ -13,7 +13,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://ui.shadcn.com/docs/components/base/direction",
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/base/direction",
       "api": "https://base-ui.com/react/utils/direction-provider.md"
     }
   },

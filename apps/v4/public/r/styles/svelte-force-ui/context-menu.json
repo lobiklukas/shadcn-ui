@@ -96,7 +96,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://force-ui.com/docs/components/svelte/context-menu"
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/context-menu"
     }
   },
   "type": "registry:ui"

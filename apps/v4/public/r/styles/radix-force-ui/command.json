@@ -17,8 +17,8 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://ui.shadcn.com/docs/components/radix/command",
-      "examples": "https://raw.githubusercontent.com/shadcn-ui/ui/refs/heads/main/apps/v4/registry/bases/radix/examples/command-example.tsx",
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/radix/command",
+      "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/command-example.tsx",
       "api": "https://github.com/dip/cmdk"
     }
   },

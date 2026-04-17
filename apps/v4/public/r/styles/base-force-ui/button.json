@@ -10,8 +10,8 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://ui.shadcn.com/docs/components/base/button",
-      "examples": "https://raw.githubusercontent.com/shadcn-ui/ui/refs/heads/main/apps/v4/registry/bases/base/examples/button-example.tsx"
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/base/button",
+      "examples": "https://raw.githubusercontent.com/lobiklukas/shadcn-ui/refs/heads/main/apps/v4/registry/bases/base/examples/button-example.tsx"
     }
   },
   "type": "registry:ui"

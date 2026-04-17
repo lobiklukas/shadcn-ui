@@ -21,7 +21,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://force-ui.com/docs/components/svelte/toggle"
+      "docs": "https://shadcn-force-ui.vercel.app/docs/components/svelte/toggle"
     }
   },
   "type": "registry:ui"
