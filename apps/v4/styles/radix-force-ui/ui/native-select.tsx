@@ -14,17 +14,14 @@ function NativeSelect({
 }: NativeSelectProps) {
   return (
     <div
-      className={cn(
-        "group/native-select relative w-fit has-[select:disabled]:opacity-50",
-        className
-      )}
+      className={cn("group/native-select relative w-fit", className)}
       data-slot="native-select-wrapper"
       data-size={size}
     >
       <select
         data-slot="native-select"
         data-size={size}
-        className="h-8 w-full min-w-0 appearance-none rounded-lg border border-input bg-transparent py-1 pr-8 pl-2.5 text-sm transition-colors outline-none select-none selection:bg-primary selection:text-primary-foreground placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] data-[size=sm]:py-0.5 dark:bg-input/30 dark:hover:bg-input/50 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40"
+        className="h-10 w-full min-w-0 appearance-none rounded-md border border-input bg-background py-2 pr-8 pl-3 text-sm text-foreground transition-[color,background-color,border-color,box-shadow] outline-none select-none selection:bg-primary selection:text-primary-foreground placeholder:text-tertiary hover:border-border-strong focus-visible:border-ring focus-visible:shadow-focus-ring disabled:pointer-events-none disabled:cursor-not-allowed disabled:border-input disabled:bg-muted disabled:text-muted-foreground disabled:opacity-100 aria-invalid:border-border-error aria-invalid:shadow-focus-ring-error data-[size=sm]:h-8 data-[size=sm]:rounded-md data-[size=sm]:py-1"
         {...props}
       />
       <ChevronDownIcon

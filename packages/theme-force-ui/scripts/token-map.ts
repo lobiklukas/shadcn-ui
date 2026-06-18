@@ -75,7 +75,12 @@ export const SHADCN_VARS: Record<string, string> = {
 export const FORCE_EXTRAS: Record<string, string> = {
   // Interactive states
   "primary-hover": "color.bg.primary-hover",
+  "primary-active": "color.bg.primary-active",
   "primary-subtle": "color.bg.primary-subtle",
+  "interactive-hover": "color.bg.interactive-hover",
+  overlay: "color.bg.overlay",
+  "destructive-hover": "color.bg.destructive-hover",
+  "destructive-active": "color.bg.destructive-active",
   link: "color.text.link",
   tertiary: "color.text.tertiary",
 
@@ -113,6 +118,10 @@ export const FORCE_EXTRAS: Record<string, string> = {
   // Text selection highlight
   selection: "color.bg.primary",
   "selection-foreground": "color.text.on-primary",
+
+  // Border helpers for component internals
+  "border-strong": "color.border.strong",
+  "border-error": "color.border.error",
 }
 
 // ── Theme-specific literals ───────────────────────────────────────────────────
@@ -197,7 +206,12 @@ export const TAILWIND_THEME: Record<string, string> = {
 
   // Force-specific color utilities
   "color-primary-hover": "var(--primary-hover)",
+  "color-primary-active": "var(--primary-active)",
   "color-primary-subtle": "var(--primary-subtle)",
+  "color-interactive-hover": "var(--interactive-hover)",
+  "color-overlay": "var(--overlay)",
+  "color-destructive-hover": "var(--destructive-hover)",
+  "color-destructive-active": "var(--destructive-active)",
   "color-link": "var(--link)",
   "color-tertiary": "var(--tertiary)",
   "color-warning": "var(--warning)",
@@ -217,6 +231,8 @@ export const TAILWIND_THEME: Record<string, string> = {
   "color-on-error": "var(--on-error)",
   "color-chart-6": "var(--chart-6)",
   "color-surface": "var(--surface)",
+  "color-border-strong": "var(--border-strong)",
+  "color-border-error": "var(--border-error)",
   "color-surface-foreground": "var(--surface-foreground)",
   "color-code": "var(--code)",
   "color-code-foreground": "var(--code-foreground)",
