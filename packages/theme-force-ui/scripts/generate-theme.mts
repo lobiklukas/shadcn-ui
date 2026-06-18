@@ -2,17 +2,15 @@
  * Force UI theme generator
  *
  * Reads src/generated/tokens.ts (resolved Force Design Spec values) and
- * scripts/token-map.ts (the mapping config), then writes src/index.ts.
+ * scripts/token-map.ts (the mapping config), then writes:
+ *
+ *   - src/index.ts                 shadcn RegistryItem theme definition
+ *   - src/generated/runtime.css    shared runtime CSS for apps/previews
  *
  * Usage: pnpm generate-theme
- *
- * Output: src/index.ts — a RegistryItem with three cssVars sections:
- *   theme   @theme inline entries (Tailwind utility → CSS var)
- *   light   :root variables  (shadcn vars + Force extras + --force-* layer)
- *   dark    .dark variables  (same keys, dark-mode overrides applied)
  */
 
-import { writeFileSync } from "node:fs"
+import { existsSync, mkdirSync, writeFileSync } from "node:fs"
 import { resolve, dirname } from "node:path"
 import { fileURLToPath } from "node:url"
 
@@ -28,8 +26,13 @@ import {
 
 const __dir = dirname(fileURLToPath(import.meta.url))
 const pkgRoot = resolve(__dir, "..")
+const generatedDir = resolve(pkgRoot, "src/generated")
 
-// ── Shadow serialiser ─────────────────────────────────────────────────────────
+if (!existsSync(generatedDir)) {
+  mkdirSync(generatedDir, { recursive: true })
+}
+
+// ── Value serialisers ────────────────────────────────────────────────────────
 
 type ShadowLayer = {
   offsetX: string
@@ -37,6 +40,18 @@ type ShadowLayer = {
   blur: string
   spread: string
   color: string
+}
+
+function isShadowLayer(value: unknown): value is ShadowLayer {
+  return !!value && typeof value === "object" && "offsetX" in value && "offsetY" in value
+}
+
+function quoteFontFamily(value: string): string {
+  if (value.startsWith("var(")) return value
+  if (value.includes(" ") || value === "-apple-system") {
+    return `'${value.replaceAll("'", "\\'")}'`
+  }
+  return value
 }
 
 function shadowToCss(layers: ShadowLayer[]): string {
@@ -47,9 +62,29 @@ function shadowToCss(layers: ShadowLayer[]): string {
     .join(", ")
 }
 
-// ── Theme builder ─────────────────────────────────────────────────────────────
+function tokenValueToCss(tokenKey: string, value: unknown): string {
+  if (Array.isArray(value)) {
+    if (value.every(isShadowLayer)) {
+      return shadowToCss(value)
+    }
 
-type TokenMap = Record<string, any>
+    if (tokenKey.startsWith("font.family.")) {
+      return value.map((entry) => quoteFontFamily(String(entry))).join(", ")
+    }
+
+    if (tokenKey.startsWith("easing.")) {
+      return `cubic-bezier(${value.map(String).join(", ")})`
+    }
+
+    return value.map(String).join(", ")
+  }
+
+  return String(value)
+}
+
+// ── Theme builder ────────────────────────────────────────────────────────────
+
+type TokenMap = Record<string, unknown>
 
 function buildTheme(
   tokens: TokenMap,
@@ -65,7 +100,7 @@ function buildTheme(
       warnings++
       return
     }
-    out[varName] = value as string
+    out[varName] = tokenValueToCss(tokenKey, value)
   }
 
   // 1. Standard shadcn variables
@@ -92,46 +127,51 @@ function buildTheme(
   for (const size of ["xs", "sm", "md", "lg", "xl"]) {
     const key = `shadow.${size}`
     const layers = tokens[key]
-    if (Array.isArray(layers)) {
-      out[`elevation-${size}`] = shadowToCss(layers as ShadowLayer[])
+    if (Array.isArray(layers) && layers.every(isShadowLayer)) {
+      out[`elevation-${size}`] = shadowToCss(layers)
     }
   }
 
-  // 6. Base radius
-  out["radius"] = BASE_RADIUS
+  // 6. Base radius for the shadcn-compatible radius contract.
+  out.radius = BASE_RADIUS
 
-  // 7. Full --force-* raw token layer (all resolved color.* semantic tokens)
-  //    Gives component authors direct access to every Force semantic token.
-  //    Non-color tokens (spacing, font, etc.) are handled by Tailwind utilities.
+  // 7. Full --force-* raw token layer (all semantic tokens, not just color).
   for (const [tokenKey, value] of Object.entries(tokens)) {
-    if (!tokenKey.startsWith("color.")) continue
-    if (typeof value !== "string") continue
-    // "color.bg.surface" → "force-color-bg-surface"
-    out["force-" + tokenKey.replace(/\./g, "-")] = value
+    out[`force-${tokenKey.replace(/\./g, "-")}`] = tokenValueToCss(
+      tokenKey,
+      value,
+    )
+  }
+
+  if (warnings > 0) {
+    console.warn(`  ⚠  ${warnings} mapping warning(s) while building theme`)
   }
 
   return out
 }
 
-// ── Build both themes ─────────────────────────────────────────────────────────
+// ── Build both themes ────────────────────────────────────────────────────────
 
 const lightVars = buildTheme(light as TokenMap, THEME_SPECIFIC.light)
-const darkVars  = buildTheme(dark  as TokenMap, THEME_SPECIFIC.dark)
+const darkVars = buildTheme(dark as TokenMap, THEME_SPECIFIC.dark)
 
-// ── Render helpers ────────────────────────────────────────────────────────────
+// ── Render helpers ───────────────────────────────────────────────────────────
 
-function renderBlock(
-  vars: Record<string, string>,
-  indent: string,
-): string {
+function renderTsBlock(vars: Record<string, string>, indent: string): string {
   return Object.entries(vars)
-    .map(([k, v]) => `${indent}"${k}": "${v}",`)
+    .map(([k, v]) => `${indent}"${k}": ${JSON.stringify(v)},`)
     .join("\n")
 }
 
-// ── Write src/index.ts ────────────────────────────────────────────────────────
+function renderCssBlock(vars: Record<string, string>, indent: string): string {
+  return Object.entries(vars)
+    .map(([k, v]) => `${indent}--${k}: ${v};`)
+    .join("\n")
+}
 
-const output = `// [FORCE-UI] Generated — do not edit manually.
+// ── Write src/index.ts ───────────────────────────────────────────────────────
+
+const tsOutput = `// [FORCE-UI] Generated — do not edit manually.
 // Run: pnpm generate-theme
 // Source: packages/theme-force-ui/scripts/generate-theme.mts
 
@@ -144,29 +184,53 @@ export const forceUITheme: RegistryItem = {
   cssVars: {
     // @theme inline block — Tailwind utility → CSS var mapping
     theme: {
-${renderBlock(TAILWIND_THEME, "      ")}
+${renderTsBlock(TAILWIND_THEME, "      ")}
     },
     // :root — light theme values
     light: {
-${renderBlock(lightVars, "      ")}
+${renderTsBlock(lightVars, "      ")}
     },
     // .dark — dark theme overrides
     dark: {
-${renderBlock(darkVars, "      ")}
+${renderTsBlock(darkVars, "      ")}
     },
   },
 }
 `
 
-writeFileSync(resolve(pkgRoot, "src/index.ts"), output)
+writeFileSync(resolve(pkgRoot, "src/index.ts"), tsOutput)
 
-// ── Summary ───────────────────────────────────────────────────────────────────
+// ── Write shared runtime CSS ─────────────────────────────────────────────────
+
+const runtimeCss = `/* [FORCE-UI] Generated — do not edit manually. */
+/* Run: pnpm generate-theme */
+/* Source: packages/theme-force-ui/scripts/generate-theme.mts */
+
+@theme inline {
+${renderCssBlock(TAILWIND_THEME, "  ")}
+}
+
+:root {
+${renderCssBlock(lightVars, "  ")}
+}
+
+.dark {
+${renderCssBlock(darkVars, "  ")}
+}
+`
+
+writeFileSync(resolve(generatedDir, "runtime.css"), runtimeCss)
+
+// ── Summary ──────────────────────────────────────────────────────────────────
 
 const forceCount = Object.keys(lightVars).filter((k) =>
   k.startsWith("force-"),
 ).length
 
 console.log("✓  src/index.ts written")
+console.log("✓  src/generated/runtime.css written")
 console.log(`   @theme inline  ${Object.keys(TAILWIND_THEME).length} entries`)
-console.log(`   :root          ${Object.keys(lightVars).length} variables  (${forceCount} --force-* raw tokens)`)
+console.log(
+  `   :root          ${Object.keys(lightVars).length} variables  (${forceCount} --force-* raw tokens)`,
+)
 console.log(`   .dark          ${Object.keys(darkVars).length} variables`)
