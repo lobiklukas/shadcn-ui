@@ -4,18 +4,18 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const alertVariants = cva(
-  "group/alert relative grid w-full gap-0.5 rounded-lg border px-2.5 py-2 text-start text-sm has-data-[slot=alert-action]:relative has-data-[slot=alert-action]:pe-18 has-[>svg]:grid-cols-[auto_1fr] has-[>svg]:gap-x-2 *:[svg]:row-span-2 *:[svg]:translate-y-0.5 *:[svg]:text-current *:[svg:not([class*='size-'])]:size-4",
+  "group/alert relative grid w-full gap-1 rounded-lg border border-s-4 border-border px-4 py-4 text-start text-sm has-data-[slot=alert-action]:relative has-data-[slot=alert-action]:pe-18 has-[>svg]:grid-cols-[auto_1fr] has-[>svg]:gap-x-3 *:[svg]:row-span-2 *:[svg]:translate-y-0.5 *:[svg]:text-current *:[svg:not([class*='size-'])]:size-4",
   {
     variants: {
       variant: {
-        default: "bg-card text-card-foreground",
+        default: "border-s-primary bg-primary-subtle text-primary",
         destructive:
-          "bg-error-subtle text-error [&_a]:text-error [&_a]:underline *:[svg]:text-current",
+          "border-s-destructive bg-error-subtle text-error [&_a]:text-error [&_a]:underline *:[svg]:text-current",
         warning:
-          "bg-warning-subtle text-warning [&_a]:text-warning [&_a]:underline *:[svg]:text-current", // [FORCE-UI]
+          "border-s-warning bg-warning-subtle text-warning [&_a]:text-warning [&_a]:underline *:[svg]:text-current", // [FORCE-UI]
         success:
-          "bg-success-subtle text-success [&_a]:text-success [&_a]:underline *:[svg]:text-current", // [FORCE-UI]
-        info: "bg-info-subtle text-info [&_a]:text-info [&_a]:underline *:[svg]:text-current", // [FORCE-UI]
+          "border-s-success bg-success-subtle text-success [&_a]:text-success [&_a]:underline *:[svg]:text-current", // [FORCE-UI]
+        info: "border-s-info bg-info-subtle text-info [&_a]:text-info [&_a]:underline *:[svg]:text-current", // [FORCE-UI]
       },
     },
     defaultVariants: {
@@ -44,7 +44,7 @@ function AlertTitle({ className, ...props }: React.ComponentProps<"div">) {
     <div
       data-slot="alert-title"
       className={cn(
-        "font-medium group-has-[>svg]/alert:col-start-2 [&_a]:underline [&_a]:underline-offset-3 [&_a]:hover:text-foreground",
+        "leading-tight font-medium group-has-[>svg]/alert:col-start-2 [&_a]:underline [&_a]:underline-offset-3 [&_a]:hover:text-foreground",
         className
       )}
       {...props}
@@ -60,7 +60,7 @@ function AlertDescription({
     <div
       data-slot="alert-description"
       className={cn(
-        "text-sm text-balance text-muted-foreground md:text-pretty [&_a]:underline [&_a]:underline-offset-3 [&_a]:hover:text-foreground [&_p:not(:last-child)]:mb-4",
+        "text-sm leading-normal group-has-[>svg]/alert:col-start-2 [&_a]:underline [&_a]:underline-offset-3 [&_a]:hover:text-foreground [&_p:not(:last-child)]:mb-3",
         className
       )}
       {...props}
@@ -72,7 +72,7 @@ function AlertAction({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="alert-action"
-      className={cn("absolute end-2 top-2", className)}
+      className={cn("absolute end-3 top-3", className)}
       {...props}
     />
   )

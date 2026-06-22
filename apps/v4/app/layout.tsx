@@ -90,7 +90,7 @@ export default function RootLayout({
       </head>
       <body
         className={cn(
-          "group/body overscroll-none antialiased [--footer-height:calc(var(--spacing)*14)] [--header-height:calc(var(--spacing)*14)] lg:[--header-height:calc(var(--spacing)*16)] xl:[--footer-height:calc(var(--spacing)*24)]"
+          "group/body relative isolate overscroll-none antialiased [--footer-height:calc(var(--spacing)*14)] [--header-height:calc(var(--spacing)*14)] lg:[--header-height:calc(var(--spacing)*16)] xl:[--footer-height:calc(var(--spacing)*24)]"
         )}
       >
         <ThemeProvider>
@@ -99,7 +99,7 @@ export default function RootLayout({
               <BaseTooltipProvider delay={0}>
                 <RadixTooltipProvider delayDuration={0}>
                   {children}
-                  <Toaster position="top-center" />
+                  <Toaster position="bottom-right" />
                 </RadixTooltipProvider>
               </BaseTooltipProvider>
             </NuqsAdapter>
