@@ -279,4 +279,17 @@ export const ui: Registry["items"] = [
       },
     },
   },
+  {
+    name: "breadcrumb",
+    type: "registry:ui",
+    files: [
+      { path: "ui/breadcrumb/breadcrumb.component.ts", type: "registry:ui" },
+      { path: "ui/breadcrumb/breadcrumb-separator.component.html", type: "registry:ui" },
+      { path: "ui/breadcrumb/breadcrumb-ellipsis.component.html", type: "registry:ui" },
+      { path: "ui/breadcrumb/breadcrumb.component.html", type: "registry:ui" },
+      { path: "ui/breadcrumb/breadcrumb.icons.ts", type: "registry:ui" },
+      { path: "ui/breadcrumb/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/breadcrumb" } },
+  },
 ]
