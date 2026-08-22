@@ -125,6 +125,185 @@ export const examples: Registry["items"] = [
     ],
   },
   {
+    name: "attachment-example",
+    title: "Attachment",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/attachment/AttachmentDemo.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/attachment/AttachmentGroupDemo.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/attachment/AttachmentImage.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/attachment/AttachmentSizes.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/attachment/AttachmentStates.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/attachment/AttachmentTrigger.vue",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "attachment",
+      "button",
+      "dialog",
+      "spinner",
+    ],
+    dependencies: [
+      "@material-symbols/svg-400",
+    ],
+  },
+  {
+    name: "bubble-example",
+    title: "Bubble",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/bubble/BubbleAlignment.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/bubble/BubbleCollapsible.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/bubble/BubbleDemo.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/bubble/BubbleGroupDemo.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/bubble/BubbleLinkButton.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/bubble/BubblePopover.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/bubble/BubbleReactions.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/bubble/BubbleTooltip.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/bubble/BubbleVariants.vue",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "bubble",
+      "button",
+      "collapsible",
+      "popover",
+      "tooltip",
+    ],
+    dependencies: [],
+  },
+  {
+    name: "marker-example",
+    title: "Marker",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/marker/MarkerBorder.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/marker/MarkerDemo.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/marker/MarkerIcon.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/marker/MarkerLinkButton.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/marker/MarkerSeparator.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/marker/MarkerShimmer.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/marker/MarkerStatus.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/marker/MarkerVariants.vue",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "marker",
+      "spinner",
+    ],
+    dependencies: [
+      "@material-symbols/svg-400",
+    ],
+  },
+  {
+    name: "message-example",
+    title: "Message",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/message/MessageActions.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/message/MessageAttachment.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/message/MessageAvatar.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/message/MessageDemo.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/message/MessageGroup.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/message/MessageHeaderFooter.vue",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: [
+      "attachment",
+      "avatar",
+      "bubble",
+      "button",
+      "marker",
+      "message",
+    ],
+    dependencies: [
+      "@material-symbols/svg-400",
+    ],
+  },
+  {
     name: "breadcrumb-example",
     title: "Breadcrumb",
     type: "registry:example",
