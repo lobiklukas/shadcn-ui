@@ -386,6 +386,7 @@ export const FRAMEWORK_COMPONENTS: Record<string, Set<string>> = {
     "aspect-ratio",
     "avatar",
     "badge",
+    "breadcrumb",
     "button",
     "card",
     "empty",
