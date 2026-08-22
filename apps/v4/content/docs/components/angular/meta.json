@@ -17,12 +17,16 @@
     "item",
     "kbd",
     "label",
+    "native-select",
     "progress",
+    "resizable",
+    "scroll-area",
     "separator",
     "skeleton",
     "slider",
     "spinner",
     "stepper",
+    "table",
     "textarea"
   ]
 }
