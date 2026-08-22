@@ -437,4 +437,52 @@ export const ui: Registry["items"] = [
     ],
     meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/native-select" } },
   },
+  {
+    name: "dialog",
+    type: "registry:ui",
+    dependencies: ["@radix-ng/primitives"],
+    files: [
+      { path: "ui/dialog/dialog.component.ts", type: "registry:ui" },
+      { path: "ui/dialog/dialog.component.html", type: "registry:ui" },
+      { path: "ui/dialog/dialog.icons.ts", type: "registry:ui" },
+      { path: "ui/dialog/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/dialog" } },
+  },
+  {
+    name: "alert-dialog",
+    type: "registry:ui",
+    dependencies: ["@radix-ng/primitives"],
+    files: [
+      { path: "ui/alert-dialog/alert-dialog.component.ts", type: "registry:ui" },
+      { path: "ui/alert-dialog/alert-dialog.component.html", type: "registry:ui" },
+      { path: "ui/alert-dialog/alert-dialog.variants.ts", type: "registry:ui" },
+      { path: "ui/alert-dialog/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/alert-dialog" } },
+  },
+  {
+    name: "sheet",
+    type: "registry:ui",
+    dependencies: ["@radix-ng/primitives"],
+    files: [
+      { path: "ui/sheet/sheet.component.ts", type: "registry:ui" },
+      { path: "ui/sheet/sheet.component.html", type: "registry:ui" },
+      { path: "ui/sheet/sheet.variants.ts", type: "registry:ui" },
+      { path: "ui/sheet/sheet.icons.ts", type: "registry:ui" },
+      { path: "ui/sheet/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/sheet" } },
+  },
+  {
+    name: "drawer",
+    type: "registry:ui",
+    dependencies: ["@radix-ng/primitives"],
+    files: [
+      { path: "ui/drawer/drawer.component.ts", type: "registry:ui" },
+      { path: "ui/drawer/drawer.component.html", type: "registry:ui" },
+      { path: "ui/drawer/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/drawer" } },
+  },
 ]
