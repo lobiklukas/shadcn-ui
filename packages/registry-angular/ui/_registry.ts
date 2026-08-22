@@ -485,4 +485,52 @@ export const ui: Registry["items"] = [
     ],
     meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/drawer" } },
   },
+  {
+    name: "popover",
+    type: "registry:ui",
+    dependencies: ["@radix-ng/primitives"],
+    files: [
+      { path: "ui/popover/popover.component.ts", type: "registry:ui" },
+      { path: "ui/popover/popover.component.html", type: "registry:ui" },
+      { path: "ui/popover/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/popover" } },
+  },
+  {
+    name: "tooltip",
+    type: "registry:ui",
+    dependencies: ["@radix-ng/primitives"],
+    files: [
+      { path: "ui/tooltip/tooltip.component.ts", type: "registry:ui" },
+      { path: "ui/tooltip/tooltip.component.html", type: "registry:ui" },
+      { path: "ui/tooltip/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/tooltip" } },
+  },
+  {
+    name: "hover-card",
+    type: "registry:ui",
+    dependencies: ["@radix-ng/primitives"],
+    files: [
+      { path: "ui/hover-card/hover-card.component.ts", type: "registry:ui" },
+      { path: "ui/hover-card/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/hover-card" } },
+  },
+  {
+    name: "dropdown-menu",
+    type: "registry:ui",
+    dependencies: ["@radix-ng/primitives"],
+    files: [
+      { path: "ui/dropdown-menu/dropdown-menu.component.ts", type: "registry:ui" },
+      { path: "ui/dropdown-menu/dropdown-menu.component.html", type: "registry:ui" },
+      { path: "ui/dropdown-menu/dropdown-menu-selectable.component.ts", type: "registry:ui" },
+      { path: "ui/dropdown-menu/dropdown-menu-sub.component.ts", type: "registry:ui" },
+      { path: "ui/dropdown-menu/dropdown-menu-sub.component.html", type: "registry:ui" },
+      { path: "ui/dropdown-menu/dropdown-menu.variants.ts", type: "registry:ui" },
+      { path: "ui/dropdown-menu/dropdown-menu.icons.ts", type: "registry:ui" },
+      { path: "ui/dropdown-menu/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/dropdown-menu" } },
+  },
 ]
