@@ -12,8 +12,10 @@
     "card",
     "dialog",
     "drawer",
+    "dropdown-menu",
     "empty",
     "field",
+    "hover-card",
     "input",
     "input-group",
     "input-otp",
@@ -21,6 +23,7 @@
     "kbd",
     "label",
     "native-select",
+    "popover",
     "progress",
     "resizable",
     "scroll-area",
@@ -31,6 +34,7 @@
     "spinner",
     "stepper",
     "table",
-    "textarea"
+    "textarea",
+    "tooltip"
   ]
 }

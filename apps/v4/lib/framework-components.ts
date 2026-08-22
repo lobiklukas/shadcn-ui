@@ -393,8 +393,10 @@ export const FRAMEWORK_COMPONENTS: Record<string, Set<string>> = {
     "card",
     "dialog",
     "drawer",
+    "dropdown-menu",
     "empty",
     "field",
+    "hover-card",
     "input",
     "input-group",
     "input-otp",
@@ -402,6 +404,7 @@ export const FRAMEWORK_COMPONENTS: Record<string, Set<string>> = {
     "kbd",
     "label",
     "native-select",
+    "popover",
     "progress",
     "resizable",
     "scroll-area",
@@ -413,6 +416,7 @@ export const FRAMEWORK_COMPONENTS: Record<string, Set<string>> = {
     "stepper",
     "table",
     "textarea",
+    "tooltip",
   ]),
 }
 
