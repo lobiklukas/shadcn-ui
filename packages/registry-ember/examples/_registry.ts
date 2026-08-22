@@ -3196,5 +3196,636 @@ export const examples: Registry["items"] = [
         "type": "registry:example"
       }
     ]
-  }
+  },
+  {
+    "name": "attachment-demo",
+    "title": "Attachment Demo",
+    "type": "registry:example",
+    "registryDependencies": [
+      "attachment",
+      "button",
+      "spinner"
+    ],
+    "files": [
+      {
+        "path": "examples/attachment-demo.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "attachment-group",
+    "title": "Attachment Group",
+    "type": "registry:example",
+    "registryDependencies": [
+      "attachment"
+    ],
+    "files": [
+      {
+        "path": "examples/attachment-group.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "attachment-image",
+    "title": "Attachment Image",
+    "type": "registry:example",
+    "registryDependencies": [
+      "attachment"
+    ],
+    "files": [
+      {
+        "path": "examples/attachment-image.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "attachment-sizes",
+    "title": "Attachment Sizes",
+    "type": "registry:example",
+    "registryDependencies": [
+      "attachment"
+    ],
+    "files": [
+      {
+        "path": "examples/attachment-sizes.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "attachment-states",
+    "title": "Attachment States",
+    "type": "registry:example",
+    "registryDependencies": [
+      "attachment",
+      "spinner"
+    ],
+    "files": [
+      {
+        "path": "examples/attachment-states.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "attachment-trigger",
+    "title": "Attachment Trigger",
+    "type": "registry:example",
+    "registryDependencies": [
+      "attachment",
+      "dialog"
+    ],
+    "files": [
+      {
+        "path": "examples/attachment-trigger.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "badge-destructive",
+    "title": "Badge Destructive",
+    "type": "registry:example",
+    "registryDependencies": [
+      "badge"
+    ],
+    "files": [
+      {
+        "path": "examples/badge-destructive.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "badge-outline",
+    "title": "Badge Outline",
+    "type": "registry:example",
+    "registryDependencies": [
+      "badge"
+    ],
+    "files": [
+      {
+        "path": "examples/badge-outline.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "badge-secondary",
+    "title": "Badge Secondary",
+    "type": "registry:example",
+    "registryDependencies": [
+      "badge"
+    ],
+    "files": [
+      {
+        "path": "examples/badge-secondary.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "badge-warning",
+    "title": "Badge Warning",
+    "type": "registry:example",
+    "registryDependencies": [
+      "badge"
+    ],
+    "files": [
+      {
+        "path": "examples/badge-warning.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "bubble-alignment",
+    "title": "Bubble Alignment",
+    "type": "registry:example",
+    "registryDependencies": [
+      "bubble"
+    ],
+    "files": [
+      {
+        "path": "examples/bubble-alignment.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "bubble-collapsible",
+    "title": "Bubble Collapsible",
+    "type": "registry:example",
+    "registryDependencies": [
+      "bubble",
+      "collapsible"
+    ],
+    "files": [
+      {
+        "path": "examples/bubble-collapsible.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "bubble-demo",
+    "title": "Bubble Demo",
+    "type": "registry:example",
+    "registryDependencies": [
+      "bubble"
+    ],
+    "files": [
+      {
+        "path": "examples/bubble-demo.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "bubble-group-demo",
+    "title": "Bubble Group Demo",
+    "type": "registry:example",
+    "registryDependencies": [
+      "bubble"
+    ],
+    "files": [
+      {
+        "path": "examples/bubble-group-demo.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "bubble-link-button",
+    "title": "Bubble Link Button",
+    "type": "registry:example",
+    "registryDependencies": [
+      "bubble"
+    ],
+    "files": [
+      {
+        "path": "examples/bubble-link-button.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "bubble-popover",
+    "title": "Bubble Popover",
+    "type": "registry:example",
+    "registryDependencies": [
+      "bubble",
+      "button",
+      "popover"
+    ],
+    "files": [
+      {
+        "path": "examples/bubble-popover.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "bubble-reactions",
+    "title": "Bubble Reactions",
+    "type": "registry:example",
+    "registryDependencies": [
+      "bubble"
+    ],
+    "files": [
+      {
+        "path": "examples/bubble-reactions.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "bubble-tooltip",
+    "title": "Bubble Tooltip",
+    "type": "registry:example",
+    "registryDependencies": [
+      "bubble",
+      "tooltip"
+    ],
+    "files": [
+      {
+        "path": "examples/bubble-tooltip.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "bubble-variants",
+    "title": "Bubble Variants",
+    "type": "registry:example",
+    "registryDependencies": [
+      "bubble"
+    ],
+    "files": [
+      {
+        "path": "examples/bubble-variants.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "button-loading",
+    "title": "Button Loading",
+    "type": "registry:example",
+    "registryDependencies": [
+      "button"
+    ],
+    "files": [
+      {
+        "path": "examples/button-loading.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "drawer-demo",
+    "title": "Drawer Demo",
+    "type": "registry:example",
+    "registryDependencies": [
+      "badge",
+      "button",
+      "drawer",
+      "field",
+      "radio-group"
+    ],
+    "files": [
+      {
+        "path": "examples/drawer-demo.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "drawer-dialog",
+    "title": "Drawer Dialog",
+    "type": "registry:example",
+    "registryDependencies": [
+      "button",
+      "dialog",
+      "drawer"
+    ],
+    "files": [
+      {
+        "path": "examples/drawer-dialog.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "drawer-sides",
+    "title": "Drawer Sides",
+    "type": "registry:example",
+    "registryDependencies": [
+      "button",
+      "drawer"
+    ],
+    "files": [
+      {
+        "path": "examples/drawer-sides.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "marker-border",
+    "title": "Marker Border",
+    "type": "registry:example",
+    "registryDependencies": [
+      "marker"
+    ],
+    "files": [
+      {
+        "path": "examples/marker-border.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "marker-demo",
+    "title": "Marker Demo",
+    "type": "registry:example",
+    "registryDependencies": [
+      "marker",
+      "spinner"
+    ],
+    "files": [
+      {
+        "path": "examples/marker-demo.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "marker-icon",
+    "title": "Marker Icon",
+    "type": "registry:example",
+    "registryDependencies": [
+      "marker"
+    ],
+    "files": [
+      {
+        "path": "examples/marker-icon.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "marker-link-button",
+    "title": "Marker Link Button",
+    "type": "registry:example",
+    "registryDependencies": [
+      "marker"
+    ],
+    "files": [
+      {
+        "path": "examples/marker-link-button.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "marker-separator",
+    "title": "Marker Separator",
+    "type": "registry:example",
+    "registryDependencies": [
+      "marker"
+    ],
+    "files": [
+      {
+        "path": "examples/marker-separator.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "marker-shimmer",
+    "title": "Marker Shimmer",
+    "type": "registry:example",
+    "registryDependencies": [
+      "marker"
+    ],
+    "files": [
+      {
+        "path": "examples/marker-shimmer.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "marker-status",
+    "title": "Marker Status",
+    "type": "registry:example",
+    "registryDependencies": [
+      "marker",
+      "spinner"
+    ],
+    "files": [
+      {
+        "path": "examples/marker-status.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "marker-variants",
+    "title": "Marker Variants",
+    "type": "registry:example",
+    "registryDependencies": [
+      "marker"
+    ],
+    "files": [
+      {
+        "path": "examples/marker-variants.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "message-actions",
+    "title": "Message Actions",
+    "type": "registry:example",
+    "registryDependencies": [
+      "bubble",
+      "button",
+      "message"
+    ],
+    "files": [
+      {
+        "path": "examples/message-actions.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "message-attachment",
+    "title": "Message Attachment",
+    "type": "registry:example",
+    "registryDependencies": [
+      "attachment",
+      "bubble",
+      "message"
+    ],
+    "files": [
+      {
+        "path": "examples/message-attachment.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "message-avatar",
+    "title": "Message Avatar",
+    "type": "registry:example",
+    "registryDependencies": [
+      "avatar",
+      "bubble",
+      "message"
+    ],
+    "files": [
+      {
+        "path": "examples/message-avatar.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "message-demo",
+    "title": "Message Demo",
+    "type": "registry:example",
+    "registryDependencies": [
+      "avatar",
+      "bubble",
+      "marker",
+      "message"
+    ],
+    "files": [
+      {
+        "path": "examples/message-demo.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "message-group",
+    "title": "Message Group",
+    "type": "registry:example",
+    "registryDependencies": [
+      "avatar",
+      "bubble",
+      "message"
+    ],
+    "files": [
+      {
+        "path": "examples/message-group.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "message-header-footer",
+    "title": "Message Header Footer",
+    "type": "registry:example",
+    "registryDependencies": [
+      "bubble",
+      "message"
+    ],
+    "files": [
+      {
+        "path": "examples/message-header-footer.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+
+  {
+    "name": "message-scroller-demo",
+    "title": "Message Scroller Demo",
+    "type": "registry:example",
+    "registryDependencies": [
+      "bubble",
+      "button",
+      "message-scroller"
+    ],
+    "files": [
+      {
+        "path": "examples/message-scroller-demo.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+  {
+    "name": "scroll-area-demo",
+    "title": "Scroll Area Demo",
+    "type": "registry:example",
+    "registryDependencies": [
+      "scroll-area",
+      "separator"
+    ],
+    "dependencies": [],
+    "files": [
+      {
+        "path": "examples/scroll-area-demo.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
+  {
+    "name": "scroll-area-horizontal-demo",
+    "title": "Scroll Area Horizontal Demo",
+    "type": "registry:example",
+    "registryDependencies": [
+      "scroll-area"
+    ],
+    "dependencies": [],
+    "files": [
+      {
+        "path": "examples/scroll-area-horizontal-demo.gts",
+        "type": "registry:example"
+      }
+    ]
+  },
 ]
