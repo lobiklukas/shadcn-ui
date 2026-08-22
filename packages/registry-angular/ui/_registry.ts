@@ -391,4 +391,50 @@ export const ui: Registry["items"] = [
     ],
     meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/stepper" } },
   },
+  {
+    name: "table",
+    type: "registry:ui",
+    files: [
+      { path: "ui/table/table.component.ts", type: "registry:ui" },
+      { path: "ui/table/table.component.html", type: "registry:ui" },
+      { path: "ui/table/table.variants.ts", type: "registry:ui" },
+      { path: "ui/table/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/table" } },
+  },
+  {
+    name: "resizable",
+    type: "registry:ui",
+    files: [
+      { path: "ui/resizable/resizable.component.ts", type: "registry:ui" },
+      { path: "ui/resizable/resizable.component.html", type: "registry:ui" },
+      { path: "ui/resizable/resizable.variants.ts", type: "registry:ui" },
+      { path: "ui/resizable/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/resizable" } },
+  },
+  {
+    name: "scroll-area",
+    type: "registry:ui",
+    files: [
+      { path: "ui/scroll-area/scroll-area.component.ts", type: "registry:ui" },
+      { path: "ui/scroll-area/scroll-area.component.html", type: "registry:ui" },
+      { path: "ui/scroll-area/scroll-area.variants.ts", type: "registry:ui" },
+      { path: "ui/scroll-area/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/scroll-area" } },
+  },
+  {
+    name: "native-select",
+    type: "registry:ui",
+    files: [
+      { path: "ui/native-select/native-select.component.ts", type: "registry:ui" },
+      { path: "ui/native-select/native-select-wrapper.component.html", type: "registry:ui" },
+      { path: "ui/native-select/native-select.component.html", type: "registry:ui" },
+      { path: "ui/native-select/native-select.variants.ts", type: "registry:ui" },
+      { path: "ui/native-select/native-select.icons.ts", type: "registry:ui" },
+      { path: "ui/native-select/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/native-select" } },
+  },
 ]
