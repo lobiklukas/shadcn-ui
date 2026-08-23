@@ -1,6 +1,4 @@
 import { ChangeDetectionStrategy, Component, computed, input } from "@angular/core"
-
-import { cn } from "@/lib/utils"
 import {
   tableBodyVariants,
   tableCaptionVariants,
@@ -82,7 +80,7 @@ export class TableContainerComponent {
 export class TableComponent {
   readonly className = input<string | undefined>(undefined, { alias: "class" })
   protected readonly classes = computed(() =>
-    cn(tableVariants({ class: this.className() }))
+    tableVariants({ class: this.className() })
   )
 }
 

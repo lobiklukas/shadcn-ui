@@ -2,6 +2,7 @@ import { Component } from "@angular/core"
 
 import { Button } from "@/angular-ui/button"
 import {
+  TableContainer,
   Table,
   TableBody,
   TableCell,

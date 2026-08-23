@@ -16,7 +16,7 @@ export const tableFooterVariants = cva("cn-table-footer")
 export const tableRowVariants = cva(
   // `has-aria-expanded:bg-muted/50` mirrors the React CVA base — rows that
   // expand a nested detail region tint like hovered rows. Not in cn-table-row.
-  "has-aria-expanded:bg-muted/50",
+  "cn-table-row has-aria-expanded:bg-muted/50",
 )
 
 export const tableHeadVariants = cva("cn-table-head")

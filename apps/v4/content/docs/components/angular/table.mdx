@@ -47,6 +47,7 @@ import {
   TableBody,
   TableCaption,
   TableCell,
+  TableContainer,
   TableHead,
   TableHeader,
   TableRow,
@@ -101,11 +102,11 @@ TableContainer
             └── TableCell
 ```
 
-## Demo
+## Footer
 
-An invoice table with caption, header, body rows and a footer total row.
+A `<tfoot uiTableFooter>` renders the muted, medium-weight summary row pinned after the body.
 
-<ComponentPreview framework="angular" name="table-demo" />
+<ComponentPreview framework="angular" name="table-footer" />
 
 ## Actions
 
@@ -113,17 +114,11 @@ Compose a row's last cell with a ghost icon `Button` to host per-row actions.
 
 <Callout>
   The React example opens a dropdown menu from the trigger. The Angular
-  `dropdown-menu` port is pending, so the preview shows the trigger styling
-  only; the menu composition will be added with that port.
+  preview shows the trigger styling only; compose `dropdown-menu` inside the
+  cell for the full menu behaviour.
 </Callout>
 
 <ComponentPreview framework="angular" name="table-actions" />
-
-## Footer
-
-A `<tfoot uiTableFooter>` renders the muted, medium-weight summary row pinned after the body.
-
-<ComponentPreview framework="angular" name="table-footer" />
 
 ## RTL
 

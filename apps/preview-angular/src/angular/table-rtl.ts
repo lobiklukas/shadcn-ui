@@ -1,6 +1,7 @@
 import { Component } from "@angular/core"
 
 import {
+  TableContainer,
   Table,
   TableBody,
   TableCaption,
