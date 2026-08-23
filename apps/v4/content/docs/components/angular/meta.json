@@ -31,6 +31,8 @@
     "label",
     "marker",
     "menubar",
+    "message",
+    "message-scroller",
     "native-select",
     "navigation-menu",
     "popover",

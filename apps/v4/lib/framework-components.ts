@@ -412,6 +412,8 @@ export const FRAMEWORK_COMPONENTS: Record<string, Set<string>> = {
     "label",
     "marker",
     "menubar",
+    "message",
+    "message-scroller",
     "native-select",
     "navigation-menu",
     "popover",
