@@ -8,7 +8,7 @@ import { Component } from "@angular/core"
   standalone: true,
   imports: [Button, Kbd],
   template: `<button uiButton variant="outline">
-    Accept<span uiKbd data-icon="inline-end" class="translate-x-0.5"><kbd uiKbd>⏎</kbd></span>
+    Accept<kbd uiKbd data-icon="inline-end" class="translate-x-0.5">⏎</kbd>
   </button>`,
 })
 export class KbdButtonComponent {}
