@@ -1,4 +1,5 @@
 import {
+  afterNextRender,
   booleanAttribute,
   ChangeDetectionStrategy,
   Component,
@@ -410,6 +411,18 @@ export class CommandItemComponent {
         disabled: this.disabled(),
       })
     )
+
+    // p4one parity: interpolated labels ({{ item.label }}) may render after the
+    // constructor runs; re-read textContent once the view is painted.
+    afterNextRender(() => {
+      if (!this.value()) {
+        this.root.updateItem(this.id, {
+          value: (this.el.nativeElement as HTMLElement).textContent?.trim() ?? "",
+          keywords: this.keywords(),
+          disabled: this.disabled(),
+        })
+      }
+    })
   }
 
   protected onPointerMove(): void {
