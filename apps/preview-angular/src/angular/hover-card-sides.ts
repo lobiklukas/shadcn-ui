@@ -1,5 +1,7 @@
 import { Component } from "@angular/core"
 
+import { Button } from "@/angular-ui/button"
+
 import {
   HoverCardContent,
   HoverCardPortal,
@@ -13,7 +15,7 @@ import {
 @Component({
   selector: "preview-hover-card-sides",
   standalone: true,
-  imports: [HoverCardRoot, HoverCardTrigger, HoverCardPortal, HoverCardPositioner, HoverCardContent],
+  imports: [Button, HoverCardRoot, HoverCardTrigger, HoverCardPortal, HoverCardPositioner, HoverCardContent],
   template: `
     <div class="flex flex-wrap justify-center gap-2">
       @for (side of sides; track side) {

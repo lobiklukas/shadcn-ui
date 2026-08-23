@@ -126,9 +126,7 @@ export class HoverCardPortalDirective {}
     "data-slot": "hover-card-positioner",
   },
 })
-export class HoverCardPositionerDirective {
-  readonly align = input<"start" | "center" | "end">("center")
-}
+export class HoverCardPositionerDirective {}
 
 /**
  * Angular port of the styled half of `HoverCardContent` — the visible box.
@@ -154,7 +152,7 @@ export class HoverCardContentComponent {
 
   protected readonly classes = computed(() =>
     cn(
-      "cn-hover-card-content z-50 origin-(--radix-hover-card-content-transform-origin) outline-hidden",
+      "cn-hover-card-content cn-hover-card-content-logical z-50 origin-(--radix-hover-card-content-transform-origin) outline-hidden",
       this.className()
     )
   )

@@ -1,5 +1,7 @@
 import { Component } from "@angular/core"
 
+import { Button } from "@/angular-ui/button"
+
 import {
   HoverCardContent,
   HoverCardPortal,
@@ -13,7 +15,7 @@ import {
 @Component({
   selector: "preview-hover-card-demo",
   standalone: true,
-  imports: [HoverCardRoot, HoverCardTrigger, HoverCardPortal, HoverCardPositioner, HoverCardContent],
+  imports: [Button, HoverCardRoot, HoverCardTrigger, HoverCardPortal, HoverCardPositioner, HoverCardContent],
   template: `
     <div uiHoverCardRoot>
       <button uiButton variant="link" uiHoverCardTrigger [delay]="10" [closeDelay]="100" type="button">

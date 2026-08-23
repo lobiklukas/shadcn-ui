@@ -1,5 +1,7 @@
 import { Component } from "@angular/core"
 
+import { Button } from "@/angular-ui/button"
+
 import {
   HoverCardContent,
   HoverCardPortal,
@@ -19,7 +21,7 @@ type Side = "left" | "top" | "bottom" | "right" | "inline-start" | "inline-end"
 @Component({
   selector: "preview-hover-card-rtl",
   standalone: true,
-  imports: [HoverCardRoot, HoverCardTrigger, HoverCardPortal, HoverCardPositioner, HoverCardContent],
+  imports: [Button, HoverCardRoot, HoverCardTrigger, HoverCardPortal, HoverCardPositioner, HoverCardContent],
   template: `
     <div class="grid gap-4">
       @for (row of rows; track $index) {
