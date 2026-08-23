@@ -117,6 +117,7 @@ export class NavigationMenuItemDirective {
   ],
   host: {
     "data-slot": "navigation-menu-trigger",
+    role: "menuitem",
     rdxNavigationMenuTrigger: "",
     "[class]": "classes()",
     "[attr.data-open]": `open() ? "" : null`,
@@ -213,6 +214,7 @@ export class NavigationMenuContentComponent {
   hostDirectives: [{ directive: RdxNavigationMenuLink, inputs: ["active", "onSelect"] }],
   host: {
     "data-slot": "navigation-menu-link",
+    role: "menuitem",
     "[class]": "classes()",
   },
 })

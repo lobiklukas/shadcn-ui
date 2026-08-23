@@ -59,10 +59,16 @@ const ARROW_UP = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 96
                 <div uiMessageScrollerViewport ariaLabel="Transcript">
                   <div uiMessageScrollerContent class="p-(--card-spacing)">
                     @for (m of messages(); track m.id) {
-                      <div uiMessage [align]="m.role === 'user' ? 'end' : 'start'">
-                        <div uiMessageContent>
-                          <div uiBubble [variant]="m.role === 'user' ? 'muted' : 'ghost'">
-                            <div uiBubbleContent class="whitespace-pre-wrap">{{ m.text }}</div>
+                      <div
+                        uiMessageScrollerItem
+                        [messageId]="m.id"
+                        [scrollAnchor]="m.role === anchorRole()"
+                      >
+                        <div uiMessage [align]="m.role === 'user' ? 'end' : 'start'">
+                          <div uiMessageContent>
+                            <div uiBubble [variant]="m.role === 'user' ? 'muted' : 'ghost'">
+                              <div uiBubbleContent class="whitespace-pre-wrap">{{ m.text }}</div>
+                            </div>
                           </div>
                         </div>
                       </div>

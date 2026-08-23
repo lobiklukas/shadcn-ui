@@ -127,6 +127,12 @@ Use `MessageHeader` for a sender name and `MessageFooter` for metadata such as a
 
 Place message-level actions in `MessageFooter`, such as copy, retry, or feedback buttons.
 
+<ComponentPreview framework="angular" name="message-actions" />
+
+## Attachment
+
+Compose `MessageFooter` with file attachments rendered as bordered chips.
+
 <ComponentPreview framework="angular" name="message-attachment" />
 
 ## Markdown
@@ -216,6 +222,7 @@ Displays content above the message, such as a sender name. Stays aligned to the 
 
 Displays content below the message, such as status or actions. Aligns to the message side.
 
-| Input   | Type     | Default | Description                                |
-| ------- | -------- | ------- | ------------------------------------------ |
-| `class` | `string` | -       | Additional classes to apply to the footer. |
+| Input     | Type                  | Default | Description                                |
+| --------- | --------------------- | ------- | ------------------------------------------ |
+| `variant` | `"text" \| "action"` | `text`  | Adjusts avatar offset for the footer type. |
+| `class`   | `string`              | -       | Additional classes to apply to the footer. |

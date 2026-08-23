@@ -155,19 +155,15 @@ Auto-scroll follows content growth while the reader is pinned to the bottom.
 
 <ComponentPreview framework="angular" name="message-scroller-animation" />
 
-## Demo
-
-<ComponentPreview framework="angular" name="message-scroller-demo" />
-
-## RTL
-
-Pointer to `/docs/rtl`: the scroller honors direction via CSS logical properties (`inset-s`, `translate-x` with the `rtl:` variant) — no extra setup is required.
-
 ## Accessibility
 
 - `MessageScrollerContent` sets `role="log"`, `aria-live="polite"`, and `aria-relevant="additions"` so new turns are announced without re-reading the transcript.
 - The viewport is keyboard-operable (`tabindex="0"`) and becomes a labelled `role="region"` when you pass `ariaLabel`.
 - `MessageScrollerButton` is removed from the tab order and the accessibility tree when its target edge is already visible.
+
+## RTL
+
+Pointer to `/docs/rtl`: the scroller honors direction via CSS logical properties (`inset-s`, `translate-x` with the `rtl:` variant) — no extra setup is required.
 
 ## API Reference
 
@@ -185,6 +181,15 @@ Pointer to `/docs/rtl`: the scroller honors direction via CSS logical properties
 | --- | --- | --- |
 | messageId | string / Input&lt;string \| undefined&gt; | undefined |
 | scrollAnchor | boolean / Input&lt;boolean&gt; | false |
+
+### MessageScrollerViewport
+
+| Prop | Type | Default |
+| --- | --- | --- |
+| ariaLabel | string / Input<string&gt; | undefined |
+| className | string / Input<string&gt; | undefined |
+
+`ariaLabel` turns the viewport into a labelled `role="region"`; it defaults to `"Conversation"` when unset.
 
 ### MessageScrollerButton
 

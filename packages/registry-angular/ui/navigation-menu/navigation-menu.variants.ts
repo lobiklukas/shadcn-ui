@@ -17,11 +17,11 @@
 
 /** Root — combined with the `cn-navigation-menu` token. */
 export const NAVIGATION_MENU_ROOT_CLASS =
-  "group/navigation-menu relative flex flex-1 items-center justify-center"
+  "cn-navigation-menu group/navigation-menu relative flex flex-1 items-center justify-center"
 
 /** List — combined with the `cn-navigation-menu-list` token. */
 export const NAVIGATION_MENU_LIST_CLASS =
-  "group flex flex-1 list-none items-center justify-center"
+  "cn-navigation-menu-list group flex flex-1 list-none items-center justify-center"
 
 /** Item — the `cn-navigation-menu-item` token plus the structural `relative`. */
 export const NAVIGATION_MENU_ITEM_CLASS = "cn-navigation-menu-item relative"
@@ -32,7 +32,7 @@ export const NAVIGATION_MENU_ITEM_CLASS = "cn-navigation-menu-item relative"
  * match via `navigationMenuTriggerStyle`.
  */
 export const NAVIGATION_MENU_TRIGGER_BASE =
-  "group/navigation-menu-trigger inline-flex h-9 w-max items-center justify-center outline-none disabled:pointer-events-none [&_svg]:fill-current"
+  "cn-navigation-menu-trigger group/navigation-menu-trigger inline-flex h-9 w-max items-center justify-center outline-none disabled:pointer-events-none [&_svg]:fill-current"
 
 /** Trigger chevron wrapper — token + the child-svg size/fill fix (Material Symbols carry their own width/height attrs, so sizing only the span leaves a ~24px icon to overflow the row). */
 export const NAVIGATION_MENU_TRIGGER_ICON_CLASS =
@@ -49,7 +49,7 @@ export const NAVIGATION_MENU_TRIGGER_ICON_CLASS =
  * port: no slide-direction cue.
  */
 export const NAVIGATION_MENU_CONTENT_CLASS =
-  "top-0 left-0 w-full md:absolute md:w-auto data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95"
+  "cn-navigation-menu-content top-0 left-0 w-full md:absolute md:w-auto data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95"
 
 /** Viewport outer positioning wrapper — plain layout, no token of its own. */
 export const NAVIGATION_MENU_VIEWPORT_WRAPPER_CLASS =
@@ -57,5 +57,5 @@ export const NAVIGATION_MENU_VIEWPORT_WRAPPER_CLASS =
 
 /** Viewport panel — combined with the `cn-navigation-menu-viewport` token. */
 export const NAVIGATION_MENU_VIEWPORT_CLASS =
-  "origin-top-center relative mt-1.5 h-(--radix-navigation-menu-viewport-height) w-full overflow-hidden md:w-(--radix-navigation-menu-viewport-width)"
+  "cn-navigation-menu-viewport origin-top-center relative mt-1.5 h-(--radix-navigation-menu-viewport-height) w-full overflow-hidden md:w-(--radix-navigation-menu-viewport-width)"
 
