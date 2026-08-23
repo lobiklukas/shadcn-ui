@@ -1,4 +1,5 @@
-import { Component } from "@angular/core"
+import { Component, inject } from "@angular/core"
+import { DomSanitizer, type SafeHtml } from "@angular/platform-browser"
 
 import {
   Breadcrumb,
@@ -22,11 +23,11 @@ const DOT_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960
       <li uiBreadcrumbItem>
         <a uiBreadcrumbLink href="/">Home</a>
       </li>
-      <li uiBreadcrumbSeparator [innerHTML]="dot"></li>
+      <li uiBreadcrumbSeparator><span [innerHTML]="safeDot"></span></li>
       <li uiBreadcrumbItem>
         <a uiBreadcrumbLink href="/components">Components</a>
       </li>
-      <li uiBreadcrumbSeparator [innerHTML]="dot"></li>
+      <li uiBreadcrumbSeparator><span [innerHTML]="safeDot"></span></li>
       <li uiBreadcrumbItem>
         <span uiBreadcrumbPage>Breadcrumb</span>
       </li>
@@ -35,7 +36,8 @@ const DOT_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960
 })
 export class BreadcrumbSeparatorDemoComponent {
   // Static bundled string — safe to bypass the sanitizer.
-  protected readonly dot = DOT_SVG
+  protected readonly safeDot: SafeHtml =
+    inject(DomSanitizer).bypassSecurityTrustHtml(DOT_SVG)
 }
 
 export default BreadcrumbSeparatorDemoComponent

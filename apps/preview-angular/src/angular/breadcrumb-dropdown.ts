@@ -1,4 +1,5 @@
-import { Component } from "@angular/core"
+import { Component, inject } from "@angular/core"
+import { DomSanitizer, type SafeHtml } from "@angular/platform-browser"
 
 import {
   Breadcrumb,
@@ -42,12 +43,12 @@ const DOT_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960
       <li uiBreadcrumbItem>
         <a uiBreadcrumbLink href="/">Home</a>
       </li>
-      <li uiBreadcrumbSeparator [innerHTML]="dot"></li>
+      <li uiBreadcrumbSeparator><span [innerHTML]="safeDot"></span></li>
       <li uiBreadcrumbItem>
         <div uiDropdownMenuRoot>
           <button class="flex items-center gap-1" uiDropdownMenuTrigger type="button">
             Components
-            <span data-icon="inline-end" aria-hidden="true" class="size-3.5" [innerHTML]="chevronDown"></span>
+            <span data-icon="inline-end" aria-hidden="true" class="inline-flex size-3.5"><span [innerHTML]="safeChevronDown"></span></span>
           </button>
           <div uiDropdownMenuContent>
             <div uiDropdownMenuGroup>
@@ -58,7 +59,7 @@ const DOT_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960
           </div>
         </div>
       </li>
-      <li uiBreadcrumbSeparator [innerHTML]="dot"></li>
+      <li uiBreadcrumbSeparator><span [innerHTML]="safeDot"></span></li>
       <li uiBreadcrumbItem>
         <span uiBreadcrumbPage>Breadcrumb</span>
       </li>
@@ -66,8 +67,10 @@ const DOT_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960
   </nav>`,
 })
 export class BreadcrumbDropdownDemoComponent {
-  protected readonly chevronDown = CHEVRON_DOWN_SVG
-  protected readonly dot = DOT_SVG
+  protected readonly safeChevronDown: SafeHtml =
+    inject(DomSanitizer).bypassSecurityTrustHtml(CHEVRON_DOWN_SVG)
+  protected readonly safeDot: SafeHtml =
+    inject(DomSanitizer).bypassSecurityTrustHtml(DOT_SVG)
 }
 
 export default BreadcrumbDropdownDemoComponent

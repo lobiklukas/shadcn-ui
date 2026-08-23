@@ -47,7 +47,9 @@ export class BreadcrumbComponent {
   readonly ariaLabel = input<string>("breadcrumb", { alias: "aria-label" })
   readonly className = input<string | undefined>(undefined, { alias: "class" })
 
-  protected readonly classes = computed(() => cn("cn-breadcrumb", this.className()))
+  // p4one parity: the root carries no own token styles (`cn-breadcrumb` has
+  // no rule in style-force-ui.css), only consumer classes.
+  protected readonly classes = computed(() => cn(this.className()))
 }
 
 @Component({

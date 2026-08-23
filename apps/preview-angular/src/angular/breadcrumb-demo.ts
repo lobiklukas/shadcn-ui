@@ -10,10 +10,15 @@ import {
   BreadcrumbSeparator,
 } from "@/angular-ui/breadcrumb"
 import { Button } from "@/angular-ui/button"
+import {
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuRoot,
+  DropdownMenuTrigger,
+} from "@/angular-ui/dropdown-menu"
 
-// React example composes a DropdownMenu around the ellipsis trigger. Angular's
-// dropdown-menu port is pending, so the trigger renders as the ghost icon
-// button without popup content.
+// apps/v4/examples/base/breadcrumb-demo.tsx
 @Component({
   selector: "preview-breadcrumb-demo",
   standalone: true,
@@ -26,6 +31,11 @@ import { Button } from "@/angular-ui/button"
     BreadcrumbPage,
     BreadcrumbEllipsis,
     Button,
+    DropdownMenuRoot,
+    DropdownMenuTrigger,
+    DropdownMenuContent,
+    DropdownMenuGroup,
+    DropdownMenuItem,
   ],
   template: `<nav uiBreadcrumb>
     <ol uiBreadcrumbList>
@@ -34,11 +44,19 @@ import { Button } from "@/angular-ui/button"
       </li>
       <li uiBreadcrumbSeparator></li>
       <li uiBreadcrumbItem>
-        <!-- DropdownMenu composition pending angular dropdown-menu port -->
-        <button uiButton variant="ghost" size="icon-sm">
-          <span uiBreadcrumbEllipsis></span>
-          <span class="sr-only">Toggle menu</span>
-        </button>
+        <div uiDropdownMenuRoot>
+          <button uiButton variant="ghost" size="icon-sm" uiDropdownMenuTrigger type="button">
+            <span uiBreadcrumbEllipsis></span>
+            <span class="sr-only">Toggle menu</span>
+          </button>
+          <div uiDropdownMenuContent>
+            <div uiDropdownMenuGroup>
+              <button uiDropdownMenuItem>Documentation</button>
+              <button uiDropdownMenuItem>Themes</button>
+              <button uiDropdownMenuItem>GitHub</button>
+            </div>
+          </div>
+        </div>
       </li>
       <li uiBreadcrumbSeparator></li>
       <li uiBreadcrumbItem>

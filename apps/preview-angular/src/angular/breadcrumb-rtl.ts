@@ -1,4 +1,5 @@
-import { Component } from "@angular/core"
+import { Component, inject } from "@angular/core"
+import { DomSanitizer, type SafeHtml } from "@angular/platform-browser"
 
 import {
   Breadcrumb,
@@ -8,6 +9,13 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/angular-ui/breadcrumb"
+import {
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuRoot,
+  DropdownMenuTrigger,
+} from "@/angular-ui/dropdown-menu"
 
 // Material Symbols glyphs matching the React RTL example (DotIcon /
 // ChevronDownIcon via apps/v4/examples/material-symbols-map.ts).
@@ -19,21 +27,41 @@ const CHEVRON_DOWN_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -96
 @Component({
   selector: "preview-breadcrumb-rtl",
   standalone: true,
-  imports: [Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage],
+  imports: [
+    Breadcrumb,
+    BreadcrumbList,
+    BreadcrumbItem,
+    BreadcrumbLink,
+    BreadcrumbSeparator,
+    BreadcrumbPage,
+    DropdownMenuRoot,
+    DropdownMenuTrigger,
+    DropdownMenuContent,
+    DropdownMenuGroup,
+    DropdownMenuItem,
+  ],
   template: `<nav uiBreadcrumb dir="rtl">
     <ol uiBreadcrumbList>
       <li uiBreadcrumbItem>
         <a uiBreadcrumbLink href="/">الرئيسية</a>
       </li>
-      <li uiBreadcrumbSeparator [innerHTML]="dot"></li>
+      <li uiBreadcrumbSeparator><span [innerHTML]="safeDot"></span></li>
       <li uiBreadcrumbItem>
-        <!-- DropdownMenu composition pending angular dropdown-menu port -->
-        <button class="flex items-center gap-1">
-          المكونات
-          <svg data-icon="inline-end" aria-hidden="true" class="size-3.5" [innerHTML]="chevronDown"></svg>
-        </button>
+        <div uiDropdownMenuRoot>
+          <button class="flex items-center gap-1" uiDropdownMenuTrigger type="button">
+            المكونات
+            <span data-icon="inline-end" aria-hidden="true" class="inline-flex size-3.5"><span [innerHTML]="safeChevronDown"></span></span>
+          </button>
+          <div uiDropdownMenuContent>
+            <div uiDropdownMenuGroup>
+              <button uiDropdownMenuItem>التوثيق</button>
+              <button uiDropdownMenuItem>السمات</button>
+              <button uiDropdownMenuItem>GitHub</button>
+            </div>
+          </div>
+        </div>
       </li>
-      <li uiBreadcrumbSeparator [innerHTML]="dot"></li>
+      <li uiBreadcrumbSeparator><span [innerHTML]="safeDot"></span></li>
       <li uiBreadcrumbItem>
         <span uiBreadcrumbPage>مسار التنقل</span>
       </li>
@@ -41,8 +69,8 @@ const CHEVRON_DOWN_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -96
   </nav>`,
 })
 export class BreadcrumbRtlComponent {
-  protected readonly dot = DOT_SVG
-  protected readonly chevronDown = CHEVRON_DOWN_SVG
+  protected readonly safeDot: SafeHtml =
+    inject(DomSanitizer).bypassSecurityTrustHtml(DOT_SVG)
+  protected readonly safeChevronDown: SafeHtml =
+    inject(DomSanitizer).bypassSecurityTrustHtml(CHEVRON_DOWN_SVG)
 }
-
-export default BreadcrumbRtlComponent
