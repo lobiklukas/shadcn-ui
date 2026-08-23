@@ -14270,6 +14270,11 @@ export const Index: Record<string, Record<string, any>> = {
           type: "registry:example",
           target: "",
         },
+        {
+          path: "registry/bases/vue/examples/alert/AlertRtl.vue",
+          type: "registry:example",
+          target: "",
+        },
       ],
       categories: undefined,
       meta: undefined,
@@ -14299,6 +14304,11 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/vue/examples/aspect-ratio/AspectRatioDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/aspect-ratio/AspectRatioRtl.vue",
           type: "registry:example",
           target: "",
         },
@@ -14462,6 +14472,11 @@ export const Index: Record<string, Record<string, any>> = {
           type: "registry:example",
           target: "",
         },
+        {
+          path: "registry/bases/vue/examples/bubble/BubbleMarkdown.vue",
+          type: "registry:example",
+          target: "",
+        },
       ],
       categories: undefined,
       meta: undefined,
@@ -14561,6 +14576,11 @@ export const Index: Record<string, Record<string, any>> = {
           type: "registry:example",
           target: "",
         },
+        {
+          path: "registry/bases/vue/examples/message/MessageMarkdown.vue",
+          type: "registry:example",
+          target: "",
+        },
       ],
       categories: undefined,
       meta: undefined,
@@ -14579,6 +14599,46 @@ export const Index: Record<string, Record<string, any>> = {
         },
         {
           path: "registry/bases/vue/examples/message-scroller/MessageScrollerScrollable.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message-scroller/MessageScrollerAnchoring.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message-scroller/MessageScrollerAnimation.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message-scroller/MessageScrollerGroupChat.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message-scroller/MessageScrollerLoadHistory.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message-scroller/MessageScrollerOpeningPosition.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message-scroller/MessageScrollerPreviousContext.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message-scroller/MessageScrollerState.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/message-scroller/MessageScrollerStreaming.vue",
           type: "registry:example",
           target: "",
         },
@@ -14997,6 +15057,11 @@ export const Index: Record<string, Record<string, any>> = {
           type: "registry:example",
           target: "",
         },
+        {
+          path: "registry/bases/vue/examples/command/CommandDialogDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
       ],
       categories: undefined,
       meta: undefined,
@@ -15010,6 +15075,11 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/vue/examples/context-menu/ContextMenuDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/context-menu/ContextMenuSides.vue",
           type: "registry:example",
           target: "",
         },
@@ -15035,6 +15105,11 @@ export const Index: Record<string, Record<string, any>> = {
           type: "registry:example",
           target: "",
         },
+        {
+          path: "registry/bases/vue/examples/data-table/DataTableRtl.vue",
+          type: "registry:example",
+          target: "",
+        },
       ],
       categories: undefined,
       meta: undefined,
@@ -15048,6 +15123,41 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/vue/examples/date-picker/DatePickerDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/date-picker/DatePickerBasic.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/date-picker/DatePickerDob.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/date-picker/DatePickerInput.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/date-picker/DatePickerNaturalLanguage.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/date-picker/DatePickerRange.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/date-picker/DatePickerTime.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/date-picker/DatePickerRtl.vue",
           type: "registry:example",
           target: "",
         },
@@ -15105,6 +15215,26 @@ export const Index: Record<string, Record<string, any>> = {
           type: "registry:example",
           target: "",
         },
+        {
+          path: "registry/bases/vue/examples/drawer/DrawerNested.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/drawer/DrawerNonModal.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/drawer/DrawerSnapPoints.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/drawer/DrawerSwipeHandle.vue",
+          type: "registry:example",
+          target: "",
+        },
       ],
       categories: undefined,
       meta: undefined,
@@ -15118,6 +15248,11 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/vue/examples/dropdown-menu/DropdownMenuDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/dropdown-menu/DropdownMenuRtl.vue",
           type: "registry:example",
           target: "",
         },
@@ -15408,6 +15543,11 @@ export const Index: Record<string, Record<string, any>> = {
         },
         {
           path: "registry/bases/vue/examples/input-group/InputGroupVariants.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/input-group/InputGroupRtl.vue",
           type: "registry:example",
           target: "",
         },
@@ -15860,6 +16000,11 @@ export const Index: Record<string, Record<string, any>> = {
           type: "registry:example",
           target: "",
         },
+        {
+          path: "registry/bases/vue/examples/sheet/SheetRtl.vue",
+          type: "registry:example",
+          target: "",
+        },
       ],
       categories: undefined,
       meta: undefined,
@@ -15873,6 +16018,11 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/vue/examples/sidebar/SidebarDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/sidebar/SidebarRtl.vue",
           type: "registry:example",
           target: "",
         },
@@ -15905,6 +16055,27 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/vue/examples/slider/SliderDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "toast-example": {
+      name: "toast-example",
+      title: "Toast",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [
+        {
+          path: "registry/bases/vue/examples/toast/ToastTypes.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/toast/ToastPromise.vue",
           type: "registry:example",
           target: "",
         },
@@ -16057,6 +16228,11 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/vue/examples/switch/SwitchDemo.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/switch/SwitchRtl.vue",
           type: "registry:example",
           target: "",
         },
@@ -16382,6 +16558,11 @@ export const Index: Record<string, Record<string, any>> = {
         },
         {
           path: "registry/bases/vue/examples/typography/TypographyTable.vue",
+          type: "registry:example",
+          target: "",
+        },
+        {
+          path: "registry/bases/vue/examples/typography/TypographyRtl.vue",
           type: "registry:example",
           target: "",
         },
@@ -30317,6 +30498,685 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/ember/examples/scroll-area-horizontal-demo.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "alert-action": {
+      name: "alert-action",
+      title: "Alert Action",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["alert", "button"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/alert-action.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "alert-rtl": {
+      name: "alert-rtl",
+      title: "Alert RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["alert"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/alert-rtl.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "alert-dialog-destructive": {
+      name: "alert-dialog-destructive",
+      title: "Alert Dialog Destructive",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["alert-dialog", "button"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/alert-dialog-destructive.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "alert-dialog-media": {
+      name: "alert-dialog-media",
+      title: "Alert Dialog Media",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["alert-dialog", "button"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/alert-dialog-media.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "alert-dialog-small-media": {
+      name: "alert-dialog-small-media",
+      title: "Alert Dialog Small with Media",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["alert-dialog", "button"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/alert-dialog-small-media.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "aspect-ratio-rtl": {
+      name: "aspect-ratio-rtl",
+      title: "Aspect Ratio RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["aspect-ratio"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/aspect-ratio-rtl.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "avatar-badge": {
+      name: "avatar-badge",
+      title: "Avatar Badge",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["avatar"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/avatar-badge.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "avatar-badge-icon": {
+      name: "avatar-badge-icon",
+      title: "Avatar Badge Icon",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["avatar"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/avatar-badge-icon.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "avatar-group": {
+      name: "avatar-group",
+      title: "Avatar Group",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["avatar"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/avatar-group.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "avatar-group-count": {
+      name: "avatar-group-count",
+      title: "Avatar Group Count",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["avatar"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/avatar-group-count.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "avatar-group-count-icon": {
+      name: "avatar-group-count-icon",
+      title: "Avatar Group Count Icon",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["avatar"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/avatar-group-count-icon.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "avatar-size": {
+      name: "avatar-size",
+      title: "Avatar Size",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["avatar"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/avatar-size.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "avatar-rtl": {
+      name: "avatar-rtl",
+      title: "Avatar RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["avatar"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/avatar-rtl.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "bubble-markdown": {
+      name: "bubble-markdown",
+      title: "Bubble Markdown",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["bubble"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/bubble-markdown.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "combobox-basic": {
+      name: "combobox-basic",
+      title: "Combobox Basic",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "command", "popover"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/combobox-basic.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "combobox-custom": {
+      name: "combobox-custom",
+      title: "Combobox Custom",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "command", "item", "popover"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/combobox-custom.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "combobox-disabled": {
+      name: "combobox-disabled",
+      title: "Combobox Disabled",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "command", "popover"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/combobox-disabled.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "combobox-groups": {
+      name: "combobox-groups",
+      title: "Combobox Groups",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "command", "popover"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/combobox-groups.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "combobox-input-group": {
+      name: "combobox-input-group",
+      title: "Combobox Input Group",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["command", "popover"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/combobox-input-group.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "combobox-invalid": {
+      name: "combobox-invalid",
+      title: "Combobox Invalid",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "command", "popover"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/combobox-invalid.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "combobox-popup": {
+      name: "combobox-popup",
+      title: "Combobox Popup",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "command", "popover"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/combobox-popup.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "combobox-rtl": {
+      name: "combobox-rtl",
+      title: "Combobox RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "command", "popover"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/combobox-rtl.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "drawer-nested": {
+      name: "drawer-nested",
+      title: "Drawer Nested",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "drawer"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/drawer-nested.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "drawer-rtl": {
+      name: "drawer-rtl",
+      title: "Drawer RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "drawer", "field", "input"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/drawer-rtl.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "empty-card": {
+      name: "empty-card",
+      title: "Empty in Card",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "empty"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/empty-card.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "input-group-basic": {
+      name: "input-group-basic",
+      title: "Input Group Basic",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["field", "input-group"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/input-group-basic.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "input-group-in-card": {
+      name: "input-group-in-card",
+      title: "Input Group in Card",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "card", "field", "input-group"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/input-group-in-card.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "input-group-rtl": {
+      name: "input-group-rtl",
+      title: "Input Group RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["field", "input-group"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/input-group-rtl.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "input-group-textarea-examples": {
+      name: "input-group-textarea-examples",
+      title: "Input Group Textarea Examples",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["field", "input-group", "textarea"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/input-group-textarea-examples.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "input-group-with-addons": {
+      name: "input-group-with-addons",
+      title: "Input Group with Addons",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["field", "input-group"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/input-group-with-addons.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "input-group-with-buttons": {
+      name: "input-group-with-buttons",
+      title: "Input Group with Buttons",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["field", "input-group"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/input-group-with-buttons.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "input-group-with-kbd": {
+      name: "input-group-with-kbd",
+      title: "Input Group with Kbd",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["field", "input-group", "kbd"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/input-group-with-kbd.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "input-group-with-tooltip": {
+      name: "input-group-with-tooltip",
+      title: "Input Group with Tooltip",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "field", "input-group", "tooltip"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/input-group-with-tooltip.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "message-markdown": {
+      name: "message-markdown",
+      title: "Message Markdown",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["bubble", "message"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/message-markdown.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "message-scroller-group-chat": {
+      name: "message-scroller-group-chat",
+      title: "Message Scroller Group Chat",
+      description: "",
+      type: "registry:example",
+      registryDependencies: [
+        "avatar",
+        "bubble",
+        "button",
+        "card",
+        "message",
+        "message-scroller",
+      ],
+      files: [
+        {
+          path: "registry/bases/ember/examples/message-scroller-group-chat.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "message-scroller-scrollable": {
+      name: "message-scroller-scrollable",
+      title: "Message Scroller Scrollable",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["bubble", "card", "message", "message-scroller"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/message-scroller-scrollable.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "message-scroller-state": {
+      name: "message-scroller-state",
+      title: "Message Scroller State",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["bubble", "card", "message", "message-scroller"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/message-scroller-state.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "scroll-area-rtl": {
+      name: "scroll-area-rtl",
+      title: "Scroll Area RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["scroll-area", "separator"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/scroll-area-rtl.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "sheet-rtl": {
+      name: "sheet-rtl",
+      title: "Sheet RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button", "field", "input", "sheet"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/sheet-rtl.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "sidebar-rtl": {
+      name: "sidebar-rtl",
+      title: "Sidebar RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["sidebar"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/sidebar-rtl.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "switch-rtl": {
+      name: "switch-rtl",
+      title: "Switch RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["switch"],
+      files: [
+        {
+          path: "registry/bases/ember/examples/switch-rtl.gts",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "typography-rtl": {
+      name: "typography-rtl",
+      title: "Typography RTL",
+      description: "",
+      type: "registry:example",
+      registryDependencies: [],
+      files: [
+        {
+          path: "registry/bases/ember/examples/typography-rtl.gts",
           type: "registry:example",
           target: "",
         },
