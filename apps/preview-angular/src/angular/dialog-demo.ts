@@ -1,11 +1,14 @@
 import { Component } from "@angular/core"
 
+import { Button } from "@/angular-ui/button"
+
 import {
   DialogClose,
   DialogContent,
   DialogDescription,
   DialogFooter,
   DialogHeader,
+  DialogOverlay,
   DialogPortal,
   DialogRoot,
   DialogTitle,
@@ -18,21 +21,7 @@ import { Label } from "@/angular-ui/label"
 @Component({
   selector: "preview-dialog-demo",
   standalone: true,
-  imports: [
-    DialogRoot,
-    DialogTrigger,
-    DialogPortal,
-    DialogContent,
-    DialogHeader,
-    DialogTitle,
-    DialogDescription,
-    DialogFooter,
-    DialogClose,
-    Field,
-    FieldGroup,
-    Label,
-    Input,
-  ],
+  imports: [DialogOverlay, Button, DialogRoot, DialogTrigger, DialogPortal, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter, DialogClose, Field, FieldGroup, Label, Input],
   template: `
     <div uiDialogRoot>
       <form class="grid gap-4">

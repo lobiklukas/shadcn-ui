@@ -1,9 +1,12 @@
 import { Component } from "@angular/core"
 
+import { Button } from "@/angular-ui/button"
+
 import {
   DialogContent,
   DialogDescription,
   DialogHeader,
+  DialogOverlay,
   DialogPortal,
   DialogRoot,
   DialogTitle,
@@ -13,15 +16,7 @@ import {
 @Component({
   selector: "preview-dialog-no-close-button",
   standalone: true,
-  imports: [
-    DialogRoot,
-    DialogTrigger,
-    DialogPortal,
-    DialogContent,
-    DialogHeader,
-    DialogTitle,
-    DialogDescription,
-  ],
+  imports: [DialogOverlay, Button, DialogRoot, DialogTrigger, DialogPortal, DialogContent, DialogHeader, DialogTitle, DialogDescription],
   template: `
     <div uiDialogRoot>
       <button uiButton variant="outline" uiDialogTrigger type="button">

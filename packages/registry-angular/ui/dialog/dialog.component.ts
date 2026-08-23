@@ -11,7 +11,7 @@ import {
 } from "@radix-ng/primitives/dialog"
 
 import { cn } from "@/lib/utils"
-
+import { Button } from "@/angular-ui/button"
 import { DIALOG_CLOSE_SVG } from "./dialog.icons"
 
 /**
@@ -164,7 +164,7 @@ export class DialogCloseDirective {}
 @Component({
   selector: "div[uiDialogContent]",
   standalone: true,
-  imports: [DialogCloseDirective],
+  imports: [Button, DialogCloseDirective],
   templateUrl: "./dialog.component.html",
   changeDetection: ChangeDetectionStrategy.OnPush,
   hostDirectives: [{ directive: RdxDialogPopup }],

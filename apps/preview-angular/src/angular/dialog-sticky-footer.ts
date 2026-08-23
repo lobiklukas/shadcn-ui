@@ -1,11 +1,14 @@
 import { Component } from "@angular/core"
 
+import { Button } from "@/angular-ui/button"
+
 import {
   DialogClose,
   DialogContent,
   DialogDescription,
   DialogFooter,
   DialogHeader,
+  DialogOverlay,
   DialogPortal,
   DialogRoot,
   DialogTitle,
@@ -18,17 +21,7 @@ const LOREM =
 @Component({
   selector: "preview-dialog-sticky-footer",
   standalone: true,
-  imports: [
-    DialogRoot,
-    DialogTrigger,
-    DialogPortal,
-    DialogContent,
-    DialogHeader,
-    DialogTitle,
-    DialogDescription,
-    DialogFooter,
-    DialogClose,
-  ],
+  imports: [DialogOverlay, Button, DialogRoot, DialogTrigger, DialogPortal, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter, DialogClose],
   template: `
     <div uiDialogRoot>
       <button uiButton variant="outline" uiDialogTrigger type="button">
