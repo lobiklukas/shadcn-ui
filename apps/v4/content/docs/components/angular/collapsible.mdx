@@ -77,6 +77,26 @@ Collapsible
 └── CollapsibleContent
 ```
 
+## Controlled State
+
+Use `[(open)]` two-way binding to control the state.
+
+```ts showLineNumbers
+import { Component, signal } from "@angular/core"
+
+@Component({
+  template: `
+    <div uiCollapsible [(open)]="open">
+      <button uiCollapsibleTrigger>Toggle</button>
+      <div uiCollapsibleContent>Content</div>
+    </div>
+  `,
+})
+export class Example {
+  readonly open = signal(false)
+}
+```
+
 ## Basic
 
 A simple disclosure card that expands to reveal more content.

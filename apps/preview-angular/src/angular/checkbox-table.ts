@@ -7,7 +7,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/angular-ui/table"
-import { Component } from "@angular/core"
+import { Component, signal } from "@angular/core"
 
 interface Person {
   id: string
@@ -41,7 +41,8 @@ const tableData: Person[] = [
               <button
                 uiCheckbox
                 aria-label="Select all"
-                [checked]="selected.size === data.length"
+                [checked]="allSelected()"
+                (checkedChange)="toggleAll($event)"
               ></button>
             </th>
             <th uiTableHead>Name</th>
@@ -56,7 +57,8 @@ const tableData: Person[] = [
                 <button
                   uiCheckbox
                   [attr.aria-label]="'Select ' + person.name"
-                  [checked]="selected.has(person.id)"
+                  [checked]="selected().has(person.id)"
+                  (checkedChange)="toggleRow(person.id, $event)"
                 ></button>
               </td>
               <td uiTableCell>{{ person.name }}</td>
@@ -71,7 +73,24 @@ const tableData: Person[] = [
 })
 export class CheckboxTableComponent {
   readonly data = tableData
-  readonly selected = new Set(["1"])
+  readonly selected = signal(new Set(["1"]))
+
+  readonly allSelected = () => this.selected().size === this.data.length
+
+  toggleRow(id: string, checked: boolean | "indeterminate"): void {
+    this.selected.update((set) => {
+      const next = new Set(set)
+      if (checked === true) next.add(id)
+      else next.delete(id)
+      return next
+    })
+  }
+
+  toggleAll(checked: boolean | "indeterminate"): void {
+    this.selected.set(
+      checked === true ? new Set(this.data.map((p) => p.id)) : new Set(),
+    )
+  }
 }
 
 export default CheckboxTableComponent

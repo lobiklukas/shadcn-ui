@@ -1,4 +1,3 @@
-import { Button } from "@/angular-ui/button"
 import {
   Card,
   CardContent,
@@ -13,19 +12,19 @@ import {
 } from "@/angular-ui/collapsible"
 import { Field, FieldGroup, FieldLabel } from "@/angular-ui/field"
 import { Input } from "@/angular-ui/input"
-import { Component } from "@angular/core"
+import { Component, signal } from "@angular/core"
 
 @Component({
   selector: "preview-collapsible-settings",
   standalone: true,
-  imports: [Button, Card, CardHeader, CardTitle, CardDescription, CardContent, Collapsible, CollapsibleTrigger, CollapsibleContent, Field, FieldGroup, FieldLabel, Input],
+  imports: [Card, CardHeader, CardTitle, CardDescription, CardContent, Collapsible, CollapsibleTrigger, CollapsibleContent, Field, FieldGroup, FieldLabel, Input],
   template: ` <div uiCard class="mx-auto w-full max-w-xs">
     <div uiCardHeader>
       <div uiCardTitle>Radius</div>
       <div uiCardDescription>Set the corner radius of the element.</div>
     </div>
     <div uiCardContent>
-      <div uiCollapsible defaultOpen class="flex items-start gap-2">
+      <div uiCollapsible [(open)]="open" class="flex items-start gap-2">
         <div uiFieldGroup class="grid w-full grid-cols-2 gap-2">
           <div uiField>
             <label uiFieldLabel for="radius-x" class="sr-only">
@@ -62,14 +61,24 @@ import { Component } from "@angular/core"
           class="inline-flex size-9 shrink-0 items-center justify-center gap-2 rounded-md border border-input bg-background text-sm font-medium whitespace-nowrap transition-all hover:bg-accent hover:text-accent-foreground [&_svg]:fill-current [&_svg]:size-4"
           aria-label="Toggle radius fields"
         >
-          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-            <path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z" />
-          </svg>
+          @if (open()) {
+            <!-- minimize -->
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+              <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z" />
+            </svg>
+          } @else {
+            <!-- maximize -->
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+              <path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z" />
+            </svg>
+          }
         </button>
       </div>
     </div>
   </div>`,
 })
-export class CollapsibleSettingsComponent {}
+export class CollapsibleSettingsComponent {
+  readonly open = signal(true)
+}
 
 export default CollapsibleSettingsComponent

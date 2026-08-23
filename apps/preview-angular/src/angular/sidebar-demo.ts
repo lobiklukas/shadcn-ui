@@ -208,10 +208,10 @@ const data = {
 
           <div uiSidebarContent>
             <!-- NavMain -->
-            @for (item of navMain(); track item.title) {
-              <div uiSidebarGroup>
-                <div uiSidebarGroupLabel>Platform</div>
-                <ul uiSidebarMenu>
+            <div uiSidebarGroup>
+              <div uiSidebarGroupLabel>Platform</div>
+              <ul uiSidebarMenu>
+                @for (item of navMain(); track item.title) {
                   <li uiSidebarMenuItem>
                     <div uiCollapsible [open]="!!item.isActive" class="group/collapsible contents">
                       <button
@@ -238,9 +238,9 @@ const data = {
                       </div>
                     </div>
                   </li>
-                </ul>
-              </div>
-            }
+                }
+              </ul>
+            </div>
 
             <!-- NavProjects -->
             <div uiSidebarGroup class="group-data-[collapsible=icon]:hidden">

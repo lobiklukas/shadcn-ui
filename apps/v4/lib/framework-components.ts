@@ -443,7 +443,6 @@ export const FRAMEWORK_COMPONENTS: Record<string, Set<string>> = {
     "toggle",
     "toggle-group",
     "tooltip",
-
   ]),
 }
 

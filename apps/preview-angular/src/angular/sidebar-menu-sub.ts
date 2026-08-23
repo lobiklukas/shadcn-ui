@@ -101,5 +101,16 @@ export default class SidebarMenuSubDemoComponent {
         { title: "Edge Runtime", url: "#" },
       ],
     },
+    {
+      title: "Architecture",
+      url: "#",
+      items: [
+        { title: "Accessibility", url: "#" },
+        { title: "Fast Refresh", url: "#" },
+        { title: "Next.js Compiler", url: "#" },
+        { title: "Supported Browsers", url: "#" },
+        { title: "Turbopack", url: "#" },
+      ],
+    },
   ]
 }

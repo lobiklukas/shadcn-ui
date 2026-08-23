@@ -15,9 +15,10 @@ import { injectSidebar } from "./sidebar-provider.component"
  * shortcut via `aria-keyshortcuts`; the glyph is mirrored in RTL
  * (`cn-rtl-flip`).
  */
-@Directive({
+@Component({
   selector: "button[uiSidebarTrigger]",
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     type: "button",
     "data-sidebar": "trigger",
@@ -26,6 +27,10 @@ import { injectSidebar } from "./sidebar-provider.component"
     "[class]": "classes()",
     "(click)": "onClick()",
   },
+  template: `
+    <span class="inline-flex cn-rtl-flip [&>svg]:fill-current" aria-hidden="true" [innerHTML]="icon"></span>
+    <span class="sr-only">Toggle sidebar</span>
+  `,
 })
 export class SidebarTriggerDirective {
   readonly className = input<string | undefined>(undefined, { alias: "class" })

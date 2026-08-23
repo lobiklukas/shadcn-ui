@@ -159,8 +159,8 @@ const data = {
   ],
   template: `
     <div class="relative h-[420px] w-full overflow-hidden rounded-lg border border-border" uiDirectionProvider direction="rtl">
-      <button uiSidebarTrigger class="absolute top-4 right-4 z-10 ltr:right-auto ltr:left-4"></button>
       <div uiSidebarProvider class="w-full">
+        <button uiSidebarTrigger class="absolute top-4 right-4 z-10 ltr:right-auto ltr:left-4"></button>
         <nav uiSidebar collapsible="icon">
           <div uiSidebarHeader>
             <!-- TeamSwitcher -->
@@ -212,10 +212,10 @@ const data = {
 
           <div uiSidebarContent>
             <!-- NavMain -->
-            @for (item of navMain(); track item.title) {
-              <div uiSidebarGroup>
-                <div uiSidebarGroupLabel>Platform</div>
-                <ul uiSidebarMenu>
+            <div uiSidebarGroup>
+              <div uiSidebarGroupLabel>Platform</div>
+              <ul uiSidebarMenu>
+                @for (item of navMain(); track item.title) {
                   <li uiSidebarMenuItem>
                     <div uiCollapsible [open]="!!item.isActive" class="group/collapsible contents">
                       <button
@@ -242,9 +242,9 @@ const data = {
                       </div>
                     </div>
                   </li>
-                </ul>
-              </div>
-            }
+                }
+              </ul>
+            </div>
 
             <!-- NavProjects -->
             <div uiSidebarGroup class="group-data-[collapsible=icon]:hidden">
