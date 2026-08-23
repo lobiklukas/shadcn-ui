@@ -129,19 +129,27 @@ Pair the calendar with time inputs composed from field and input-group parts in 
 
 ## Custom Day Content
 
+Range selection with a month/year dropdown caption.
+
+<ComponentPreview framework="angular" name="calendar-custom-days" />
+
 <Callout>
-Not available in the Angular port. React customizes day cells through
-DayPicker's `components.DayButton` render prop; the Angular build has no
-per-day content hook, so the "$120 weekend price" example cannot be
-reproduced. Extend `CalendarComponent` if you need it.
+React customizes day cells through DayPicker's `components.DayButton` render
+prop (the "$120 weekend price" example); the Angular calendar has no per-day
+content hook yet, so that part is omitted. Extend `CalendarComponent` if you
+need it.
 </Callout>
 
 ## Hijri Calendar
 
+Single-date selection rendered with the Vazirmatn Arabic typeface.
+
+<ComponentPreview framework="angular" name="calendar-hijri" />
+
 <Callout>
-Not available in the Angular port. The React example uses
-`react-day-picker/persian` for an Islamic (Hijri) calendar; the Angular grid
-is built on the native Gregorian `Date` and has no alternate-calendar engine.
+The React example uses `react-day-picker/persian` for an Islamic (Hijri)
+calendar; the Angular grid is built on the native Gregorian `Date`, so this
+demo reproduces the locale typography only, not the alternate calendar.
 </Callout>
 
 ## RTL
