@@ -304,6 +304,26 @@ export const examples: Registry["items"] = [
     ],
   },
   {
+    name: "message-scroller-demo",
+    title: "Message Scroller Demo",
+    type: "registry:example",
+    registryDependencies: [
+      "message-scroller",
+      "button",
+      "input",
+    ],
+    files: [
+      {
+        path: "examples/message-scroller/MessageScrollerDemo.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/message-scroller/MessageScrollerScrollable.vue",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "breadcrumb-example",
     title: "Breadcrumb",
     type: "registry:example",

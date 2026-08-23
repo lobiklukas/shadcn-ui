@@ -40,6 +40,7 @@
     "menubar",
     "marker",
     "message",
+    "message-scroller",
     "native-select",
     "navigation-menu",
     "number-field",

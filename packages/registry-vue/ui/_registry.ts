@@ -1573,6 +1573,52 @@ export const ui: Registry["items"] = [
     },
   },
   {
+    name: "message-scroller",
+    type: "registry:ui",
+    registryDependencies: [
+      "button",
+    ],
+    files: [
+      {
+        path: "ui/message-scroller/MessageScrollerProvider.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/message-scroller/MessageScroller.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/message-scroller/MessageScrollerViewport.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/message-scroller/MessageScrollerContent.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/message-scroller/MessageScrollerItem.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/message-scroller/MessageScrollerButton.vue",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/message-scroller/context.ts",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/message-scroller/index.ts",
+        type: "registry:ui",
+      },
+    ],
+    meta: {
+      links: {
+        docs: "https://forceui.public.prd.shared.perforce.com/docs/components/vue/message-scroller",
+      },
+    },
+  },
+  {
     name: "menubar",
     type: "registry:ui",
     dependencies: [
