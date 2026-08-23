@@ -653,4 +653,39 @@ export const ui: Registry["items"] = [
     ],
     meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/navigation-menu" } },
   },
+  {
+    name: "sonner",
+    type: "registry:ui",
+    dependencies: ["ngx-sonner"],
+    files: [
+      { path: "ui/sonner/index.ts", type: "registry:ui" },
+      { path: "ui/sonner/sonner.component.html", type: "registry:ui" },
+      { path: "ui/sonner/sonner.component.ts", type: "registry:ui" },
+      { path: "ui/sonner/sonner.icons.ts", type: "registry:ui" },
+      { path: "ui/sonner/sonner.variants.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/sonner" } },
+  },
+  {
+    name: "calendar",
+    type: "registry:ui",
+    files: [
+      { path: "ui/calendar/calendar.component.html", type: "registry:ui" },
+      { path: "ui/calendar/calendar.component.ts", type: "registry:ui" },
+      { path: "ui/calendar/calendar.icons.ts", type: "registry:ui" },
+      { path: "ui/calendar/calendar.utils.ts", type: "registry:ui" },
+      { path: "ui/calendar/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/calendar" } },
+  },
+  {
+    name: "direction",
+    type: "registry:ui",
+    dependencies: ["@angular/cdk"],
+    files: [
+      { path: "ui/direction/direction.component.ts", type: "registry:ui" },
+      { path: "ui/direction/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/direction" } },
+  },
 ]
