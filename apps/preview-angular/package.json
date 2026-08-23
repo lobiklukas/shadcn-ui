@@ -10,6 +10,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@angular/animations": "^20.1.8",
     "@angular/cdk": "20.2.9",
     "@angular/common": "^20.0.0",
     "@angular/core": "^20.0.0",
