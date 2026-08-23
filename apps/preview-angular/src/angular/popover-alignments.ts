@@ -1,5 +1,7 @@
 import { Component } from "@angular/core"
 
+import { Button } from "@/angular-ui/button"
+
 import {
   Popover,
   PopoverContent,
@@ -11,7 +13,7 @@ import {
 @Component({
   selector: "preview-popover-alignments",
   standalone: true,
-  imports: [Popover, PopoverTrigger, PopoverPortal, PopoverPositioner, PopoverContent],
+  imports: [Button, Popover, PopoverTrigger, PopoverPortal, PopoverPositioner, PopoverContent],
   template: `
     <div class="flex gap-6">
       <div uiPopover>

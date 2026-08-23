@@ -1,5 +1,7 @@
 import { Component } from "@angular/core"
 
+import { Button } from "@/angular-ui/button"
+
 import {
   Popover,
   PopoverContent,
@@ -14,16 +16,7 @@ import {
 @Component({
   selector: "preview-popover-basic",
   standalone: true,
-  imports: [
-    Popover,
-    PopoverTrigger,
-    PopoverPortal,
-    PopoverPositioner,
-    PopoverContent,
-    PopoverHeader,
-    PopoverTitle,
-    PopoverDescription,
-  ],
+  imports: [Button, Popover, PopoverTrigger, PopoverPortal, PopoverPositioner, PopoverContent, PopoverHeader, PopoverTitle, PopoverDescription],
   template: `
     <div uiPopover>
       <button uiButton variant="outline" class="w-fit" uiPopoverTrigger type="button">

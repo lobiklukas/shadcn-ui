@@ -1,5 +1,7 @@
 import { Component } from "@angular/core"
 
+import { Button } from "@/angular-ui/button"
+
 import {
   Popover,
   PopoverContent,
@@ -16,20 +18,7 @@ import { Input } from "@/angular-ui/input"
 @Component({
   selector: "preview-popover-form",
   standalone: true,
-  imports: [
-    Popover,
-    PopoverTrigger,
-    PopoverPortal,
-    PopoverPositioner,
-    PopoverContent,
-    PopoverHeader,
-    PopoverTitle,
-    PopoverDescription,
-    Field,
-    FieldGroup,
-    FieldLabel,
-    Input,
-  ],
+  imports: [Button, Popover, PopoverTrigger, PopoverPortal, PopoverPositioner, PopoverContent, PopoverHeader, PopoverTitle, PopoverDescription, Field, FieldGroup, FieldLabel, Input],
   template: `
     <div uiPopover>
       <button uiButton variant="outline" uiPopoverTrigger type="button">
