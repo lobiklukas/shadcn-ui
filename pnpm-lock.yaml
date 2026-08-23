@@ -156,6 +156,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      ngx-sonner:
+        specifier: ^3.1.0
+        version: 3.1.0(@angular/common@20.3.26(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))
       shadcn:
         specifier: workspace:*
         version: link:../../packages/shadcn
@@ -893,6 +896,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      ngx-sonner:
+        specifier: ^3.1.0
+        version: 3.1.0(@angular/common@20.3.26(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))
       shadcn:
         specifier: workspace:*
         version: link:../shadcn
@@ -10967,6 +10973,12 @@ packages:
       sass:
         optional: true
 
+  ngx-sonner@3.1.0:
+    resolution: {integrity: sha512-hN5GolhBeVs0gzPNZi2VPnbv/sM+3+aMGCvIjH33MC8LHz+QIiOUWGw3AbnCH/hQxy08AGwkWHVYy1acvXByQQ==}
+    peerDependencies:
+      '@angular/common': '>=19.0.0'
+      '@angular/core': '>=19.0.0'
+
   node-addon-api@6.1.0:
     resolution: {integrity: sha512-+eawOlIgy680F0kBzPUNFhMZGtJ1YmqM6l4+Crf4IkImjYrO/mqPwRMh352g23uIaQKFItcQ64I7KMaJxHgAVA==}
 
@@ -19604,6 +19616,26 @@ snapshots:
       vite: 6.4.3(@types/node@20.19.10)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.90.0)(tsx@4.20.3)(yaml@2.8.1)
       vue: 3.5.40(typescript@5.9.2)
 
+  '@vitest/browser@3.2.6(msw@2.10.4(@types/node@20.19.10)(typescript@5.9.2))(playwright@1.61.0)(vite@6.4.3(@types/node@20.19.10)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.90.0)(tsx@4.20.3)(yaml@2.8.1))(vitest@3.2.6)':
+    dependencies:
+      '@testing-library/dom': 10.4.1
+      '@testing-library/user-event': 14.6.1(@testing-library/dom@10.4.1)
+      '@vitest/mocker': 3.2.6(msw@2.10.4(@types/node@20.19.10)(typescript@5.9.2))(vite@6.4.3(@types/node@20.19.10)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.90.0)(tsx@4.20.3)(yaml@2.8.1))
+      '@vitest/utils': 3.2.6
+      magic-string: 0.30.21
+      sirv: 3.0.2
+      tinyrainbow: 2.0.0
+      vitest: 3.2.6(@types/debug@4.1.12)(@types/node@20.19.10)(@vitest/browser@3.2.6)(jiti@2.7.0)(jsdom@28.1.0(@noble/hashes@1.8.0))(lightningcss@1.32.0)(msw@2.10.4(@types/node@20.19.10)(typescript@5.9.2))(sass@1.90.0)(tsx@4.20.3)(yaml@2.8.1)
+      ws: 8.18.3
+    optionalDependencies:
+      playwright: 1.61.0
+    transitivePeerDependencies:
+      - bufferutil
+      - msw
+      - utf-8-validate
+      - vite
+    optional: true
+
   '@vitest/browser@3.2.6(msw@2.10.4(@types/node@20.19.10)(typescript@5.9.2))(playwright@1.61.0)(vite@7.3.2(@types/node@20.19.10)(jiti@1.21.7)(lightningcss@1.32.0)(sass@1.90.0)(tsx@4.20.3)(yaml@2.8.1))(vitest@3.2.6)':
     dependencies:
       '@testing-library/dom': 10.4.1
@@ -19650,6 +19682,16 @@ snapshots:
       '@vitest/utils': 3.2.6
       chai: 5.3.3
       tinyrainbow: 2.0.0
+
+  '@vitest/mocker@3.2.6(msw@2.10.4(@types/node@20.19.10)(typescript@5.9.2))(vite@6.4.3(@types/node@20.19.10)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.90.0)(tsx@4.20.3)(yaml@2.8.1))':
+    dependencies:
+      '@vitest/spy': 3.2.6
+      estree-walker: 3.0.3
+      magic-string: 0.30.21
+    optionalDependencies:
+      msw: 2.10.4(@types/node@20.19.10)(typescript@5.9.2)
+      vite: 6.4.3(@types/node@20.19.10)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.90.0)(tsx@4.20.3)(yaml@2.8.1)
+    optional: true
 
   '@vitest/mocker@3.2.6(msw@2.10.4(@types/node@20.19.10)(typescript@5.9.2))(vite@7.3.2(@types/node@20.19.10)(jiti@1.21.7)(lightningcss@1.32.0)(sass@1.90.0)(tsx@4.20.3)(yaml@2.8.1))':
     dependencies:
@@ -24679,6 +24721,12 @@ snapshots:
       - '@types/node'
       - babel-plugin-macros
 
+  ngx-sonner@3.1.0(@angular/common@20.3.26(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1)):
+    dependencies:
+      '@angular/common': 20.3.26(@angular/core@20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2)
+      '@angular/core': 20.3.26(@angular/compiler@20.3.26)(rxjs@7.8.2)(zone.js@0.15.1)
+      tslib: 2.8.1
+
   node-addon-api@6.1.0:
     optional: true
 
@@ -27793,7 +27841,7 @@ snapshots:
     optionalDependencies:
       '@types/debug': 4.1.12
       '@types/node': 20.19.10
-      '@vitest/browser': 3.2.6(msw@2.10.4(@types/node@20.19.10)(typescript@5.9.2))(playwright@1.61.0)(vite@7.3.6(@types/node@20.19.10)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.90.0)(tsx@4.20.3)(yaml@2.8.1))(vitest@3.2.6)
+      '@vitest/browser': 3.2.6(msw@2.10.4(@types/node@20.19.10)(typescript@5.9.2))(playwright@1.61.0)(vite@6.4.3(@types/node@20.19.10)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.90.0)(tsx@4.20.3)(yaml@2.8.1))(vitest@3.2.6)
       jsdom: 28.1.0(@noble/hashes@1.8.0)
     transitivePeerDependencies:
       - jiti
