@@ -5,7 +5,11 @@ base: angular
 component: true
 ---
 
-<ComponentPreview framework="angular" name="card-demo" previewClassName="h-[30rem]" />
+<ComponentPreview
+  framework="angular"
+  name="card-demo"
+  previewClassName="h-[30rem]"
+/>
 
 ## Installation
 
@@ -43,9 +47,13 @@ npx shadcn@latest add @force-ui-angular/card
 
 ```ts
 import {
-  CardComponent, CardHeaderComponent, CardTitleComponent,
-  CardDescriptionComponent, CardActionComponent,
-  CardContentComponent, CardFooterComponent,
+  CardActionComponent,
+  CardComponent,
+  CardContentComponent,
+  CardDescriptionComponent,
+  CardFooterComponent,
+  CardHeaderComponent,
+  CardTitleComponent,
 } from "@/components/ui/card"
 ```
 
