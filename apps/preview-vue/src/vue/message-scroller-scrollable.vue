@@ -1,26 +1,26 @@
 <script setup lang="ts">
 import {
-  MessageScrollerProvider,
   MessageScroller,
-  MessageScrollerViewport,
+  MessageScrollerButton,
   MessageScrollerContent,
   MessageScrollerItem,
-  MessageScrollerButton,
-} from '@/ui/message-scroller'
+  MessageScrollerProvider,
+  MessageScrollerViewport,
+} from "@/ui/message-scroller"
 
 interface Msg {
   id: number
-  role: 'user' | 'assistant'
+  role: "user" | "assistant"
   text: string
 }
 
 let nextId = 0
-function msg(role: Msg['role'], text: string): Msg {
+function msg(role: Msg["role"], text: string): Msg {
   return { id: nextId++, role, text }
 }
 
 const messages: Msg[] = Array.from({ length: 12 }, (_, i) =>
-  msg(i % 2 === 0 ? 'user' : 'assistant', `Message ${i + 1}`)
+  msg(i % 2 === 0 ? "user" : "assistant", `Message ${i + 1}`)
 )
 </script>
 
@@ -37,9 +37,11 @@ const messages: Msg[] = Array.from({ length: 12 }, (_, i) =>
             >
               <span
                 class="inline-block max-w-[85%] rounded-lg px-3 py-2"
-                :class="message.role === 'user'
-                  ? 'ml-auto bg-primary text-primary-foreground'
-                  : 'bg-muted'"
+                :class="
+                  message.role === 'user'
+                    ? 'ml-auto bg-primary text-primary-foreground'
+                    : 'bg-muted'
+                "
               >
                 {{ message.text }}
               </span>

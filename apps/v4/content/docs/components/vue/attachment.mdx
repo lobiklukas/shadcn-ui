@@ -51,8 +51,8 @@ npx shadcn@latest add @force-ui-vue/attachment
 <script setup lang="ts">
 import {
   Attachment,
-  AttachmentActions,
   AttachmentAction,
+  AttachmentActions,
   AttachmentContent,
   AttachmentDescription,
   AttachmentMedia,
@@ -124,13 +124,13 @@ Use `state` to reflect the upload lifecycle. The card styles error state automat
   previewClassName="h-auto theme-blue"
 />
 
-| State         | Description                                    |
-| ------------- | ---------------------------------------------- |
-| `idle`        | Selected but not yet uploaded. Dashed border.  |
-| `uploading`   | Transfer in progress.                          |
-| `processing`  | Uploaded, server-side processing.              |
-| `error`       | Failed. Destructive border, text, and icon.    |
-| `done`        | Completed. The default state.                  |
+| State        | Description                                   |
+| ------------ | --------------------------------------------- |
+| `idle`       | Selected but not yet uploaded. Dashed border. |
+| `uploading`  | Transfer in progress.                         |
+| `processing` | Uploaded, server-side processing.             |
+| `error`      | Failed. Destructive border, text, and icon.   |
+| `done`       | Completed. The default state.                 |
 
 ## Sizes
 
@@ -192,21 +192,21 @@ State is conveyed by more than color: `idle` uses a dashed border, `uploading`/`
 
 The root file card.
 
-| Prop          | Type                                                    | Default        | Description                                      |
-| ------------- | ------------------------------------------------------- | -------------- | ------------------------------------------------ |
-| `state`       | `"idle" \| "uploading" \| "processing" \| "error" \| "done"` | `"done"`  | The upload lifecycle state.                      |
-| `size`        | `"default" \| "sm" \| "xs"`                             | `"default"`    | The attachment density.                          |
-| `orientation` | `"horizontal" \| "vertical"`                            | `"horizontal"` | Layout of media relative to content.             |
-| `class`       | `string`                                                | -              | Additional classes to apply to the root element. |
+| Prop          | Type                                                         | Default        | Description                                      |
+| ------------- | ------------------------------------------------------------ | -------------- | ------------------------------------------------ |
+| `state`       | `"idle" \| "uploading" \| "processing" \| "error" \| "done"` | `"done"`       | The upload lifecycle state.                      |
+| `size`        | `"default" \| "sm" \| "xs"`                                  | `"default"`    | The attachment density.                          |
+| `orientation` | `"horizontal" \| "vertical"`                                 | `"horizontal"` | Layout of media relative to content.             |
+| `class`       | `string`                                                     | -              | Additional classes to apply to the root element. |
 
 ### AttachmentMedia
 
 The media slot. Use `variant="image"` for image previews.
 
-| Prop      | Type               | Default   | Description                                       |
-| --------- | ------------------ | --------- | ------------------------------------------------- |
-| `variant` | `"icon" \| "image"` | `"icon"` | Whether the slot holds an icon or an image.        |
-| `class`   | `string`           | -         | Additional classes to apply to the media slot.     |
+| Prop      | Type                | Default  | Description                                    |
+| --------- | ------------------- | -------- | ---------------------------------------------- |
+| `variant` | `"icon" \| "image"` | `"icon"` | Whether the slot holds an icon or an image.    |
+| `class`   | `string`            | -        | Additional classes to apply to the media slot. |
 
 ### AttachmentContent
 
@@ -220,49 +220,49 @@ The text column holding the title and description.
 
 The file name. Truncates and shimmers during upload/processing.
 
-| Prop    | Type     | Default | Description                                  |
-| ------- | -------- | ------- | -------------------------------------------- |
-| `class` | `string` | -       | Additional classes to apply to the title.     |
+| Prop    | Type     | Default | Description                               |
+| ------- | -------- | ------- | ----------------------------------------- |
+| `class` | `string` | -       | Additional classes to apply to the title. |
 
 ### AttachmentDescription
 
 Secondary metadata, e.g. size, progress, or error text.
 
-| Prop    | Type     | Default | Description                                           |
-| ------- | -------- | ------- | ----------------------------------------------------- |
-| `class` | `string` | -       | Additional classes to apply to the description.        |
+| Prop    | Type     | Default | Description                                     |
+| ------- | -------- | ------- | ----------------------------------------------- |
+| `class` | `string` | -       | Additional classes to apply to the description. |
 
 ### AttachmentActions
 
 The action row pinned to the end of the card.
 
-| Prop    | Type     | Default | Description                                         |
-| ------- | -------- | ------- | --------------------------------------------------- |
-| `class` | `string` | -       | Additional classes to apply to the actions row.      |
+| Prop    | Type     | Default | Description                                     |
+| ------- | -------- | ------- | ----------------------------------------------- |
+| `class` | `string` | -       | Additional classes to apply to the actions row. |
 
 ### AttachmentAction
 
 An icon button styled after [`Button`](/docs/components/vue/button). Defaults to `ghost` / `icon-xs`.
 
-| Prop      | Type                        | Default     | Description                                     |
-| --------- | --------------------------- | ----------- | ----------------------------------------------- |
-| `variant` | `ButtonVariants["variant"]` | `"ghost"`   | The button variant.                              |
-| `size`    | `ButtonVariants["size"]`    | `"icon-xs"` | The button size.                                 |
-| `class`   | `string`                    | -           | Additional classes to apply to the button.       |
+| Prop      | Type                        | Default     | Description                                |
+| --------- | --------------------------- | ----------- | ------------------------------------------ |
+| `variant` | `ButtonVariants["variant"]` | `"ghost"`   | The button variant.                        |
+| `size`    | `ButtonVariants["size"]`    | `"icon-xs"` | The button size.                           |
+| `class`   | `string`                    | -           | Additional classes to apply to the button. |
 
 ### AttachmentTrigger
 
 A transparent overlay covering the card. Use `as="a"` for link triggers.
 
-| Prop    | Type     | Default    | Description                                        |
-| ------- | -------- | ---------- | -------------------------------------------------- |
-| `as`    | `string` | `"button"` | The element to render.                              |
-| `class` | `string` | -          | Additional classes to apply to the trigger.         |
+| Prop    | Type     | Default    | Description                                 |
+| ------- | -------- | ---------- | ------------------------------------------- |
+| `as`    | `string` | `"button"` | The element to render.                      |
+| `class` | `string` | -          | Additional classes to apply to the trigger. |
 
 ### AttachmentGroup
 
 A horizontally scrollable row of attachments.
 
-| Prop    | Type     | Default | Description                                          |
-| ------- | -------- | ------- | ---------------------------------------------------- |
-| `class` | `string` | -       | Additional classes to apply to the group.             |
+| Prop    | Type     | Default | Description                               |
+| ------- | -------- | ------- | ----------------------------------------- |
+| `class` | `string` | -       | Additional classes to apply to the group. |

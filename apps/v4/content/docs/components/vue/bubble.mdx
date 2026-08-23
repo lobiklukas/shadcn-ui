@@ -193,7 +193,10 @@ Reaction chips render emoji, which assistive tech reads literally ("thumbs up" i
 
 ```vue showLineNumbers
 <template>
-  <BubbleReactions role="img" aria-label="Reactions: thumbs up, fire, and 2 more">
+  <BubbleReactions
+    role="img"
+    aria-label="Reactions: thumbs up, fire, and 2 more"
+  >
     <span>👍</span>
     <span>🔥</span>
     <span>+2</span>
@@ -221,10 +224,10 @@ The root bubble wrapper.
 
 The bubble content wrapper.
 
-| Prop    | Type      | Default | Description                                         |
-| ------- | --------- | ------- | --------------------------------------------------- |
-| `as`    | `string`  | `"div"` | Render the content as a custom element, e.g. `button`. |
-| `class` | `string`  | -       | Additional classes to apply to the content element. |
+| Prop    | Type     | Default | Description                                            |
+| ------- | -------- | ------- | ------------------------------------------------------ |
+| `as`    | `string` | `"div"` | Render the content as a custom element, e.g. `button`. |
+| `class` | `string` | -       | Additional classes to apply to the content element.    |
 
 ### BubbleReactions
 

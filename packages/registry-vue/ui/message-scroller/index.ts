@@ -6,6 +6,7 @@ export { default as MessageScrollerItem } from "./MessageScrollerItem.vue"
 export { default as MessageScrollerButton } from "./MessageScrollerButton.vue"
 export {
   useMessageScrollerContext,
+  useMessageScrollerController,
   provideMessageScrollerContext,
   type MessageScrollerState,
   type MessageScrollerProviderProps,

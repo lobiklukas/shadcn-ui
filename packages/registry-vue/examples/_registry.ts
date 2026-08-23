@@ -11,9 +11,7 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "accordion",
-    ],
+    registryDependencies: ["accordion"],
     dependencies: [],
   },
   {
@@ -33,13 +31,13 @@ export const examples: Registry["items"] = [
         path: "examples/alert/AlertStatus.vue",
         type: "registry:example",
       },
+      {
+        path: "examples/alert/AlertRtl.vue",
+        type: "registry:example",
+      },
     ],
-    registryDependencies: [
-      "alert",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    registryDependencies: ["alert"],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "alert-dialog-example",
@@ -51,10 +49,7 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "alert-dialog",
-      "button",
-    ],
+    registryDependencies: ["alert-dialog", "button"],
     dependencies: [],
   },
   {
@@ -66,10 +61,12 @@ export const examples: Registry["items"] = [
         path: "examples/aspect-ratio/AspectRatioDemo.vue",
         type: "registry:example",
       },
+      {
+        path: "examples/aspect-ratio/AspectRatioRtl.vue",
+        type: "registry:example",
+      },
     ],
-    registryDependencies: [
-      "aspect-ratio",
-    ],
+    registryDependencies: ["aspect-ratio"],
     dependencies: [],
   },
   {
@@ -82,9 +79,7 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "avatar",
-    ],
+    registryDependencies: ["avatar"],
     dependencies: [],
   },
   {
@@ -117,12 +112,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "badge",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    registryDependencies: ["badge"],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "attachment-example",
@@ -154,15 +145,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "attachment",
-      "button",
-      "dialog",
-      "spinner",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    registryDependencies: ["attachment", "button", "dialog", "spinner"],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "bubble-example",
@@ -203,6 +187,10 @@ export const examples: Registry["items"] = [
       },
       {
         path: "examples/bubble/BubbleVariants.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/bubble/BubbleMarkdown.vue",
         type: "registry:example",
       },
     ],
@@ -253,13 +241,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "marker",
-      "spinner",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    registryDependencies: ["marker", "spinner"],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "message-example",
@@ -290,6 +273,10 @@ export const examples: Registry["items"] = [
         path: "examples/message/MessageHeaderFooter.vue",
         type: "registry:example",
       },
+      {
+        path: "examples/message/MessageMarkdown.vue",
+        type: "registry:example",
+      },
     ],
     registryDependencies: [
       "attachment",
@@ -299,19 +286,13 @@ export const examples: Registry["items"] = [
       "marker",
       "message",
     ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "message-scroller-demo",
     title: "Message Scroller Demo",
     type: "registry:example",
-    registryDependencies: [
-      "message-scroller",
-      "button",
-      "input",
-    ],
+    registryDependencies: ["message-scroller", "button", "input"],
     files: [
       {
         path: "examples/message-scroller/MessageScrollerDemo.vue",
@@ -319,6 +300,38 @@ export const examples: Registry["items"] = [
       },
       {
         path: "examples/message-scroller/MessageScrollerScrollable.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/message-scroller/MessageScrollerAnchoring.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/message-scroller/MessageScrollerAnimation.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/message-scroller/MessageScrollerGroupChat.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/message-scroller/MessageScrollerLoadHistory.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/message-scroller/MessageScrollerOpeningPosition.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/message-scroller/MessageScrollerPreviousContext.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/message-scroller/MessageScrollerState.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/message-scroller/MessageScrollerStreaming.vue",
         type: "registry:example",
       },
     ],
@@ -353,15 +366,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "breadcrumb",
-      "button",
-      "drawer",
-      "dropdown-menu",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    registryDependencies: ["breadcrumb", "button", "drawer", "dropdown-menu"],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "button-example",
@@ -417,13 +423,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "button",
-      "spinner",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    registryDependencies: ["button", "spinner"],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "button-group-example",
@@ -487,9 +488,7 @@ export const examples: Registry["items"] = [
       "textarea",
       "tooltip",
     ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "calendar-example",
@@ -559,12 +558,7 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "button",
-      "card",
-      "input",
-      "label",
-    ],
+    registryDependencies: ["button", "card", "input", "label"],
     dependencies: [],
   },
   {
@@ -597,13 +591,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "card",
-      "carousel",
-    ],
-    dependencies: [
-      "embla-carousel-autoplay",
-    ],
+    registryDependencies: ["card", "carousel"],
+    dependencies: ["embla-carousel-autoplay"],
   },
   {
     name: "chart-example",
@@ -631,13 +620,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "card",
-      "chart",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    registryDependencies: ["card", "chart"],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "checkbox-example",
@@ -653,10 +637,7 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "checkbox",
-      "label",
-    ],
+    registryDependencies: ["checkbox", "label"],
     dependencies: [],
   },
   {
@@ -669,13 +650,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "button",
-      "collapsible",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    registryDependencies: ["button", "collapsible"],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "combobox-example",
@@ -687,14 +663,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "button",
-      "command",
-      "popover",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    registryDependencies: ["button", "command", "popover"],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "command-example",
@@ -705,13 +675,13 @@ export const examples: Registry["items"] = [
         path: "examples/command/CommandDemo.vue",
         type: "registry:example",
       },
+      {
+        path: "examples/command/CommandDialogDemo.vue",
+        type: "registry:example",
+      },
     ],
-    registryDependencies: [
-      "command",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    registryDependencies: ["command"],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "context-menu-example",
@@ -722,13 +692,13 @@ export const examples: Registry["items"] = [
         path: "examples/context-menu/ContextMenuDemo.vue",
         type: "registry:example",
       },
+      {
+        path: "examples/context-menu/ContextMenuSides.vue",
+        type: "registry:example",
+      },
     ],
-    registryDependencies: [
-      "context-menu",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    registryDependencies: ["context-menu"],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "data-table-example",
@@ -739,6 +709,10 @@ export const examples: Registry["items"] = [
         path: "examples/data-table/DataTableDemo.vue",
         type: "registry:example",
       },
+      {
+        path: "examples/data-table/DataTableRtl.vue",
+        type: "registry:example",
+      },
     ],
     registryDependencies: [
       "button",
@@ -747,9 +721,7 @@ export const examples: Registry["items"] = [
       "input",
       "table",
     ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "date-picker-example",
@@ -760,15 +732,37 @@ export const examples: Registry["items"] = [
         path: "examples/date-picker/DatePickerDemo.vue",
         type: "registry:example",
       },
+      {
+        path: "examples/date-picker/DatePickerBasic.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/date-picker/DatePickerDob.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/date-picker/DatePickerInput.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/date-picker/DatePickerNaturalLanguage.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/date-picker/DatePickerRange.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/date-picker/DatePickerTime.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/date-picker/DatePickerRtl.vue",
+        type: "registry:example",
+      },
     ],
-    registryDependencies: [
-      "button",
-      "calendar",
-      "popover",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    registryDependencies: ["button", "calendar", "popover"],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "dialog-example",
@@ -800,11 +794,7 @@ export const examples: Registry["items"] = [
       "input",
       "label",
     ],
-    dependencies: [
-      "vee-validate",
-      "vue-sonner",
-      "zod",
-    ],
+    dependencies: ["vee-validate", "vue-sonner", "zod"],
   },
   {
     name: "drawer-example",
@@ -815,14 +805,25 @@ export const examples: Registry["items"] = [
         path: "examples/drawer/DrawerDemo.vue",
         type: "registry:example",
       },
+      {
+        path: "examples/drawer/DrawerNested.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/drawer/DrawerNonModal.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/drawer/DrawerSnapPoints.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/drawer/DrawerSwipeHandle.vue",
+        type: "registry:example",
+      },
     ],
-    registryDependencies: [
-      "button",
-      "drawer",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    registryDependencies: ["button", "drawer"],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "dropdown-menu-example",
@@ -833,11 +834,12 @@ export const examples: Registry["items"] = [
         path: "examples/dropdown-menu/DropdownMenuDemo.vue",
         type: "registry:example",
       },
+      {
+        path: "examples/dropdown-menu/DropdownMenuRtl.vue",
+        type: "registry:example",
+      },
     ],
-    registryDependencies: [
-      "button",
-      "dropdown-menu",
-    ],
+    registryDependencies: ["button", "dropdown-menu"],
     dependencies: [],
   },
   {
@@ -870,16 +872,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "avatar",
-      "button",
-      "empty",
-      "input-group",
-      "kbd",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    registryDependencies: ["avatar", "button", "empty", "input-group", "kbd"],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "field-example",
@@ -958,16 +952,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "button",
-      "form",
-      "input",
-      "textarea",
-    ],
-    dependencies: [
-      "vee-validate",
-      "zod",
-    ],
+    registryDependencies: ["button", "form", "input", "textarea"],
+    dependencies: ["vee-validate", "zod"],
   },
   {
     name: "hover-card-example",
@@ -979,14 +965,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "avatar",
-      "button",
-      "hover-card",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    registryDependencies: ["avatar", "button", "hover-card"],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "input-example",
@@ -1030,16 +1010,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "button",
-      "form",
-      "input",
-      "label",
-    ],
-    dependencies: [
-      "vee-validate",
-      "zod",
-    ],
+    registryDependencies: ["button", "form", "input", "label"],
+    dependencies: ["vee-validate", "zod"],
   },
   {
     name: "input-group-example",
@@ -1094,6 +1066,10 @@ export const examples: Registry["items"] = [
         path: "examples/input-group/InputGroupVariants.vue",
         type: "registry:example",
       },
+      {
+        path: "examples/input-group/InputGroupRtl.vue",
+        type: "registry:example",
+      },
     ],
     registryDependencies: [
       "button-group",
@@ -1105,9 +1081,7 @@ export const examples: Registry["items"] = [
       "spinner",
       "tooltip",
     ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "input-otp-example",
@@ -1135,17 +1109,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "button",
-      "field",
-      "input-otp",
-    ],
-    dependencies: [
-      "vee-validate",
-      "vue-input-otp",
-      "vue-sonner",
-      "zod",
-    ],
+    registryDependencies: ["button", "field", "input-otp"],
+    dependencies: ["vee-validate", "vue-input-otp", "vue-sonner", "zod"],
   },
   {
     name: "item-example",
@@ -1193,15 +1158,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "avatar",
-      "button",
-      "dropdown-menu",
-      "item",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    registryDependencies: ["avatar", "button", "dropdown-menu", "item"],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "kbd-example",
@@ -1240,9 +1198,7 @@ export const examples: Registry["items"] = [
       "kbd",
       "tooltip",
     ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "label-example",
@@ -1254,10 +1210,7 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "checkbox",
-      "label",
-    ],
+    registryDependencies: ["checkbox", "label"],
     dependencies: [],
   },
   {
@@ -1270,9 +1223,7 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "menubar",
-    ],
+    registryDependencies: ["menubar"],
     dependencies: [],
   },
   {
@@ -1305,16 +1256,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "button",
-      "form",
-      "native-select",
-    ],
-    dependencies: [
-      "vee-validate",
-      "vue-sonner",
-      "zod",
-    ],
+    registryDependencies: ["button", "form", "native-select"],
+    dependencies: ["vee-validate", "vue-sonner", "zod"],
   },
   {
     name: "navigation-menu-example",
@@ -1330,12 +1273,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "navigation-menu",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    registryDependencies: ["navigation-menu"],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "number-field-example",
@@ -1367,17 +1306,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "button",
-      "field",
-      "label",
-      "number-field",
-    ],
-    dependencies: [
-      "vee-validate",
-      "vue-sonner",
-      "zod",
-    ],
+    registryDependencies: ["button", "field", "label", "number-field"],
+    dependencies: ["vee-validate", "vue-sonner", "zod"],
   },
   {
     name: "pagination-example",
@@ -1389,9 +1319,7 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "pagination",
-    ],
+    registryDependencies: ["pagination"],
     dependencies: [],
   },
   {
@@ -1404,9 +1332,7 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "pin-input",
-    ],
+    registryDependencies: ["pin-input"],
     dependencies: [],
   },
   {
@@ -1419,12 +1345,7 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "button",
-      "input",
-      "label",
-      "popover",
-    ],
+    registryDependencies: ["button", "input", "label", "popover"],
     dependencies: [],
   },
   {
@@ -1437,9 +1358,7 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "progress",
-    ],
+    registryDependencies: ["progress"],
     dependencies: [],
   },
   {
@@ -1452,10 +1371,7 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "label",
-      "radio-group",
-    ],
+    registryDependencies: ["label", "radio-group"],
     dependencies: [],
   },
   {
@@ -1468,9 +1384,7 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "resizable",
-    ],
+    registryDependencies: ["resizable"],
     dependencies: [],
   },
   {
@@ -1483,10 +1397,7 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "scroll-area",
-      "separator",
-    ],
+    registryDependencies: ["scroll-area", "separator"],
     dependencies: [],
   },
   {
@@ -1507,9 +1418,7 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "select",
-    ],
+    registryDependencies: ["select"],
     dependencies: [],
   },
   {
@@ -1522,9 +1431,7 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "separator",
-    ],
+    registryDependencies: ["separator"],
     dependencies: [],
   },
   {
@@ -1536,13 +1443,12 @@ export const examples: Registry["items"] = [
         path: "examples/sheet/SheetDemo.vue",
         type: "registry:example",
       },
+      {
+        path: "examples/sheet/SheetRtl.vue",
+        type: "registry:example",
+      },
     ],
-    registryDependencies: [
-      "button",
-      "input",
-      "label",
-      "sheet",
-    ],
+    registryDependencies: ["button", "input", "label", "sheet"],
     dependencies: [],
   },
   {
@@ -1554,13 +1460,13 @@ export const examples: Registry["items"] = [
         path: "examples/sidebar/SidebarDemo.vue",
         type: "registry:example",
       },
+      {
+        path: "examples/sidebar/SidebarRtl.vue",
+        type: "registry:example",
+      },
     ],
-    registryDependencies: [
-      "sidebar",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    registryDependencies: ["sidebar"],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "skeleton-example",
@@ -1572,9 +1478,7 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "skeleton",
-    ],
+    registryDependencies: ["skeleton"],
     dependencies: [],
   },
   {
@@ -1587,10 +1491,25 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "slider",
-    ],
+    registryDependencies: ["slider"],
     dependencies: [],
+  },
+  {
+    name: "toast-example",
+    title: "Toast",
+    type: "registry:example",
+    files: [
+      {
+        path: "examples/toast/ToastTypes.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/toast/ToastPromise.vue",
+        type: "registry:example",
+      },
+    ],
+    registryDependencies: ["button"],
+    dependencies: ["vue-sonner"],
   },
   {
     name: "sonner-example",
@@ -1610,13 +1529,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "button",
-      "dialog",
-    ],
-    dependencies: [
-      "vue-sonner",
-    ],
+    registryDependencies: ["button", "dialog"],
+    dependencies: ["vue-sonner"],
   },
   {
     name: "spinner-example",
@@ -1681,9 +1595,7 @@ export const examples: Registry["items"] = [
       "progress",
       "spinner",
     ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "stepper-example",
@@ -1707,18 +1619,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "button",
-      "form",
-      "input",
-      "select",
-      "stepper",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-      "vue-sonner",
-      "zod",
-    ],
+    registryDependencies: ["button", "form", "input", "select", "stepper"],
+    dependencies: ["@material-symbols/svg-400", "vue-sonner", "zod"],
   },
   {
     name: "switch-example",
@@ -1729,11 +1631,12 @@ export const examples: Registry["items"] = [
         path: "examples/switch/SwitchDemo.vue",
         type: "registry:example",
       },
+      {
+        path: "examples/switch/SwitchRtl.vue",
+        type: "registry:example",
+      },
     ],
-    registryDependencies: [
-      "label",
-      "switch",
-    ],
+    registryDependencies: ["label", "switch"],
     dependencies: [],
   },
   {
@@ -1746,9 +1649,7 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "table",
-    ],
+    registryDependencies: ["table"],
     dependencies: [],
   },
   {
@@ -1761,13 +1662,7 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "button",
-      "card",
-      "input",
-      "label",
-      "tabs",
-    ],
+    registryDependencies: ["button", "card", "input", "label", "tabs"],
     dependencies: [],
   },
   {
@@ -1784,15 +1679,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "button",
-      "popover",
-      "tags-input",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-      "reka-ui",
-    ],
+    registryDependencies: ["button", "popover", "tags-input"],
+    dependencies: ["@material-symbols/svg-400", "reka-ui"],
   },
   {
     name: "tanstack-form-example",
@@ -1848,11 +1736,7 @@ export const examples: Registry["items"] = [
       "switch",
       "textarea",
     ],
-    dependencies: [
-      "@material-symbols/svg-400",
-      "vue-sonner",
-      "zod",
-    ],
+    dependencies: ["@material-symbols/svg-400", "vue-sonner", "zod"],
   },
   {
     name: "textarea-example",
@@ -1872,9 +1756,7 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "textarea",
-    ],
+    registryDependencies: ["textarea"],
     dependencies: [],
   },
   {
@@ -1907,12 +1789,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "toggle",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    registryDependencies: ["toggle"],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "toggle-group-example",
@@ -1944,12 +1822,8 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "toggle-group",
-    ],
-    dependencies: [
-      "@material-symbols/svg-400",
-    ],
+    registryDependencies: ["toggle-group"],
+    dependencies: ["@material-symbols/svg-400"],
   },
   {
     name: "tooltip-example",
@@ -1961,10 +1835,7 @@ export const examples: Registry["items"] = [
         type: "registry:example",
       },
     ],
-    registryDependencies: [
-      "button",
-      "tooltip",
-    ],
+    registryDependencies: ["button", "tooltip"],
     dependencies: [],
   },
   {
@@ -2026,6 +1897,10 @@ export const examples: Registry["items"] = [
       },
       {
         path: "examples/typography/TypographyTable.vue",
+        type: "registry:example",
+      },
+      {
+        path: "examples/typography/TypographyRtl.vue",
         type: "registry:example",
       },
     ],

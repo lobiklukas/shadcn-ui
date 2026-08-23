@@ -45,14 +45,14 @@ npx shadcn@latest add @force-ui-vue/message-scroller
 
 ```vue
 <script setup lang="ts">
-  import {
-    MessageScrollerProvider,
-    MessageScroller,
-    MessageScrollerViewport,
-    MessageScrollerContent,
-    MessageScrollerItem,
-    MessageScrollerButton,
-  } from "@/ui/message-scroller";
+import {
+  MessageScroller,
+  MessageScrollerButton,
+  MessageScrollerContent,
+  MessageScrollerItem,
+  MessageScrollerProvider,
+  MessageScrollerViewport,
+} from "@/ui/message-scroller"
 </script>
 ```
 
@@ -97,10 +97,10 @@ To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
 
 Headless root. Owns the follow state and edge tracking.
 
-| Prop                  | Type      | Default | Description                                          |
-| --------------------- | --------- | ------- | ---------------------------------------------------- |
-| `autoScroll`          | `boolean` | `true`  | Follow new content while pinned to the bottom.       |
-| `scrollEdgeThreshold` | `number`  | `80`    | Distance in px that counts as "at" an edge.          |
+| Prop                  | Type      | Default | Description                                    |
+| --------------------- | --------- | ------- | ---------------------------------------------- |
+| `autoScroll`          | `boolean` | `true`  | Follow new content while pinned to the bottom. |
+| `scrollEdgeThreshold` | `number`  | `80`    | Distance in px that counts as "at" an edge.    |
 
 ### MessageScroller
 
@@ -130,19 +130,19 @@ The message list column.
 
 One transcript entry. Content-visibility is applied automatically for long lists.
 
-| Prop           | Type      | Default | Description                                    |
-| -------------- | --------- | ------- | ---------------------------------------------- |
-| `messageId`    | `string`  | -       | Reflected as `data-message-id`.                |
-| `scrollAnchor` | `boolean` | `false` | Marks items used for turn anchoring.           |
-| `class`        | `string`  | -       |                                                |
+| Prop           | Type      | Default | Description                          |
+| -------------- | --------- | ------- | ------------------------------------ |
+| `messageId`    | `string`  | -       | Reflected as `data-message-id`.      |
+| `scrollAnchor` | `boolean` | `false` | Marks items used for turn anchoring. |
+| `class`        | `string`  | -       |                                      |
 
 ### MessageScrollerButton
 
 Jump-to-start/end control rendered over the viewport.
 
-| Prop       | Type                 | Default       |
-| ---------- | -------------------- | ------------- |
-| `direction`| `"start" \| "end"`   | `"end"`       |
-| `variant`  | Button variant       | `"secondary"` |
-| `size`     | Button size          | `"icon-sm"`   |
-| `class`    | `string`             | -             |
+| Prop        | Type               | Default       |
+| ----------- | ------------------ | ------------- |
+| `direction` | `"start" \| "end"` | `"end"`       |
+| `variant`   | Button variant     | `"secondary"` |
+| `size`      | Button size        | `"icon-sm"`   |
+| `class`     | `string`           | -             |

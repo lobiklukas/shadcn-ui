@@ -1,49 +1,57 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { Button } from "@/ui/button"
+import { Input } from "@/ui/input"
 import {
-  MessageScrollerProvider,
   MessageScroller,
-  MessageScrollerViewport,
+  MessageScrollerButton,
   MessageScrollerContent,
   MessageScrollerItem,
-  MessageScrollerButton,
-} from '@/ui/message-scroller'
-import { Button } from '@/ui/button'
-import { Input } from '@/ui/input'
+  MessageScrollerProvider,
+  MessageScrollerViewport,
+} from "@/ui/message-scroller"
+import { ref } from "vue"
 
 interface Msg {
   id: number
-  role: 'user' | 'assistant'
+  role: "user" | "assistant"
   text: string
 }
 
-const seed: [Msg['role'], string][] = [
-  ['user', "I'm building a chat for our app and the scroll behavior is driving me nuts."],
+const seed: [Msg["role"], string][] = [
   [
-    'assistant',
+    "user",
+    "I'm building a chat for our app and the scroll behavior is driving me nuts.",
+  ],
+  [
+    "assistant",
     "That's the classic streaming scroll problem. Wrap your message list in MessageScroller and turn on autoScroll — the viewport pins to the bottom as tokens arrive.",
   ],
-  ['user', 'Okay, but when someone sends a new message the view still feels jarring.'],
   [
-    'assistant',
-    'Auto-scroll only runs while the reader is already at the bottom. The moment they scroll up, their position is preserved. The scroll button appears when there is unseen content below.',
+    "user",
+    "Okay, but when someone sends a new message the view still feels jarring.",
+  ],
+  [
+    "assistant",
+    "Auto-scroll only runs while the reader is already at the bottom. The moment they scroll up, their position is preserved. The scroll button appears when there is unseen content below.",
   ],
 ]
 
-const messages = ref<Msg[]>(seed.map(([role, text], i) => ({ id: i, role, text })))
+const messages = ref<Msg[]>(
+  seed.map(([role, text], i) => ({ id: i, role, text }))
+)
 let nextId = seed.length
-const draft = ref('')
+const draft = ref("")
 
 function send() {
   const text = draft.value.trim()
   if (!text) return
-  messages.value.push({ id: nextId++, role: 'user', text })
-  draft.value = ''
+  messages.value.push({ id: nextId++, role: "user", text })
+  draft.value = ""
   // simulated reply exercises auto-follow
   setTimeout(() => {
     messages.value.push({
       id: nextId++,
-      role: 'assistant',
+      role: "assistant",
       text: `Got it — you said: "${text}"`,
     })
   }, 600)
@@ -56,7 +64,7 @@ function send() {
       <div class="rounded-xl border bg-card">
         <div class="gap-1 border-b p-4">
           <p class="font-medium">New Chat</p>
-          <p class="text-muted-foreground text-sm">How can I help you today?</p>
+          <p class="text-sm text-muted-foreground">How can I help you today?</p>
         </div>
         <MessageScroller class="h-96">
           <MessageScrollerViewport>
@@ -68,9 +76,11 @@ function send() {
               >
                 <span
                   class="inline-block max-w-[85%] rounded-lg px-3 py-2 text-sm"
-                  :class="message.role === 'user'
-                    ? 'ml-auto bg-primary text-primary-foreground'
-                    : 'bg-muted'"
+                  :class="
+                    message.role === 'user'
+                      ? 'ml-auto bg-primary text-primary-foreground'
+                      : 'bg-muted'
+                  "
                 >
                   {{ message.text }}
                 </span>
