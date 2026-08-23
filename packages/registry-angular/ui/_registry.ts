@@ -688,4 +688,40 @@ export const ui: Registry["items"] = [
     ],
     meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/direction" } },
   },
+  {
+    name: "attachment",
+    type: "registry:ui",
+    files: [
+      { path: "ui/attachment/attachment.component.html", type: "registry:ui" },
+      { path: "ui/attachment/attachment.component.ts", type: "registry:ui" },
+      { path: "ui/attachment/attachment.variants.ts", type: "registry:ui" },
+      { path: "ui/attachment/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/attachment" } },
+  },
+  {
+    name: "bubble",
+    type: "registry:ui",
+    files: [
+      { path: "ui/bubble/bubble-content.component.html", type: "registry:ui" },
+      { path: "ui/bubble/bubble-group.component.html", type: "registry:ui" },
+      { path: "ui/bubble/bubble-reactions.component.html", type: "registry:ui" },
+      { path: "ui/bubble/bubble.component.html", type: "registry:ui" },
+      { path: "ui/bubble/bubble.component.ts", type: "registry:ui" },
+      { path: "ui/bubble/bubble.variants.ts", type: "registry:ui" },
+      { path: "ui/bubble/index.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/bubble" } },
+  },
+  {
+    name: "marker",
+    type: "registry:ui",
+    files: [
+      { path: "ui/marker/index.ts", type: "registry:ui" },
+      { path: "ui/marker/marker.component.html", type: "registry:ui" },
+      { path: "ui/marker/marker.component.ts", type: "registry:ui" },
+      { path: "ui/marker/marker.variants.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/marker" } },
+  },
 ]
