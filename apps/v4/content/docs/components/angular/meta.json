@@ -39,6 +39,7 @@
     "message-scroller",
     "native-select",
     "navigation-menu",
+    "pagination",
     "popover",
     "progress",
     "questionnaire",

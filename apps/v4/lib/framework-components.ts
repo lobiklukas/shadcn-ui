@@ -420,6 +420,7 @@ export const FRAMEWORK_COMPONENTS: Record<string, Set<string>> = {
     "message-scroller",
     "native-select",
     "navigation-menu",
+    "pagination",
     "popover",
     "progress",
     "questionnaire",
@@ -442,6 +443,7 @@ export const FRAMEWORK_COMPONENTS: Record<string, Set<string>> = {
     "toggle",
     "toggle-group",
     "tooltip",
+
   ]),
 }
 

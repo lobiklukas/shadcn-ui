@@ -440,6 +440,7 @@ export const ui: Registry["items"] = [
   {
     name: "dialog",
     type: "registry:ui",
+    registryDependencies: ["button"],
     dependencies: ["@radix-ng/primitives"],
     files: [
       { path: "ui/dialog/dialog.component.ts", type: "registry:ui" },
@@ -464,6 +465,7 @@ export const ui: Registry["items"] = [
   {
     name: "sheet",
     type: "registry:ui",
+    registryDependencies: ["button"],
     dependencies: ["@radix-ng/primitives"],
     files: [
       { path: "ui/sheet/sheet.component.ts", type: "registry:ui" },
@@ -583,6 +585,7 @@ export const ui: Registry["items"] = [
   {
     name: "command",
     type: "registry:ui",
+    registryDependencies: ["input-group", "dialog"],
     files: [
       { path: "ui/command/command-dialog.component.ts", type: "registry:ui" },
       { path: "ui/command/command.component.html", type: "registry:ui" },
@@ -811,5 +814,16 @@ export const ui: Registry["items"] = [
       { path: "ui/chart/index.ts", type: "registry:ui" },
     ],
     meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/chart" } },
+  },
+  {
+    name: "pagination",
+    type: "registry:ui",
+    registryDependencies: ["button", "select"],
+    files: [
+      { path: "ui/pagination/index.ts", type: "registry:ui" },
+      { path: "ui/pagination/pagination.component.ts", type: "registry:ui" },
+      { path: "ui/pagination/pagination.icons.ts", type: "registry:ui" },
+    ],
+    meta: { links: { docs: "https://forceui.public.prd.shared.perforce.com/docs/components/angular/pagination" } },
   },
 ]
