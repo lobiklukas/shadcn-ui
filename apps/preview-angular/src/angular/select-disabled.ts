@@ -5,6 +5,8 @@ import {
   SelectContent,
   SelectGroup,
   SelectItem,
+  SelectPortal,
+  SelectPositioner,
   SelectTrigger,
   SelectValue,
 } from "@/angular-ui/select"
@@ -12,7 +14,7 @@ import {
 @Component({
   selector: "preview-select-disabled",
   standalone: true,
-  imports: [Select, SelectTrigger, SelectValue, SelectContent, SelectGroup, SelectItem],
+  imports: [Select, SelectTrigger, SelectValue, SelectContent, SelectGroup, SelectItem, SelectPortal, SelectPositioner],
   template: `
     <div uiSelect disabled>
       <button uiSelectTrigger class="w-full max-w-48">

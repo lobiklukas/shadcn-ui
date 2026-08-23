@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, Directive, inject, input } from "@angular/core"
+import { ChangeDetectionStrategy, Component, computed, contentChild, Directive, inject, input } from "@angular/core"
 import { DomSanitizer, type SafeHtml } from "@angular/platform-browser"
 import {
   RdxSelectGroup,
@@ -194,7 +194,17 @@ export class SelectContentComponent {
   )
 
   protected readonly classes = computed(() =>
-    cn(SELECT_CONTENT_BASE, "cn-select-content", this.className()),
+    cn(
+      SELECT_CONTENT_BASE,
+      "cn-select-content",
+      // Dark-mode inversion marker for the design-system provider.
+      "cn-menu-target",
+      // Frosted-glass popup treatment (matches React base select.tsx).
+      "cn-menu-translucent",
+      // RTL-aware slide-in directions.
+      "cn-select-content-logical",
+      this.className(),
+    ),
   )
 }
 
@@ -206,9 +216,17 @@ export class SelectContentComponent {
   host: {
     "data-slot": "select-group",
     class: "cn-select-group",
+    // WCAG 4.1.2: the group needs an accessible name from its label.
+    "[attr.aria-labelledby]": "labelId()",
   },
 })
-export class SelectGroupDirective {}
+export class SelectGroupDirective {
+  private readonly label = contentChild(SelectLabelDirective)
+
+  protected readonly labelId = computed(() => this.label()?.labelId ?? null)
+}
+
+let nextSelectLabelId = 0
 
 /** Angular port of `SelectLabel` — group heading. */
 @Directive({
@@ -220,7 +238,10 @@ export class SelectGroupDirective {}
     class: "cn-select-label",
   },
 })
-export class SelectLabelDirective {}
+export class SelectLabelDirective {
+  /** Stable id consumed by the sibling `SelectGroupDirective` aria binding. */
+  readonly labelId = `ui-select-label-${++nextSelectLabelId}`
+}
 
 /**
  * Angular port of `SelectItem`. The check indicator renders before the item
@@ -264,6 +285,7 @@ export class SelectItemComponent {
   host: {
     "data-slot": "select-separator",
     class: "cn-select-separator pointer-events-none",
+    "aria-hidden": "true",
   },
 })
 export class SelectSeparatorDirective {}

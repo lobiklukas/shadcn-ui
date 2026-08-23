@@ -1,14 +1,19 @@
 import { Component } from "@angular/core"
 
-import { Field } from "@/angular-ui/field"
 import {
   Select,
   SelectContent,
   SelectGroup,
   SelectItem,
+  SelectPortal,
+  SelectPositioner,
   SelectTrigger,
   SelectValue,
 } from "@/angular-ui/select"
+
+import {
+  Field,
+} from "@/angular-ui/field"
 
 // Parity shift: radix-ng v1.x positions the popup item-aligned whenever it
 // opens (non-touch), so React's `alignItemWithTrigger` toggle has no Angular
@@ -16,7 +21,7 @@ import {
 @Component({
   selector: "preview-select-align-item",
   standalone: true,
-  imports: [Field, Select, SelectTrigger, SelectValue, SelectContent, SelectGroup, SelectItem],
+  imports: [Field, Select, SelectTrigger, SelectValue, SelectContent, SelectGroup, SelectItem, SelectPortal, SelectPositioner],
   template: `
     <div uiField class="w-full max-w-48">
       <div uiSelect defaultValue="banana">

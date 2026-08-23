@@ -6,6 +6,8 @@ import {
   SelectGroup,
   SelectItem,
   SelectLabel,
+  SelectPortal,
+  SelectPositioner,
   SelectSeparator,
   SelectTrigger,
   SelectValue,
@@ -25,6 +27,8 @@ import {
     SelectLabel,
     SelectSeparator,
     SelectItem,
+    SelectPortal,
+    SelectPositioner,
   ],
   template: `
     <div uiSelect dir="rtl" [uiValue]="selectedFruit()" (uiValueChange)="selectedFruit.set($event)">

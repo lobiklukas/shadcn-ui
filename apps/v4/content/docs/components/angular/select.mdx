@@ -142,9 +142,19 @@ Add the `data-invalid` attribute to the `Field` component and the `aria-invalid`
 ```html showLineNumbers /data-invalid/ /aria-invalid/
 <div uiField data-invalid>
   <label uiFieldLabel>Fruit</label>
-  <button uiSelectTrigger aria-invalid="true" class="w-full">
-    <span uiSelectValue placeholder="Select a fruit"></span>
-  </button>
+  <div uiSelect>
+    <button uiSelectTrigger aria-invalid="true" class="w-full">
+      <span uiSelectValue placeholder="Select a fruit"></span>
+    </button>
+    <ng-template uiSelectPortal>
+      <div uiSelectPositioner>
+        <div uiSelectContent>
+          <div uiSelectItem value="apple">Apple</div>
+          <div uiSelectItem value="banana">Banana</div>
+        </div>
+      </div>
+    </ng-template>
+  </div>
 </div>
 ```
 

@@ -1,19 +1,26 @@
 import { Component } from "@angular/core"
 
-import { Field, FieldError, FieldLabel } from "@/angular-ui/field"
 import {
   Select,
   SelectContent,
   SelectGroup,
   SelectItem,
+  SelectPortal,
+  SelectPositioner,
   SelectTrigger,
   SelectValue,
 } from "@/angular-ui/select"
 
+import {
+  Field,
+  FieldError,
+  FieldLabel,
+} from "@/angular-ui/field"
+
 @Component({
   selector: "preview-select-invalid",
   standalone: true,
-  imports: [Field, FieldLabel, FieldError, Select, SelectTrigger, SelectValue, SelectContent, SelectGroup, SelectItem],
+  imports: [Field, FieldLabel, FieldError, Select, SelectTrigger, SelectValue, SelectContent, SelectGroup, SelectItem, SelectPortal, SelectPositioner],
   template: `
     <div uiField data-invalid class="w-full max-w-48">
       <label uiFieldLabel>Fruit</label>

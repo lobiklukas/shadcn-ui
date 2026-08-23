@@ -6,6 +6,8 @@ import {
   SelectGroup,
   SelectItem,
   SelectLabel,
+  SelectPortal,
+  SelectPositioner,
   SelectTrigger,
   SelectValue,
 } from "@/angular-ui/select"
@@ -13,7 +15,7 @@ import {
 @Component({
   selector: "preview-select-demo",
   standalone: true,
-  imports: [Select, SelectTrigger, SelectValue, SelectContent, SelectGroup, SelectLabel, SelectItem],
+  imports: [Select, SelectTrigger, SelectValue, SelectContent, SelectGroup, SelectLabel, SelectItem, SelectPortal, SelectPositioner],
   template: `
     <div uiSelect>
       <button uiSelectTrigger class="w-full max-w-48">
