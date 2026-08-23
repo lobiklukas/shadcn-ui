@@ -54,8 +54,12 @@
     "sonner",
     "spinner",
     "stepper",
+    "switch",
     "table",
+    "tabs",
     "textarea",
+    "toggle",
+    "toggle-group",
     "tooltip"
   ]
 }

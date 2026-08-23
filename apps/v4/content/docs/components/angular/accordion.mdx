@@ -83,13 +83,41 @@ Accordion
     └── AccordionContent
 ```
 
+## Basic
+
+The default single-open accordion with three items.
+
+<ComponentPreview framework="angular" name="accordion-basic" />
+
+## Multiple
+
+Use the `multiple` attribute to allow several items to stay open at once.
+
+<ComponentPreview framework="angular" name="accordion-multiple" previewClassName="h-[450px] *:data-[slot=accordion]:max-w-sm" />
+
+## Disabled
+
+An individual item can be disabled so its trigger cannot be toggled.
+
+<ComponentPreview framework="angular" name="accordion-disabled" />
+
+## Borders
+
+Add border utilities to frame the accordion and pad each item.
+
+<ComponentPreview framework="angular" name="accordion-borders" />
+
+## Card
+
+Compose the accordion inside a `Card` for grouped settings content.
+
+<ComponentPreview framework="angular" name="accordion-card" />
+
 ## RTL
 
 To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
 
-<Callout>
-A dedicated `accordion-rtl` Angular example has not been ported yet. It is tracked in the example-parity report.
-</Callout>
+<ComponentPreview framework="angular" name="accordion-rtl" />
 
 ## API Reference
 
