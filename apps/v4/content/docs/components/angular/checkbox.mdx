@@ -1,0 +1,73 @@
+---
+title: Checkbox
+description: A control that allows the user to toggle between checked and not checked.
+base: angular
+component: true
+links:
+  doc: https://radix-ng.com/primitives/checkbox
+  api: https://radix-ng.com/primitives/checkbox
+---
+
+<ComponentPreview framework="angular" name="checkbox-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @force-ui-angular/checkbox
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ng/primitives
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource framework="angular" name="checkbox" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```ts showLineNumbers
+import { Checkbox } from "@/components/ui/checkbox"
+```
+
+```html showLineNumbers
+<button uiCheckbox id="tos" [checked]="false"></button>
+<label uiLabel for="tos">Accept terms and conditions</label>
+```
+
+## RTL
+
+To enable RTL support in Force UI, see the [RTL configuration guide](/docs/rtl).
+
+<Callout>
+A dedicated `checkbox-rtl` Angular example has not been ported yet. It is tracked in the example-parity report.
+</Callout>
+
+## API Reference
+
+See the [radix-ng](https://radix-ng.com/primitives/checkbox) documentation for more information.

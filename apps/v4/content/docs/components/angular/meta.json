@@ -1,6 +1,7 @@
 {
   "title": "Angular",
   "pages": [
+    "accordion",
     "alert",
     "alert-dialog",
     "aspect-ratio",
@@ -14,6 +15,8 @@
     "calendar",
     "card",
     "chart",
+    "checkbox",
+    "collapsible",
     "combobox",
     "command",
     "context-menu",
@@ -39,6 +42,7 @@
     "popover",
     "progress",
     "questionnaire",
+    "radio-group",
     "resizable",
     "scroll-area",
     "select",
