@@ -99,11 +99,11 @@ Pair with [`Dialog`](/docs/components/ember/dialog) to show a dialog on desktop 
 
 Root component managing open state.
 
-| Prop              | Type                          | Default | Description                              |
-| ----------------- | ----------------------------- | ------- | ---------------------------------------- |
-| `@open`           | `boolean`                     | -       | Controlled open state.                   |
-| `@defaultOpen`    | `boolean`                     | -       | Initial state when uncontrolled.         |
-| `@onOpenChange`   | `(open: boolean) => void`     | -       | Called when the open state changes.      |
+| Prop            | Type                      | Default | Description                         |
+| --------------- | ------------------------- | ------- | ----------------------------------- |
+| `@open`         | `boolean`                 | -       | Controlled open state.              |
+| `@defaultOpen`  | `boolean`                 | -       | Initial state when uncontrolled.    |
+| `@onOpenChange` | `(open: boolean) => void` | -       | Called when the open state changes. |
 
 ### DrawerTrigger
 
@@ -121,10 +121,10 @@ Fixed full-screen backdrop. Fades in/out with the drawer state.
 
 Portaled panel sliding in from an edge.
 
-| Prop     | Type                                          | Default    | Description                    |
-| -------- | --------------------------------------------- | ---------- | ------------------------------ |
-| `@side`  | `"top" \| "bottom" \| "left" \| "right"`      | `"bottom"` | Edge the drawer slides from.   |
-| `@class` | `string`                                      | -          | Additional classes to apply.   |
+| Prop     | Type                                     | Default    | Description                  |
+| -------- | ---------------------------------------- | ---------- | ---------------------------- |
+| `@side`  | `"top" \| "bottom" \| "left" \| "right"` | `"bottom"` | Edge the drawer slides from. |
+| `@class` | `string`                                 | -          | Additional classes to apply. |
 
 Renders role="dialog", includes the decorative grab handle (bottom side only), and locks body scroll while open.
 

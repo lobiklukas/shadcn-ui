@@ -78,13 +78,13 @@ Use `@state` to drive the border, media tint, and shimmer behavior: `idle` rende
 
 <ComponentPreview framework="ember" name="attachment-states" />
 
-| State         | Description                                    |
-| ------------- | ---------------------------------------------- |
-| `idle`        | Selected but not yet uploaded. Dashed border.  |
-| `uploading`   | Upload in progress. Pair with a `Spinner`.     |
-| `processing`  | Server-side processing. Title shimmers.        |
-| `error`       | Upload failed. Media and description tint red. |
-| `done`        | Default completed state.                       |
+| State        | Description                                    |
+| ------------ | ---------------------------------------------- |
+| `idle`       | Selected but not yet uploaded. Dashed border.  |
+| `uploading`  | Upload in progress. Pair with a `Spinner`.     |
+| `processing` | Server-side processing. Title shimmers.        |
+| `error`      | Upload failed. Media and description tint red. |
+| `done`       | Default completed state.                       |
 
 ## Sizes
 
@@ -114,21 +114,21 @@ Use `@variant="image"` on the media slot to render a full-bleed image.
 
 The attachment card root.
 
-| Prop             | Type                                                        | Default       | Description                                      |
-| ---------------- | ----------------------------------------------------------- | ------------- | ------------------------------------------------ |
-| `@state`         | `"idle" \| "uploading" \| "processing" \| "error" \| "done"`| `"done"`      | Upload lifecycle state driving visual treatment. |
-| `@size`          | `"default" \| "sm" \| "xs"`                                 | `"default"`   | Card density.                                    |
-| `@orientation`   | `"horizontal" \| "vertical"`                                | `"horizontal"`| Layout of media vs content.                      |
-| `@class`         | `string`                                                    | -             | Additional classes to apply.                     |
+| Prop           | Type                                                         | Default        | Description                                      |
+| -------------- | ------------------------------------------------------------ | -------------- | ------------------------------------------------ |
+| `@state`       | `"idle" \| "uploading" \| "processing" \| "error" \| "done"` | `"done"`       | Upload lifecycle state driving visual treatment. |
+| `@size`        | `"default" \| "sm" \| "xs"`                                  | `"default"`    | Card density.                                    |
+| `@orientation` | `"horizontal" \| "vertical"`                                 | `"horizontal"` | Layout of media vs content.                      |
+| `@class`       | `string`                                                     | -              | Additional classes to apply.                     |
 
 ### AttachmentMedia
 
 Square media frame for icons or images.
 
-| Prop       | Type                | Default | Description                                      |
-| ---------- | ------------------- | ------- | ------------------------------------------------ |
-| `@variant` | `"icon" \| "image"` | `"icon"`| Icon tile or full-bleed image.                   |
-| `@class`   | `string`            | -       | Additional classes to apply.                     |
+| Prop       | Type                | Default  | Description                    |
+| ---------- | ------------------- | -------- | ------------------------------ |
+| `@variant` | `"icon" \| "image"` | `"icon"` | Icon tile or full-bleed image. |
+| `@class`   | `string`            | -        | Additional classes to apply.   |
 
 ### AttachmentContent
 

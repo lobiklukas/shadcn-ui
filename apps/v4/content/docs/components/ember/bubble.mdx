@@ -68,15 +68,15 @@ Use `@align` to switch sides of the thread. Start is the default for incoming me
 
 <ComponentPreview framework="ember" name="bubble-variants" />
 
-| Variant       | Description                                              |
-| ------------- | -------------------------------------------------------- |
-| `default`     | The primary bubble for outgoing messages.                |
-| `secondary`   | A softer bubble for secondary participants.              |
-| `muted`       | Low emphasis bubble for incoming messages.               |
-| `tinted`      | Soft tint derived from the primary color.                |
-| `outline`     | Outlined bubble without fill.                            |
-| `ghost`       | Full width, unframed content for assistant text.         |
-| `destructive` | Error or failure bubbles.                                |
+| Variant       | Description                                      |
+| ------------- | ------------------------------------------------ |
+| `default`     | The primary bubble for outgoing messages.        |
+| `secondary`   | A softer bubble for secondary participants.      |
+| `muted`       | Low emphasis bubble for incoming messages.       |
+| `tinted`      | Soft tint derived from the primary color.        |
+| `outline`     | Outlined bubble without fill.                    |
+| `ghost`       | Full width, unframed content for assistant text. |
+| `destructive` | Error or failure bubbles.                        |
 
 ## Group
 
@@ -118,11 +118,11 @@ Render quick-reply actions inside the bubble content.
 
 The bubble container.
 
-| Prop       | Type                                                                                                   | Default     | Description                                      |
-| ---------- | ------------------------------------------------------------------------------------------------------ | ----------- | ------------------------------------------------ |
-| `@variant` | `"default" \| "secondary" \| "muted" \| "tinted" \| "outline" \| "ghost" \| "destructive"`            | `"default"` | The visual style of the bubble.                  |
-| `@align`   | `"start" \| "end"`                                                                                     | `"start"`   | Which side of the thread the bubble sits on.     |
-| `@class`   | `string`                                                                                               | -           | Additional classes to apply to the root element. |
+| Prop       | Type                                                                                       | Default     | Description                                      |
+| ---------- | ------------------------------------------------------------------------------------------ | ----------- | ------------------------------------------------ |
+| `@variant` | `"default" \| "secondary" \| "muted" \| "tinted" \| "outline" \| "ghost" \| "destructive"` | `"default"` | The visual style of the bubble.                  |
+| `@align`   | `"start" \| "end"`                                                                         | `"start"`   | Which side of the thread the bubble sits on.     |
+| `@class`   | `string`                                                                                   | -           | Additional classes to apply to the root element. |
 
 ### BubbleContent
 
@@ -136,16 +136,16 @@ The bubble's inner content wrapper.
 
 Groups consecutive bubbles from one participant.
 
-| Prop     | Type     | Default | Description                                      |
-| -------- | -------- | ------- | ------------------------------------------------ |
-| `@class` | `string` | -       | Additional classes to apply to the group element.|
+| Prop     | Type     | Default | Description                                       |
+| -------- | -------- | ------- | ------------------------------------------------- |
+| `@class` | `string` | -       | Additional classes to apply to the group element. |
 
 ### BubbleReactions
 
 Floating reactions row attached to a bubble.
 
-| Prop      | Type                   | Default     | Description                                        |
-| --------- | ---------------------- | ----------- | -------------------------------------------------- |
-| `@side`   | `"top" \| "bottom"`    | `"bottom"`  | Which edge of the bubble the reactions attach to.  |
-| `@align`  | `"start" \| "end"`     | `"end"`     | Horizontal alignment within the bubble.            |
-| `@class`  | `string`               | -           | Additional classes to apply.                       |
+| Prop     | Type                | Default    | Description                                       |
+| -------- | ------------------- | ---------- | ------------------------------------------------- |
+| `@side`  | `"top" \| "bottom"` | `"bottom"` | Which edge of the bubble the reactions attach to. |
+| `@align` | `"start" \| "end"`  | `"end"`    | Horizontal alignment within the bubble.           |
+| `@class` | `string`            | -          | Additional classes to apply.                      |
