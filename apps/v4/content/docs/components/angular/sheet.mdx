@@ -119,10 +119,12 @@ Set `[showCloseButton]="false"` to hide the corner close button. Provide an expl
 
 Sheets follow the document or element `dir`. In RTL layouts the sheet slides from the left edge — pass `side="left"` alongside `dir="rtl"`.
 
+<Callout>
+The Angular RTL demo renders the Arabic state statically; the React version cycles en/ar/he via a language switcher. The rendered behaviour is the same.
+</Callout>
+
 <ComponentPreview framework="angular" name="sheet-rtl" direction="rtl" />
 
 ## API Reference
 
 Wraps [radix-ng's dialog primitive](https://radix-ng.com/primitives/dialog) — see its documentation for focus management, dismissal, and controlled state.
-
-Force UI adds these parts on top (attribute selectors on native elements): `[uiSheet]` root, `button[uiSheetTrigger]`, `ng-template[uiSheetPortal]`, `[uiSheetOverlay]`, `[uiSheetContent]` (inputs: `side`, `showCloseButton`, `class`), `[uiSheetHeader]`, `[uiSheetFooter]`, `[uiSheetTitle]`, `[uiSheetDescription]`, and `button[uiSheetClose]`.

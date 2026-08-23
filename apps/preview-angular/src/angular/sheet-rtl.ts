@@ -12,6 +12,8 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
+  SheetOverlay,
+  SheetPortal,
 } from "@/angular-ui/sheet"
 
 // apps/v4/examples/base/sheet-rtl.tsx — the React example drives dir/labels

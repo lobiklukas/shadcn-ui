@@ -8,6 +8,8 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
+  SheetOverlay,
+  SheetPortal,
 } from "@/angular-ui/sheet"
 
 // apps/v4/examples/base/sheet-no-close-button.tsx

@@ -10,6 +10,8 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
+  SheetOverlay,
+  SheetPortal,
 } from "@/angular-ui/sheet"
 
 // apps/v4/examples/base/sheet-side.tsx — one sheet per edge. The side classes
