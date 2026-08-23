@@ -8,29 +8,57 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/angular-ui/breadcrumb"
-import { Button } from "@/angular-ui/button"
+import {
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuRoot,
+  DropdownMenuTrigger,
+} from "@/angular-ui/dropdown-menu"
 
-// Material Symbols `keyboard_arrow_down` — the React example's ChevronDownIcon.
+// apps/v4/examples/base/breadcrumb-dropdown.tsx
+// Material Symbols (rounded) — the React example's ChevronDownIcon / DotIcon.
 const CHEVRON_DOWN_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M469-358q-5-2-10-7L261-563q-9-9-8.5-21.5T262-606q9-9 21.5-9t21.5 9l175 176 176-176q9-9 21-8.5t21 9.5q9 9 9 21.5t-9 21.5L501-365q-5 5-10 7t-11 2q-6 0-11-2Z"/></svg>`
+const DOT_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M478-478ZM281.5-281.5Q200-363 200-480t81.5-198.5Q363-760 480-760t198.5 81.5Q760-597 760-480t-81.5 198.5Q597-200 480-200t-198.5-81.5Z"/></svg>`
 
 @Component({
   selector: "preview-breadcrumb-dropdown",
   standalone: true,
-  imports: [Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage],
+  imports: [
+    Breadcrumb,
+    BreadcrumbList,
+    BreadcrumbItem,
+    BreadcrumbLink,
+    BreadcrumbSeparator,
+    BreadcrumbPage,
+    DropdownMenuRoot,
+    DropdownMenuTrigger,
+    DropdownMenuContent,
+    DropdownMenuGroup,
+    DropdownMenuItem,
+  ],
   template: `<nav uiBreadcrumb>
     <ol uiBreadcrumbList>
       <li uiBreadcrumbItem>
         <a uiBreadcrumbLink href="/">Home</a>
       </li>
-      <li uiBreadcrumbSeparator></li>
+      <li uiBreadcrumbSeparator [innerHTML]="dot"></li>
       <li uiBreadcrumbItem>
-        <!-- DropdownMenu composition pending angular dropdown-menu port -->
-        <button class="flex items-center gap-1">
-          Components
-          <svg data-icon="inline-end" aria-hidden="true" class="size-3.5" [innerHTML]="chevronDown"></svg>
-        </button>
+        <div uiDropdownMenuRoot>
+          <button class="flex items-center gap-1" uiDropdownMenuTrigger type="button">
+            Components
+            <span data-icon="inline-end" aria-hidden="true" class="size-3.5" [innerHTML]="chevronDown"></span>
+          </button>
+          <div uiDropdownMenuContent>
+            <div uiDropdownMenuGroup>
+              <button uiDropdownMenuItem>Documentation</button>
+              <button uiDropdownMenuItem>Themes</button>
+              <button uiDropdownMenuItem>GitHub</button>
+            </div>
+          </div>
+        </div>
       </li>
-      <li uiBreadcrumbSeparator></li>
+      <li uiBreadcrumbSeparator [innerHTML]="dot"></li>
       <li uiBreadcrumbItem>
         <span uiBreadcrumbPage>Breadcrumb</span>
       </li>
@@ -39,6 +67,7 @@ const CHEVRON_DOWN_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -96
 })
 export class BreadcrumbDropdownDemoComponent {
   protected readonly chevronDown = CHEVRON_DOWN_SVG
+  protected readonly dot = DOT_SVG
 }
 
 export default BreadcrumbDropdownDemoComponent
