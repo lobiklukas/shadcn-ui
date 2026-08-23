@@ -1,6 +1,6 @@
 <script lang="ts">
 	import BookOpenCheckIcon from "~icons/ms/menu_book";
-	import GitBranchIcon from "~icons/ms/branch";
+	import GitBranchIcon from "~icons/ms/account_tree";
 	import SearchIcon from "~icons/ms/search";
 	import {
 		Marker,

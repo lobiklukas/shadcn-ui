@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { toast } from "svelte-sonner";
-	import GitBranchIcon from "~icons/ms/branch";
+	import GitBranchIcon from "~icons/ms/account_tree";
 	import RevertIcon from "~icons/ms/restart_alt";
 	import {
 		Marker,

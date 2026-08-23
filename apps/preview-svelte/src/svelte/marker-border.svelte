@@ -1,6 +1,6 @@
 <script lang="ts">
 	import FileTextIcon from "~icons/ms/description";
-	import GitBranchIcon from "~icons/ms/branch";
+	import GitAccountTreeIcon from "~icons/ms/account_tree";
 	import SearchIcon from "~icons/ms/search";
 	import {
 		Marker,
@@ -11,7 +11,7 @@
 
 <div class="flex w-full max-w-sm flex-col gap-3 py-12">
 	<Marker variant="border">
-		<MarkerIcon><GitBranchIcon /></MarkerIcon>
+		<MarkerIcon><GitAccountTreeIcon /></MarkerIcon>
 		<MarkerContent>Switched to release-candidate</MarkerContent>
 	</Marker>
 	<Marker variant="border">

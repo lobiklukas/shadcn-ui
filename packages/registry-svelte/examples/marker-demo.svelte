@@ -1,5 +1,5 @@
 <script lang="ts">
-	import GitBranchIcon from "~icons/ms/branch";
+	import GitBranchIcon from "~icons/ms/account_tree";
 	import {
 		Marker,
 		MarkerContent,
